@@ -33,13 +33,11 @@
 <!-- Responsive CSS -->
 <link href="static/css/responsive.css" rel="stylesheet">
 
-<!-- 引入 Mapbox GL Draw 插件的 JavaScript 和 CSS 文件 -->
+<!-- import Mapbox GL Draw plugin and JavaScript  CSS file-->
 <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.css" rel="stylesheet">
-    
-<script charset="utf-8" src="https://d3js.org/d3.v7.min.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.css" rel="stylesheet">   
 <style>
         /* 设置地图容器的样式 */
         .map-container {
@@ -79,7 +77,7 @@
 								<li><a href="#UrbanExtent">Urban Extent</a></li>
 								<li><a href="#Built-up">Built-up Area</a></li>								
 								<li><a href="#AirQuality">Air Quality</a></li>
-								<li><a href="#Metro">Metro</a></li>
+								<li><a href="#GreenSpace">Green Space</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</nav>
@@ -119,6 +117,8 @@
 		
 	</div>
 	<!-- /Static Banner Wrap -->
+
+	
 
 	<!-- oscar Contant Wrapper Start-->  
 <div id="main-contant" class="main-contant">  
@@ -267,25 +267,52 @@
 								<img src="static/images/urban_extent.png" alt="">
 							</div><!-- / Svg Icon -->
 							<div class="text">
-								<h6 class="title"><a href="#">History of Los Angeles</a></h6><!-- / Title --> 
-								<p></p>
-							</div>
-						</div>
-						<!-- Features Thumb Start -->
-					</div>
-					<div data-aos="fade-up" data-aos-delay="300" class="col-md-4 col-sm-6">
-						<!-- Features Thumb Start -->
-						<div class="features-thumb-2 radius-5">
-							<div>
-								<!-- <img src="static/picture/feature-icon2.svg" alt=""> -->
-							</div><!-- / Svg Icon -->
-							<div class="text">
 								<h6 class="title"><a href="#"></a></h6><!-- / Title --> 
 								<p></p>
 							</div>
 						</div>
+
+
 						<!-- Features Thumb Start -->
 					</div>
+
+					<!-- Static Banner Wrap Metro Map -->
+	<div class="main-banner">
+		<div class="container">
+			<div class="row d-lg-flex align-items-lg-center">
+				<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
+					<div class="about-caption-3">
+						<h3 class="title">Metro Change</h3>
+						<p>Existing and Under construction(black line). Include A Line, B & D Lines, C Line, E Line, K Line. </p>
+						<a href="#" class="btn th-bg">Read More</a>
+					</div>
+				</div>
+				<div id="map1" class="map-container">1</div>
+				<div id="map2" class="map-container">2</div>
+				<script>
+				mapboxgl.accessToken = 'pk.eyJ1IjoibGFiYml0OXUiLCJhIjoiY2xyaHBidGY3MDFpeDJqcDh5c3htcW9tbyJ9.MIEvLBcTmBQOKa0acImNcQ'; // Replace with your Mapbox access token
+
+				var map = new mapboxgl.Map({
+					container: 'map1',
+					style: 'mapbox://styles/labbit9u/clvmy00r901jo01qv7nb0b41b', // 这里换成适合洛杉矶地铁线的地图样式
+					center: [-118.2437, 34.0522], // 洛杉矶的经纬度坐标
+					zoom: 9
+				});
+
+				var map = new mapboxgl.Map({
+					container: 'map2',
+					style: 'mapbox://styles/labbit9u/clvmzxzix01k501qp8asw857y', // 这里换成适合洛杉矶地铁线的地图样式
+					center: [-118.2437, 34.0522], // 洛杉矶的经纬度坐标
+					zoom: 9
+				});
+				</script>
+			</div>
+		</div>
+		
+	</div>
+	<!-- /Static Banner Wrap -->
+
+
 					<div data-aos="fade-up" data-aos-delay="600" class="col-md-4 col-sm-6">
 						<!-- Features Thumb Start -->
 						<div class="features-thumb-2 radius-5">
@@ -336,45 +363,10 @@
 								<p></p>
 							</div>
 						</div>
+
 						<!-- Features Thumb Start -->
 					</div>
 				</div>
-
-					<!-- Static Banner Wrap -->
-				<div class="main-banner">
-					<div class="container">
-						<div class="row d-lg-flex align-items-lg-center">
-							<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
-								<div class="about-caption-3">
-									<h3 class="title">Metro Change</h3>
-									<p>Existing and Under construction(black line). Include A Line, B & D Lines, C Line, E Line, K Line. </p>
-									<a href="#" class="btn th-bg">Read More</a>
-								</div>
-							</div>
-							<div id="map1" class="map-container">1</div>
-							<div id="map2" class="map-container">2</div>
-							<script>
-							mapboxgl.accessToken = 'pk.eyJ1IjoibGFiYml0OXUiLCJhIjoiY2xyaHBidGY3MDFpeDJqcDh5c3htcW9tbyJ9.MIEvLBcTmBQOKa0acImNcQ'; // Replace with your Mapbox access token
-
-							var map = new mapboxgl.Map({
-								container: 'map1',
-								style: 'mapbox://styles/labbit9u/clvmy00r901jo01qv7nb0b41b', // 这里换成适合洛杉矶地铁线的地图样式
-								center: [-118.2437, 34.0522], // 洛杉矶的经纬度坐标
-								zoom: 9
-							});
-
-							var map = new mapboxgl.Map({
-								container: 'map2',
-								style: 'mapbox://styles/labbit9u/clvmzxzix01k501qp8asw857y', // 这里换成适合洛杉矶地铁线的地图样式
-								center: [-118.2437, 34.0522], // 洛杉矶的经纬度坐标
-								zoom: 9
-							});
-							</script>
-						</div>
-					</div>
-					
-				</div>
-				<!-- /Static Banner Wrap -->
 			</div>
 		</section>
 		<!-- Features Section End -->
@@ -536,13 +528,13 @@
 		</section>
 		<!-- Blog Section End -->
 		<!-- Testimonial Section Start -->
-		<section id="Metro" class="grad-testimonial-section">
+		<section id="GreenSpace" class="grad-testimonial-section">
 			<div class="container">
 				<div class="row d-lg-flex align-items-lg-center">
 					<div class="col-md-6 col-sm-6">
 						<!-- Section Heading Start -->
 						<div class="intro-section section-heading-2 text-left">
-							<h6 class="sub-title">Metro Map of Los Angeles</h6>
+							<h6 class="sub-title">Urban Green Space</h6>
 
 							<!--temporary comment-->
 
