@@ -33,25 +33,8 @@
 <!-- Responsive CSS -->
 <link href="static/css/responsive.css" rel="stylesheet">
 
-<!-- 引入 Mapbox GL Draw 插件的 JavaScript 和 CSS 文件 -->
-<link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
-<script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
-<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.css" rel="stylesheet">
-    
-<script charset="utf-8" src="https://d3js.org/d3.v7.min.js"></script>
- <style>
-        /* 设置地图容器的样式 */
-        .map-container {
-            display: inline-block; /* 将地图容器设置为内联块元素，使其水平排列 */
-            width: 45%; /* 设置地图容器的宽度 */
-            height: 300px; /* 设置地图容器的高度 */
-            margin-right: 20px; /* 设置地图容器之间的右边距 */
-        }
-</style>
-
 </head>
-<body class="grad-version" id="home">
+<body class="grad-version" id="Population">
 <!-- LOADER --> 
 <div id="loader-overflow">
   <div id="loader3" class="loader-cont">Please enable JS</div>
@@ -63,22 +46,22 @@
 		<div class="nav-outer sticky-header">
 			<div class="container">
 				<!-- Logo Start -->
-				<h1 class="logo">
+				<!-- <h1 class="logo">
 					<a href="index.html" title="oscarthemes">
 						<img src="static/picture/logo.svg" alt="oscarthemes">
 					</a>
-				</h1>
+				</h1> -->
 				<!-- /Logo End -->
 				<div class="pull-right menu-holder">
 					<div class="mobile-menu"></div>
 					<div id="opg-nav" class="main-menu navigation">
 						<nav>
 							<ul>
-								<li class="active"><a href="#home">Population</a></li> 
-								<li><a href="#featured">Features</a></li>
-								<li><a href="#testimonial">testimonial</a></li>
-								<li><a href="#pricing">Pricing</a></li>
-								<li><a href="#blog">Air Quality</a></li>
+								<li class="active"><a href="#Population">Population</a></li> 
+								<li><a href="#UrbanExtent">Urban Extent</a></li>
+								<li><a href="#Built-up">Built-up Area</a></li>								
+								<li><a href="#AirQuality">Air Quality</a></li>
+								<li><a href="#Metro">Metro</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</nav>
@@ -104,13 +87,13 @@
 				<!-- Second section with larger first chart -->
 				<div class="col-md-6">
 					<div class="banner-thumb">
-						<canvas id="populationChangeChart2"height="400"></canvas>
+						<canvas id="populationChangeChart2"height="500"></canvas>
 					</div>
 				</div>
 				<!-- Third section with larger second chart -->
 				<div class="col-md-4">
 					<div class="banner-thumb2">
-						<canvas id="populationChangeChart1" height="400"></canvas>
+						<canvas id="populationChangeChart1" height="500"></canvas>
 					</div>
 				</div>
 			</div>
@@ -118,8 +101,10 @@
 		
 	</div>
 	<!-- /Static Banner Wrap -->
+
+	
 	<!-- oscar Contant Wrapper Start-->  
-	<div id="main-contant" class="main-contant">  
+<div id="main-contant" class="main-contant">  
 		<!-- Featured Section Start -->
 		<section  class="">
 			<!-- Featured Item Section Start -->
@@ -130,7 +115,7 @@
 						<div class="col-md-3" data-aos="flip-right" data-aos-delay="200">
 							<!-- Featured Thumb Start -->
 							<div class="featured-thumb">
-								<a href="#"><img src="static/picture/google.svg" alt=""></a>
+								<!-- <a href="#"><img src="static/picture/google.svg" alt=""></a> -->
 							</div>
 							<!-- Featured Thumb End -->
 						</div>
@@ -144,28 +129,28 @@
 						<div class="col-md-3" data-aos="flip-right" data-aos-delay="400">
 							<!-- Featured Thumb Start -->
 							<div class="featured-thumb">
-								<a href="#"><img src="static/picture/microsoft.svg" alt=""></a>
+								<!-- <a href="#"><img src="static/picture/microsoft.svg" alt=""></a> -->
 							</div>
 							<!-- Featured Thumb End -->
 						</div>
 						<div class="col-md-3" data-aos="flip-right" data-aos-delay="200">
 							<!-- Featured Thumb Start -->
 							<div class="featured-thumb">
-								<a href="#"><img src="static/picture/google.svg" alt=""></a>
+								<!-- <a href="#"><img src="static/picture/google.svg" alt=""></a> -->
 							</div>
 							<!-- Featured Thumb End -->
 						</div>
 						<div class="col-md-3" data-aos="flip-right" data-aos-delay="500">
 							<!-- Featured Thumb Start -->
 							<div class="featured-thumb">
-								<a href="#"><img src="static/picture/intel.svg" alt=""></a>
+								<!-- <a href="#"><img src="static/picture/intel.svg" alt=""></a> -->
 							</div>
 							<!-- Featured Thumb End -->
 						</div>
 						<div class="col-md-3" data-aos="flip-right" data-aos-delay="600">
 							<!-- Featured Thumb Start -->
 							<div class="featured-thumb">
-								<a href="#"><img src="static/picture/slack.svg" alt=""></a>
+								<!-- <a href="#"><img src="static/picture/slack.svg" alt=""></a> -->
 							</div>
 							<!-- Featured Thumb End -->
 						</div>
@@ -174,9 +159,12 @@
 				</div>
 			</div>
 			<!-- Featured Item Section End -->
-		</section>
+		</section> 
 		<!-- Featured Section End -->
-		<section class="intro-section section-heading-2 gray-bg">
+	
+<!--temporary comment-->
+
+		<!-- <section class="intro-section section-heading-2 gray-bg">
 			<div class="container ">
 				<div class="row d-lg-flex align-items-lg-center">
 					<div class="col-md-6 col-sm-6">
@@ -188,38 +176,28 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
+
+
 		<!-- About Us Section Start -->
-		<section  id="about-us">
+
+		<!--temporary comment-->
+
+		<!-- <section  id="about-us">
 			<div class="container">
 				<div class="row d-lg-flex align-items-lg-center">
 					<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
 						<div class="about-caption-3">
-							<h3 class="title">Metro Change</h3>
-							<p>Existing and Under construction(black line) </p>
-							<p>Include A Line, B & D Lines, C Line, E Line, K Line </p>
+							<h3 class="title">Complete Data Reports <br> & Analysis history</h3>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
 							<a href="#" class="btn th-bg">Read More</a>
 						</div>
 					</div>
-                    <div id="map1" class="map-container">1</div>
-                    <div id="map2" class="map-container">2</div>
-                    <script>
-                    mapboxgl.accessToken = 'pk.eyJ1IjoibGFiYml0OXUiLCJhIjoiY2xyaHBidGY3MDFpeDJqcDh5c3htcW9tbyJ9.MIEvLBcTmBQOKa0acImNcQ'; // Replace with your Mapbox access token
-
-                    var map = new mapboxgl.Map({
-                        container: 'map1',
-                        style: 'mapbox://styles/labbit9u/clvmy00r901jo01qv7nb0b41b', // 这里换成适合洛杉矶地铁线的地图样式
-                        center: [-118.2437, 34.0522], // 洛杉矶的经纬度坐标
-                        zoom: 9
-                    });
-
-                    var map = new mapboxgl.Map({
-                        container: 'map2',
-                        style: 'mapbox://styles/labbit9u/clvmzxzix01k501qp8asw857y', // 这里换成适合洛杉矶地铁线的地图样式
-                        center: [-118.2437, 34.0522], // 洛杉矶的经纬度坐标
-                        zoom: 9
-                    });
-                    </script>
+					<div data-aos="fade-left" class="col-md-6 col-sm-6">
+						<div class="shadow-thumb">
+							<figure><img src="static/picture/img1.svg" alt=""></figure>
+						</div>
+					</div>
 				</div>
 				<div class="row d-lg-flex align-items-lg-center">
 					<div data-aos="fade-left" class="col-md-6 col-sm-6">
@@ -250,27 +228,30 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
+
 		<!-- About Us Section End -->
-		<!-- Features Section Start -->
-		<section id="featured" class="gray-bg">
+
+
+		<!-- Urban Extent Section Start -->
+		<section id="UrbanExtent" class="gray-bg">
 			<div class="container">
 				<!-- Section Heading Start -->
 				<div class="section-heading-2 text-center mb-61">
-					<h2 class="title">Features</h2>
-					<p>Everything needed to manage your business</p>
+					<h2 class="title">Urban Extent</h2>
+					<p>Urban Extent</p>
 				</div>
 				<!-- Section Heading End -->
 				<div class="row">
-					<div data-aos="fade-up" class="col-md-4 col-sm-6">
+					<div  class="col-md-12 col-sm-6">
 						<!-- Features Thumb Start -->
 						<div class="features-thumb-2 radius-5">
-							<div class="svg-icon th-bg">
-								<img src="static/picture/feature-icon1.svg" alt="">
+							<div >
+								<img src="static/images/urban_extent.png" alt="">
 							</div><!-- / Svg Icon -->
 							<div class="text">
-								<h6 class="title"><a href="#">SEO Integrated</a></h6><!-- / Title --> 
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+								<h6 class="title"><a href="#">History of Los Angeles</a></h6><!-- / Title --> 
+								<p></p>
 							</div>
 						</div>
 						<!-- Features Thumb Start -->
@@ -278,12 +259,12 @@
 					<div data-aos="fade-up" data-aos-delay="300" class="col-md-4 col-sm-6">
 						<!-- Features Thumb Start -->
 						<div class="features-thumb-2 radius-5">
-							<div class="svg-icon th-bg">
-								<img src="static/picture/feature-icon2.svg" alt="">
+							<div>
+								<!-- <img src="static/picture/feature-icon2.svg" alt=""> -->
 							</div><!-- / Svg Icon -->
 							<div class="text">
-								<h6 class="title"><a href="#">Project Analysis</a></h6><!-- / Title --> 
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+								<h6 class="title"><a href="#"></a></h6><!-- / Title --> 
+								<p></p>
 							</div>
 						</div>
 						<!-- Features Thumb Start -->
@@ -291,12 +272,12 @@
 					<div data-aos="fade-up" data-aos-delay="600" class="col-md-4 col-sm-6">
 						<!-- Features Thumb Start -->
 						<div class="features-thumb-2 radius-5">
-							<div class="svg-icon th-bg">
-								<img src="static/picture/feature-icon3.svg" alt="">
+							<div >
+								<!-- <img src="static/picture/feature-icon3.svg" alt=""> -->
 							</div><!-- / Svg Icon -->
 							<div class="text">
-								<h6 class="title"><a href="#">Manage Team</a></h6><!-- / Title --> 
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+								<h6 class="title"><a href="#"></a></h6><!-- / Title --> 
+								<p></p>
 							</div>
 						</div>
 						<!-- Features Thumb Start -->
@@ -304,12 +285,12 @@
 					<div data-aos="fade-up" data-aos-delay="600" class="col-md-4 col-sm-6">
 						<!-- Features Thumb Start -->
 						<div class="features-thumb-2 radius-5">
-							<div class="svg-icon th-bg">
-								<img src="static/picture/feature-icon4.svg" alt="">
+							<div >
+								<!-- <img src="static/picture/feature-icon4.svg" alt=""> -->
 							</div><!-- / Svg Icon -->
 							<div class="text">
-								<h6 class="title"><a href="#">Manage Team</a></h6><!-- / Title --> 
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+								<h6 class="title"><a href="#"></a></h6><!-- / Title --> 
+								<p></p>
 							</div>
 						</div>
 						<!-- Features Thumb Start -->
@@ -317,25 +298,25 @@
 					<div data-aos="fade-up" data-aos-delay="600" class="col-md-4 hidden-sm">
 						<!-- Features Thumb Start -->
 						<div class="features-thumb-2 radius-5">
-							<div class="svg-icon th-bg">
-								<img src="static/picture/feature-icon5.svg" alt="">
+							<div >
+								<!-- <img src="static/picture/feature-icon5.svg" alt=""> -->
 							</div><!-- / Svg Icon -->
 							<div class="text">
-								<h6 class="title"><a href="#">Manage Team</a></h6><!-- / Title --> 
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+								<h6 class="title"><a href="#"></a></h6><!-- / Title --> 
+								<p></p>
 							</div>
 						</div>
 						<!-- Features Thumb Start -->
 					</div>
-					<div data-aos="fade-up" data-aos-delay="600" class="col-md-4 hidden-sm">
+					<div  class="col-md-4 hidden-sm">
 						<!-- Features Thumb Start -->
 						<div class="features-thumb-2 radius-5">
-							<div class="svg-icon th-bg">
-								<img src="static/picture/feature-icon6.svg" alt="">
+							<div >
+								<!-- <img src="static/picture/feature-icon6.svg" alt=""> -->
 							</div><!-- / Svg Icon -->
 							<div class="text">
-								<h6 class="title"><a href="#">Manage Team</a></h6><!-- / Title --> 
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+								<h6 class="title"><a href="#"></a></h6><!-- / Title --> 
+								<p></p>
 							</div>
 						</div>
 						<!-- Features Thumb Start -->
@@ -346,14 +327,14 @@
 		<!-- Features Section End -->
 
 		<!-- Pricing Section Start -->
-		<section class="price-section" id="pricing">
+		<section class="price-section" id="Built-up">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<!-- Section Heading Start -->
 						<div class="section-heading-2 text-center mb-61">
-							<h2 class="title">Simple, Transparent Pricing</h2>
-							<p>We have several powerful plans to showcase your business and get discovered as creative entrepreneurs. Everything you need.</p>
+							<h2 class="title">Built-up Areas</h2>
+							<p></p>
 						</div>
 						<!-- Section Heading End -->
 					</div>
@@ -361,25 +342,35 @@
 				<div class="row">
 					<div class="col-md-3 col-sm-6">
 						<!-- Pricing Table Start -->
-						<div class="pricing-table mb-30">
+
+						<!--temporary comment-->
+
+						<!-- <div class="pricing-table mb-30">
 							<div class="price-area">
 								<h6 class="price-type">Free</h6>
 								<h5 class="price-unit"><sub>$</sub> 0 <sub>/ Month</sub></h5>
-							</div>
-							<ul class="list-group">
+							</div> -->
+
+<!--temporary comment-->
+							<!-- <ul class="list-group">
 							  <li class="list-group-item">1 Project</li>
 							  <li class="list-group-item">Dashboard</li>
 							  <li class="list-group-item">2 TB Storage</li>
 							  <li class="list-group-item">Data Reports</li>
 							  <li class="list-group-item">5 Users</li>
-							</ul>
-							<a href="#" class="btn th-bg ">Get Started</a>
+							</ul> -->
+							<!-- <a href="#" class="btn th-bg ">Get Started</a> -->
 						</div>
 						<!-- Pricing Table End -->
 					</div>
 					<div class="col-md-3 col-sm-6">
+
+
 						<!-- Pricing Table Start -->
-						<div class="pricing-table mb-30">
+
+						<!--temporary comment-->
+
+						<!-- <div class="pricing-table mb-30">
 							<div class="price-area">
 								<h6 class="price-type">Basic</h6>
 								<h5 class="price-unit"><sub>$</sub> 39 <sub>/ Month</sub></h5>
@@ -392,12 +383,17 @@
 							  <li class="list-group-item">20 Users</li>
 							</ul>
 							<a href="#" class="btn th-bg ">Get Started</a>
-						</div>
+						</div> -->
 						<!-- Pricing Table End -->
+
 					</div>
 					<div class="col-md-3 col-sm-6">
+						
 						<!-- Pricing Table Start -->
-						<div class="pricing-table mb-30 active">
+
+						<!--temporary comment-->
+
+						<!-- <div class="pricing-table mb-30 active">
 							<div class="price-area">
 								<h6 class="price-type">Premium <label class="badge">Popular</label></h6>
 								<h5 class="price-unit"><sub>$</sub> 99 <sub>/ Month</sub></h5>
@@ -410,12 +406,16 @@
 							  <li class="list-group-item">Unlimited Users</li>
 							</ul>
 							<a href="#" class="btn th-bg ">Get Started</a>
-						</div>
+						</div> -->
+
 						<!-- Pricing Table End -->
 					</div>
 					<div class="col-md-3 col-sm-6">
 						<!-- Pricing Table Start -->
-						<div class="pricing-table mb-30">
+
+						<!--temporary comment-->
+
+						<!-- <div class="pricing-table mb-30">
 							<div class="price-area">
 								<h6 class="price-type">Enterprise</h6>
 								<h5 class="price-unit"><sub>$</sub> 199 <sub>/ Month</sub></h5>
@@ -428,15 +428,17 @@
 							  <li class="list-group-item">Unlimited Users</li>
 							</ul>
 							<a href="#" class="btn th-bg ">Get Started</a>
-						</div>
+						</div> -->
 						<!-- Pricing Table End -->
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- Pricing Section End -->
+
+
 		<!-- Blog Section Start -->
-		<section id="blog">
+		<section id="AirQuality">
 			<div class="container">
 				<!-- Section Heading Start -->
 				<div class="intro-section section-heading-2 mb-61">
@@ -448,11 +450,19 @@
 						<!-- /Blog Thumb Start -->
 						<div class="blog-thumb">
 							<div class="text">
-								<h5 class="title"><a href="#"> Trip to the road show Report about the team’s</a></h5>
-								<ul class="blog-meta">
-									<li class="post-date"><time datetime="2018-07-16">July 16, 2018</time></li>
-								</ul>
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+								<h5 class="title"><a href="#"> Trends in Moderate Air Quality Days (1980-2020)</a></h5>
+							
+								<p>This line graph illustrates the annual count of days classified as 'Moderate' in 
+									terms of air quality from 1980 to 2020. 
+									The data provides insight into the fluctuations and trends in air quality over
+									 four decades.</p>
+								<p>Starting from 1980, the graph shows a steady increase in the number of moderate air quality days, peaking in the year 2000</p>
+								<p>The peak in 2000, followed by a sharp decline, 
+									suggests significant improvements in air quality management or changes 
+									in regional industrial activities. </p>
+								<p>Post-2010, the numbers show a slight recovery but still remain below the year 2000 levels, 
+									indicating sustained efforts towards air quality improvement or possibly changes 
+									in the factors contributing to air pollution.</p>
 								<a href="#" class="readmore-btn th-cl">Read More </a>
 							</div>
 						</div>
@@ -460,7 +470,7 @@
 					</div>
 					<div class="col-md-6 col-sm-6">
 						<!-- /Blog Thumb Start -->
-						<div class="chart-title">Air Quality Data</div>
+						<div class="chart-title">Annual AQI data of LA</div>
 						<div style="text-align: center;">
 							<select id="selectButton"></select>
 						</div>
@@ -473,20 +483,26 @@
 		</section>
 		<!-- Blog Section End -->
 		<!-- Testimonial Section Start -->
-		<section id="testimonial" class="grad-testimonial-section">
+		<section id="Metro" class="grad-testimonial-section">
 			<div class="container">
 				<div class="row d-lg-flex align-items-lg-center">
 					<div class="col-md-6 col-sm-6">
 						<!-- Section Heading Start -->
 						<div class="intro-section section-heading-2 text-left">
-							<h6 class="sub-title">testimonial</h6>
-							<h2 class="title">Love from our clients around the world</h2>
+							<h6 class="sub-title">Metro Map of Los Angeles</h6>
+
+							<!--temporary comment-->
+
+							<!-- <h2 class="title">Love from our clients around the world</h2>
 							<p>Over 500 00 companies of all size use this product to understand their business and then marker better.</p>
-							<p>Loved your experience with UpSpot? <a href="#">Share your experience</a></p>
+							<p>Loved your experience with UpSpot? <a href="#">Share your experience</a></p> -->
 						</div>
 						<!-- Section Heading End -->
 					</div>
-					<div class="col-md-6 col-sm-6">
+
+					<!--temporary comment-->
+
+					<!-- <div class="col-md-6 col-sm-6">
 						<div class="grad-testimonial">
 							<div class="col-md-12">
 								<div class="grad-testimonial-thumb">
@@ -501,9 +517,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="col-md-12">
+								</div> -->
+							<!-- </div> -->
+
+
+
+
+							<!-- <div class="col-md-12">
 								<div class="grad-testimonial-thumb">
 									<p>This Product Help me grow my bussiness in a short period and very easy to use. I would recommended this product.</p>
 									<div class="testimonial-head">
@@ -532,7 +552,9 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
+
+
 						</div>
 					</div>
 				</div>
@@ -544,13 +566,17 @@
 			<div class="container">
 				<!-- Section Heading Start -->
 				<div class="section-heading-2  text-center mb-61">
-					<h2 class="title">Frequently Asked Questions</h2>
+					<h2 class="title">Green Land</h2>
 				</div>
 				<!-- Section Heading End -->
 				<div class="row">
 					<div class="col-md-12" id="accordion" role="tablist" aria-multiselectable="true">
 						<!-- Collapse Thumb Start -->
-						<div class="simple-accordian panel panel-default">
+
+						<!--temporary comment-->
+
+
+						<!-- <div class="simple-accordian panel panel-default">
 							<div class="panel-heading" role="tab" id="heading1">
 								<h4 class="panel-title">
 									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">How to I pay for the Essentials of Premium Plan?</a>
@@ -561,10 +587,13 @@
 									Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi utstrud exercitation ulluer magna, nulla dolores nemo culpa, congueamco aeiciendis eget consectetuer martello pnrtorio vascello aliquip ex ea commodo.
 								</div>
 							</div>
-						</div>
+						</div> -->
+
+<!--temporary comment-->
+
 						<!--/Collapse Thumb End -->
 						<!-- Collapse Thumb Start -->
-						<div class="simple-accordian panel panel-default">
+						<!-- <div class="simple-accordian panel panel-default">
 							<div class="panel-heading" role="tab" id="heading2">
 								<h4 class="panel-title">
 									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">Can I cancel my premium plan at any time?</a>
@@ -575,10 +604,16 @@
 									Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi utstrud exercitation ulluer magna, nulla dolores nemo culpa, congueamco aeiciendis eget consectetuer martello pnrtorio vascello aliquip ex ea commodo.
 								</div>
 							</div>
-						</div>
+						</div> -->
+
+
 						<!--/Collapse Thumb End -->
 						<!-- Collapse Thumb Start -->
-						<div class="simple-accordian panel panel-default">
+
+
+						<!--temporary comment-->
+
+						<!-- <div class="simple-accordian panel panel-default">
 							<div class="panel-heading" role="tab" id="heading3">
 								<h4 class="panel-title">
 									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">We need to add new users to our team. How will that be billed?</a>
@@ -589,10 +624,15 @@
 									Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi utstrud exercitation ulluer magna, nulla dolores nemo culpa, congueamco aeiciendis eget consectetuer martello pnrtorio vascello aliquip ex ea commodo.
 								</div>
 							</div>
-						</div>
+						</div> -->
+
+
 						<!--/Collapse Thumb End -->
 						<!-- Collapse Thumb Start -->
-						<div class="simple-accordian panel panel-default">
+
+<!--temporary comment-->
+
+						<!-- <div class="simple-accordian panel panel-default">
 							<div class="panel-heading" role="tab" id="heading4">
 								<h4 class="panel-title">
 									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">We need to add new users to our team. How will that be billed?</a>
@@ -603,10 +643,16 @@
 									Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi utstrud exercitation ulluer magna, nulla dolores nemo culpa, congueamco aeiciendis eget consectetuer martello pnrtorio vascello aliquip ex ea commodo.
 								</div>
 							</div>
-						</div>
+						</div> -->
+
+
+
 						<!--/Collapse Thumb End -->
 						<!-- Collapse Thumb Start -->
-						<div class="simple-accordian panel panel-default">
+
+<!--temporary comment-->
+
+						<!-- <div class="simple-accordian panel panel-default">
 							<div class="panel-heading" role="tab" id="heading5">
 								<h4 class="panel-title">
 									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">Do you offer discounts for non-profit organizations or educational institutions?</a>
@@ -617,7 +663,9 @@
 									Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi utstrud exercitation ulluer magna, nulla dolores nemo culpa, congueamco aeiciendis eget consectetuer martello pnrtorio vascello aliquip ex ea commodo.
 								</div>
 							</div>
-						</div>
+						</div> -->
+
+
 						<!--/Collapse Thumb End -->
 					</div>
 				</div>
@@ -631,10 +679,10 @@
 					<!-- Widget Nav Menu Start --> 
 					<div class="widget widget_about">
 						<div class="widget-title">
-							<h5 class="title">About Grad</h5>
+							<h5 class="title">Zihan Xu</h5>
 						</div><!-- /Widget Title -->
 						<div class="text">
-							<p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<p>GitHub Link</p>
 							<ul class="social-list long">
 								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -649,13 +697,12 @@
 					<!-- Widget Nav Menu Start --> 
 					<div class="widget widget_nav_menu">
 						<div class="widget-title">
-							<h5 class="title">Learn More</h5>
+							<h5 class="title">Yining Cui</h5>
 						</div><!-- /Widget Title -->
 						<ul>
-							<li><a href="#">Partners</a></li>
-							<li><a href="#">Report Bug</a></li>
-							<li><a href="#">Marketplace</a></li>
-							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Github</a></li>
+							<li><a href="#">Email</a></li>
+					
 						</ul><!-- / Ul -->
 					</div>
 					<!-- /Widget Nav Menu End -->
@@ -664,13 +711,12 @@
 					<!-- Widget Nav Menu Start --> 
 					<div class="widget widget_nav_menu">
 						<div class="widget-title">
-							<h5 class="title">Quick Links</h5>
+							<h5 class="title">Yunqi Sun</h5>
 						</div><!-- /Widget Title -->
 						<ul>
-							<li><a href="#">API</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Get Support</a></li>
+							<li><a href="#">Github</a></li>
+							<li><a href="#">Email</a></li>
+					
 						</ul><!-- / Ul -->
 					</div>
 					<!-- /Widget Nav Menu End -->
@@ -678,9 +724,12 @@
 				<div class="col-md-3 col-sm-6"> 
 					<div class="widget widget-newsletter">
 						<div class="widget-title">
-							<h5 class="title">Subscribe for Newsletter</h5> 
+							<h5 class="title"></h5> 
 						</div><!-- /Widget Title -->
-						<div class="newsletter-widget">
+
+						<!--temporary comment-->
+
+						<!-- <div class="newsletter-widget">
 							<p>Stay connect with us</p>
 							<div id="mc_embed_signup" class="input-field nl-form-container clearfix">
 								<form 
@@ -707,7 +756,10 @@
 									</div>
 									<label class="search-icon"><input class="btn th-bg" id="mc-embedded-subscribe" type="submit" name="subscribe" value="Subscribe"></label>
 								</form>
-								<div id="notification_container"></div>
+								<div id="notification_container"></div> -->
+
+
+
 							</div><!-- /Input Field End-->
 						</div><!-- / Ul -->
 					</div><!-- /Widget Nav Menu -->
@@ -718,19 +770,26 @@
 	<div class="copy-right light-black-bg">
 		<div class="container">
 			<div class="pull-left">
-				<p>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://yunbuluo.net/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+				<p>CASA003 Group Work &copy; <a target="_blank" href="https://github.com/XuZiHan-010/Casa003.github.io.git">Click Here to visit the GitHub Repository</a></p>
 			</div>
-			<div class="pull-right">
+
+			<!--temporary comment-->
+
+
+			<!-- <div class="pull-right">
 				<ul class="short-nav">
 					<li><a href="#">Terms of services</a></li>
 					<li><a href="#">Privacy Policy</a></li>
 					<li><a href="#">Security</a></li>
-					<li><a href="#">Siemap</a></li>
+					<li><a href="#">Siemap</a></li> -->
+
 				</ul><!-- / Ul -->
 			</div>
 		</div>
 	</div><!-- /Copyright End-->
 </div><!-- /Main Wrapper End-->
+
+
 <!-- jQuery -->
 <script src="static/js/js-bundle.js"></script>
 <!--Custom Script-->
