@@ -1,0 +1,6 @@
+Year,Days with AQI,Good Days,Moderate Days,Unhealthy for Sensitive Groups Days,Unhealthy Days,Very Unhealthy Days,Hazardous Days,Max AQI,90th Percentile AQI,Median AQI,Days CO,Days NO2,Days Ozone,Days PM2.5,Days PM10,Days PM2.5,Days PM10
+1980,366,6,73,81,47,156,3,386,278,168,77,90,199,0,0,0,0
+1990,365,17,119,84,56,89,0,276,229,116,58,113,191,0,3,0,3
+2000,366,27,164,114,51,10,0,243,159,99,7,96,128,133,2,133,2
+2010,365,32,219,99,15,0,0,200,138,76,0,39,170,155,1,155,1
+2020,366,60,169,77,44,16,0,235,165,83,0,23,208,130,5,130,5
