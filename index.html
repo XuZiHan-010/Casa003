@@ -33,6 +33,24 @@
 <!-- Responsive CSS -->
 <link href="static/css/responsive.css" rel="stylesheet">
 
+<!-- 引入 Mapbox GL Draw 插件的 JavaScript 和 CSS 文件 -->
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.css" rel="stylesheet">
+    
+<script charset="utf-8" src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+        /* 设置地图容器的样式 */
+        .map-container {
+            display: inline-block; /* 将地图容器设置为内联块元素，使其水平排列 */
+            width: 45%; /* 设置地图容器的宽度 */
+            height: 300px; /* 设置地图容器的高度 */
+            margin-right: 20px; /* 设置地图容器之间的右边距 */
+        }
+</style>
+
+
 </head>
 <body class="grad-version" id="Population">
 <!-- LOADER --> 
@@ -102,7 +120,42 @@
 	</div>
 	<!-- /Static Banner Wrap -->
 
-	
+	<!-- Static Banner Wrap -->
+	<div class="main-banner">
+		<div class="container">
+			<div class="row d-lg-flex align-items-lg-center">
+				<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
+					<div class="about-caption-3">
+						<h3 class="title">Metro Change</h3>
+						<p>Existing and Under construction(black line). Include A Line, B & D Lines, C Line, E Line, K Line. </p>
+						<a href="#" class="btn th-bg">Read More</a>
+					</div>
+				</div>
+				<div id="map1" class="map-container">1</div>
+				<div id="map2" class="map-container">2</div>
+				<script>
+				mapboxgl.accessToken = 'pk.eyJ1IjoibGFiYml0OXUiLCJhIjoiY2xyaHBidGY3MDFpeDJqcDh5c3htcW9tbyJ9.MIEvLBcTmBQOKa0acImNcQ'; // Replace with your Mapbox access token
+
+				var map = new mapboxgl.Map({
+					container: 'map1',
+					style: 'mapbox://styles/labbit9u/clvmy00r901jo01qv7nb0b41b', // 这里换成适合洛杉矶地铁线的地图样式
+					center: [-118.2437, 34.0522], // 洛杉矶的经纬度坐标
+					zoom: 9
+				});
+
+				var map = new mapboxgl.Map({
+					container: 'map2',
+					style: 'mapbox://styles/labbit9u/clvmzxzix01k501qp8asw857y', // 这里换成适合洛杉矶地铁线的地图样式
+					center: [-118.2437, 34.0522], // 洛杉矶的经纬度坐标
+					zoom: 9
+				});
+				</script>
+			</div>
+		</div>
+		
+	</div>
+	<!-- /Static Banner Wrap -->
+
 	<!-- oscar Contant Wrapper Start-->  
 <div id="main-contant" class="main-contant">  
 		<!-- Featured Section Start -->
