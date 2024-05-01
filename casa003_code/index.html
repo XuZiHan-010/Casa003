@@ -61,7 +61,7 @@
 								<li><a href="#featured">Features</a></li>
 								<li><a href="#testimonial">testimonial</a></li>
 								<li><a href="#pricing">Pricing</a></li>
-								<li><a href="#blog">Blog</a></li>
+								<li><a href="#blog">Air Quality</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</nav>
@@ -80,7 +80,8 @@
 				<div class="col-md-2">
 					<div class="banner-caption-wrap">
 						<h3 class="banner-title">Population </h3>
-						<p>Upgrade your experience</p>
+						<p>The population of Los Angeles has shown consistent growth from 1990 to 2020, increasing from around 3.5 million to just under 4 million.</p>
+						<p>The 1990-2000 decade shows higher growth rates across all three locations compared to later decades. However, growth in Los Angeles remains relatively robust compared to national trends, suggesting sustained urban attraction or local growth dynamics</p>
 					</div>
 				</div>
 				<!-- Second section with larger first chart -->
@@ -407,12 +408,11 @@
 			<div class="container">
 				<!-- Section Heading Start -->
 				<div class="intro-section section-heading-2 mb-61">
-					<h6 class="sub-title">Resources</h6>
-					<h2 class="title">Happenings, headlines and insights. <br>See what's new at Grad.</h2>
+					<h2 class="title">Sustainable Planning in Los Angeles <br>Air Quality</h2>
 				</div>
 				<!-- Section Heading End -->
 				<div class="row">
-					<div class="col-md-4 col-sm-6">
+					<div class="col-md-6 col-sm-6">
 						<!-- /Blog Thumb Start -->
 						<div class="blog-thumb">
 							<div class="text">
@@ -426,34 +426,16 @@
 						</div>
 						<!-- /Blog Thumb End -->
 					</div>
-					<div class="col-md-4 col-sm-6">
+					<div class="col-md-6 col-sm-6">
 						<!-- /Blog Thumb Start -->
-						<div class="blog-thumb">
-							<div class="text">
-								<h5 class="title"><a href="#">Team’s Report about the  trip to the road show</a></h5>
-								<ul class="blog-meta">
-									<li class="post-date"><time datetime="2018-07-16">July 14, 2018</time></li>
-								</ul>
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-								<a href="#" class="readmore-btn th-cl">Read More </a>
-							</div>
+						<div class="chart-title">Air Quality Data</div>
+						<div style="text-align: center;">
+							<select id="selectButton"></select>
 						</div>
+						<div id="my_dataviz"></div>
 						<!-- /Blog Thumb End -->
 					</div>
-					<div class="col-md-4 hidden-sm">
-						<!-- /Blog Thumb Start -->
-						<div class="blog-thumb">
-							<div class="text">
-								<h5 class="title"><a href="#">Report about the team’s trip to the road show</a></h5>
-								<ul class="blog-meta">
-									<li class="post-date"><time datetime="2018-07-16">July 12, 2018</time></li>
-								</ul>
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-								<a href="#" class="readmore-btn th-cl">Read More </a>
-							</div>
-						</div>
-						<!-- /Blog Thumb End -->
-					</div>
+					
 				</div>
 			</div>
 		</section>
@@ -724,5 +706,10 @@
 <script src="static/js/chart-js.js"></script>
 <!-- Import Chartjs Library -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!--javascript libraries for using d3 charts-->
+<script charset="utf-8" src="https://d3js.org/d3.v6.js"></script>
+<script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
+<!--Import air quality javascript-->
+<script src="static/js/d3_airquality.js"></script>
 </body>
 </html>
