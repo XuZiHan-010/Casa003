@@ -1,15 +1,16 @@
+(function() {
 // Set the dimensions and margins of the graph
 var margin = {top: 60, right: 30, bottom: 50, left: 80}, // Adjusted margins for better layout
 width = 460 - margin.left - margin.right,
 height = 400 - margin.top - margin.bottom;
 
 // Append the svg object to the body of the page
-var svg = d3.select("#my_dataviz")
+var svg = d3.select("#airquality")
 .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+.attr("width", width + margin.left + margin.right)
+.attr("height", height + margin.top + margin.bottom)
 .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // Define the remote github link and the fallback local path
 const remoteUrl = "https://raw.githubusercontent.com/XuZiHan-010/Casa003/main/data/AQI.csv";
@@ -28,7 +29,7 @@ d3.csv(remoteUrl, d3.autoType).then(initializeChart).catch(function(error) {
 // Function to initialize the chart with the loaded data
 function initializeChart(data) {
 // specify the columns used
-var allGroup = ["Days with AQI", "Good Days", "Moderate Days", "Unhealthy for Sensitive Groups Days", "Unhealthy Days", "Very Unhealthy Days", "Hazardous Days", "Max AQI", "90th Percentile AQI", "Median AQI", "Days CO", "Days NO2", "Days Ozone", "Days PM2.5", "Days PM10"];
+var allGroup = [ "Good Days", "Moderate Days", "Unhealthy for Sensitive Groups Days", "Unhealthy Days"  , "Days PM2.5", "Days PM10"];
 
 // Add the options to the button
 d3.select("#selectButton")
@@ -108,3 +109,4 @@ d3.select("#selectButton").on("change", function(event) {
 });
 }
 loadData();
+})();

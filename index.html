@@ -96,7 +96,7 @@
 				<div class="col-md-2">
 					<div class="banner-caption-wrap">
 						<h3 class="banner-title">Population </h3>
-						<p>The population of Los Angeles has shown consistent growth from 1990 to 2020, increasing from around 3.5 million to just under 4 million.</p>
+						<p>The population of Los Angeles county has shown consistent growth from 1990 to 2020, increasing from around 3.5 million to just under 4 million.</p>
 						<p>The 1990-2000 decade shows higher growth rates across all three locations compared to later decades. However, growth in Los Angeles remains relatively robust compared to national trends, suggesting sustained urban attraction or local growth dynamics</p>
 					</div>
 				</div>
@@ -119,7 +119,7 @@
 	<!-- /Static Banner Wrap -->
 
 	
-
+	
 	<!-- oscar Contant Wrapper Start-->  
 <div id="main-contant" class="main-contant">  
 		<!-- Featured Section Start -->
@@ -129,10 +129,19 @@
 				<div class="container">
 					<!-- Featured Slider Start -->
 					<div class="row featured-slider featured-slider-2">
-						<div class="col-md-3" data-aos="flip-right" data-aos-delay="200">
+						<div class="col-md-12"  >
 							<!-- Featured Thumb Start -->
-							<div class="featured-thumb">
-								<!-- <a href="#"><img src="static/picture/google.svg" alt=""></a> -->
+							<!-- <div class="featured-thumb"> -->
+								<div id="lamap" style="width: 1000px; height: 600px;"></div>
+								<div class="controls">
+									<label for="year-selector">Select Year:</label>
+									<select id="year-selector">
+										<option value="1990">1990</option>
+										<option value="2000">2000</option>
+										<option value="2010">2010</option>
+										<option value="2020" selected>2020</option>
+									</select>
+								</div>
 							</div>
 							<!-- Featured Thumb End -->
 						</div>
@@ -519,7 +528,7 @@
 						<div style="text-align: center;">
 							<select id="selectButton"></select>
 						</div>
-						<div id="my_dataviz"></div>
+						<div id="airquality"></div>
 						<!-- /Blog Thumb End -->
 					</div>
 					
@@ -839,13 +848,20 @@
 <script src="static/js/js-bundle.js"></script>
 <!--Custom Script-->
 <script src="static/js/custom.js"></script>
+<!-- chart-Js Javascript-->
 <script src="static/js/chart-js.js"></script>
+<!--import the javascript library for echarts -->
+<script src="static/js/echarts.min.js"></script>
 <!-- Import Chartjs Library -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- <script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script> -->
 <!--javascript libraries for using d3 charts-->
 <script charset="utf-8" src="https://d3js.org/d3.v6.js"></script>
 <script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
-<!--Import air quality javascript-->
+
+<!--d3 population map-->
+<script src="static/js/la_population.js"></script>
+<!-- Import air quality javascript -->
 <script src="static/js/d3_airquality.js"></script>
 </body>
 </html>

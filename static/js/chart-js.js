@@ -7,21 +7,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     labels: ['Los Angeles', 'California', 'USA'],
                     datasets: [{
                         label: '1990-2000',
-                        data: [6.0, 13.8, 13.2],
+                        data: [7.4, 13.8, 13.2],
                         backgroundColor: 'rgba(255, 99, 132, 0.2)',
                         borderColor: 'rgba(255, 99, 132, 1)',
                         borderWidth: 1
                     },
                     {
                         label: '2000-2010',
-                        data: [2.6, 10.0, 9.7],
+                        data: [3.1, 10.0, 9.7],
                         backgroundColor: 'rgba(54, 162, 235, 0.2)',
                         borderColor: 'rgba(54, 162, 235, 1)',
                         borderWidth: 1
                     },
                     {
                         label: '2010-2020',
-                        data: [2.8, 6.1, 7.4],
+                        data: [2.0, 6.1, 7.4],
                         backgroundColor: 'rgba(255, 206, 86, 0.2)',
                         borderColor: 'rgba(255, 206, 86, 1)',
                         borderWidth: 1
@@ -80,8 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
         data: {
             labels: ['1990', '2000', '2010', '2020'],
             datasets: [{
-                label: 'Los Angeles Population',
-                data: [3485567, 3694820, 3792621, 3898747], 
+                label: 'Los Angeles County Population',
+                data: [8863052, 9519315, 9818605,10014009], 
                 borderColor: 'rgb(54, 162, 235)',
                 backgroundColor: 'rgba(54, 162, 235, 0.5)',
                 fill: false,
@@ -92,8 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
             scales: {
                 y: {
                     beginAtZero: false,
-                    min: 3400000,  // Set the minimum scale value 
-                    max: 4000000,  // Set the maximum scale value 
+                    min: 8800000,  // Set the minimum scale value 
+                    max: 10100000,  // Set the maximum scale value 
                     title: {
                         display: true,
                         text: 'Population'
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
             plugins: {
                 title: {
                     display: true,
-                    text: 'Los Angeles Population Change 1990-2020',
+                    text: 'Los Angeles County Population Change 1990-2020',
                     padding: {
                         top: 5,
                         bottom: 40
