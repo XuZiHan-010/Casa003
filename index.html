@@ -130,49 +130,52 @@
 					<!-- Population Map by city name -->
 					<!-- <div class="row featured-slider featured-slider-2"> -->
 						<div >
-							<h2>Interactive Population Map</h2>
-        <p>Explore the map below to view detailed population statistics for each city within Los Angeles County. 
-			Click on any city on the map to view its population trend from 1990 to 2020 
+							<h2>Population Map with Interactive Line Chart</h2>
+        <p>Explore the map below to view detailed population statistics for each neighborhood within Los Angeles County. 
+			Click on any city on the map to view its population trend from 2010 to 2022
 			in the adjacent line chart. The interactive map provides a visual representation of population distribution across Los Angeles County. 
 			The color gradient reflects population density,
 			 with darker colors indicating higher density.</p>
-				<p>The visualization highlights significant population growth within Los Angeles County, 
-					underscoring its continuous appeal and development over the past three decades. 
-					While this interactive tool provides a detailed look at many of the cities and communities within the county, it is important to note that data is only available for approximately half of the 200 cities/communities. The absence of data for the remaining areas may affect the comprehensiveness of the analysis but still offers valuable insights into the region's urban dynamics.</p>
-						</div>
-						
-					
-				
-				
+				<p>This interactive visualization tool offers a comprehensive view of the population trends in Los Angeles County,
+					 highlighting the varying dynamics across different cities. It provides valuable insights into how population densities have evolved in response to urban development, economic factors, and other influences over the past 12 years. By exploring different areas and time periods, 
+					users can gain a deeper understanding of the demographic shifts that shape the region.</p>
+					<ul>
+						<li>
+							<strong>Explore the map:</strong> Use your cursor to explore different cities within the map area. Hover to see quick data or click to view detailed trends on the line chart.
+						</li>
+						<li>
+							<strong>Adjust the timeframe:</strong> Select different years from the dropdown to see how the population landscape has changed over time.
+						</li>
+						<li>
+							<strong>Deep dive with the line chart:</strong> After clicking on a city, observe the line chart to analyze the population trend over time for detailed insights.
+						</li>
+					</ul>
+						</div>							
 					<!-- Featured Slider End -->
 				</div>
 			</div>
 			<!-- Featured Item Section End -->
 		</section> 
 		<!-- Featured Section End -->
-	
 <!--temporary comment-->
-
 		<section class="intro-section section-heading-2 gray-bg">
 			<div class="container ">
 				<div class="row d-lg-flex align-items-lg-center">
 					<div class="col-md-8 col-sm-6">
-						 <h6 class="sub-title">Data View & Save Image Here</h6>
-					
-						
-						<div  id="lamap" style="width: 1000px; height: 600px;"></div>
+						 <h6 class="sub-title">Data View & Save Image Here</h6>								
+						<div  id="lamap" style="width: 1100px; height: 600px;"></div>
 						<div class="controls">
 							<label for="year-selector">Select Year:</label>
 							<select id="year-selector">
-								<option value="1990">1990</option>
-								<option value="2000">2000</option>
 								<option value="2010">2010</option>
-								<option value="2020" selected>2020</option>
+								<option value="2015">2015</option>
+								<option value="2020">2020</option>
+								<option value="2022" selected>2022</option>
 							</select>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
-						<div id="lineChart" style="width: 600px; height: 400px;"></div>
+						<div id="lineChart" style="width: 650px; height: 400px;"></div>
 					</div>
 					</div>
 				</div>
@@ -547,6 +550,7 @@
 										</div>
 									</div>
 								</div> -->
+								
 							<!-- </div> -->
 
 

@@ -15,21 +15,41 @@
         });
     }
 
-    function initLineChart() {
+    function initLineChart(cityName = 'Select a city') {
         var option = {
-             title: { text: cityName },
+            title: { text: cityName + ' Population Trend' },
             tooltip: { trigger: 'axis' },
-            xAxis: { type: 'category', data: ['1990', '2000', '2010', '2020'] },
-            yAxis: { type: 'value' },
-            series: [{ name: 'Population', type: 'line', data: [] }]
+            xAxis: {
+                type: 'category',
+                data: ['2010', '2015', '2020', '2022'],
+                name: 'Year', // Adding legend Year for X-axis
+                nameLocation: 'middle', // Positioning the X-axis label
+                nameGap: 30  // Gap between the X-axis label and numbers
+            },
+            yAxis: {
+                type: 'value'
+               
+            },
+            series: [{
+                name: 'Population',
+                type: 'line',
+                data: []
+            }]
         };
         lineChart.setOption(option);
     }
+    
 
-    function updateLineChart(cityData) {
-        var populationValues = ['1990', '2000', '2010', '2020'].map(year => cityData[year] || null);
+    function updateLineChart(cityData, cityName) {
+        var populationValues = ['2010', '2015', '2020', '2022'].map(year => cityData[year] || null);
         lineChart.setOption({
-            series: [{ data: populationValues }]
+            title: {
+                text: cityName + ' Population Trend'  // Update title dynamically
+            },
+            series: [{
+                name: 'Population',
+                data: populationValues
+            }]
         });
     }
 
@@ -54,7 +74,7 @@
 
             echarts.registerMap('Los Angeles', laJson);
             var option = {
-                title: { text: 'Los Angeles County Population by Neighborhood (1990 - 2020)', left: 'right' },
+                title: { text: 'Los Angeles County Population by City (2010 - 2022)', left: 'right' },
                 tooltip: {
                     trigger: 'item',
                     formatter: function(params) {
@@ -94,14 +114,14 @@
             myChart.setOption(option);
             myChart.hideLoading();
 
-            // Set the first neighborhood data to be default value for line chart
+            // Set the first city data to be default value for line chart
             if (populationData.length > 0) {
-                updateLineChart(populationData[0]);  // Update line chart with first neighborhood's data
+                updateLineChart(populationData[0], populationData[0].Name);  // Initialize with the first city's data
             }
 
             myChart.on('click', function(params) {
                 if (dataLookup[params.name.toLowerCase().trim()]) {
-                    updateLineChart(dataLookup[params.name.toLowerCase().trim()]);
+                    updateLineChart(dataLookup[params.name.toLowerCase().trim()], params.name);
                 }
             });
 
