@@ -1,986 +1,986 @@
 [
     {
-        "City ": "Acton",
+        "Name ": "Acton",
         "2020": 7431,
         "2010": 7596,
         "2000": 2390,
         "1990": 1471
     },
     {
-        "City ": "Agoura Hills",
+        "Name ": "Agoura Hills",
         "2020": 20299,
         "2010": 20330,
         "2000": 20537,
         "1990": 20390
     },
     {
-        "City ": "Agua Dulce",
+        "Name ": "Agua Dulce",
         "2020": 3451,
         "2010": 3342,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Alhambra",
+        "Name ": "Alhambra",
         "2020": 82868,
         "2010": 83089,
         "2000": 85804,
         "1990": 82106
     },
     {
-        "City ": "Alondra Park",
+        "Name ": "Alondra Park",
         "2020": 8569,
         "2010": 8592,
         "2000": 8622,
         "1990": 12215
     },
     {
-        "City ": "Altadena",
+        "Name ": "Altadena",
         "2020": 42846,
         "2010": 42777,
         "2000": 42610,
         "1990": 42658
     },
     {
-        "City ": "Arcadia",
+        "Name ": "Arcadia",
         "2020": 56681,
         "2010": 56364,
         "2000": 53054,
         "1990": 48290
     },
     {
-        "City ": "Artesia",
+        "Name ": "Artesia",
         "2020": 16395,
         "2010": 16522,
         "2000": 16380,
         "1990": 15464
     },
     {
-        "City ": "Avalon",
+        "Name ": "Avalon",
         "2020": 3460,
         "2010": 3728,
         "2000": 3127,
         "1990": 2918
     },
     {
-        "City ": "Avocado Heights",
+        "Name ": "Avocado Heights",
         "2020": 13317,
         "2010": 15411,
         "2000": 15148,
         "1990": 14232
     },
     {
-        "City ": "Azusa",
+        "Name ": "Azusa",
         "2020": 50000,
         "2010": 46361,
         "2000": 44712,
         "1990": 41333
     },
     {
-        "City ": "Baldwin Park",
+        "Name ": "Baldwin Park",
         "2020": 72176,
         "2010": 75390,
         "2000": 75837,
         "1990": 69330
     },
     {
-        "City ": "Bell",
+        "Name ": "Bell",
         "2020": 33559,
         "2010": 35477,
         "2000": 36664,
         "1990": 34365
     },
     {
-        "City ": "Bell Gardens",
+        "Name ": "Bell Gardens",
         "2020": 39501,
         "2010": 42072,
         "2000": 44054,
         "1990": 42355
     },
     {
-        "City ": "Bellflower",
+        "Name ": "Bellflower",
         "2020": 79190,
         "2010": 76616,
         "2000": 72878,
         "1990": 61815
     },
     {
-        "City ": "Beverly Hills",
+        "Name ": "Beverly Hills",
         "2020": 32701,
         "2010": 34109,
         "2000": 33784,
         "1990": 31971
     },
     {
-        "City ": "Bradbury",
+        "Name ": "Bradbury",
         "2020": 921,
         "2010": 1048,
         "2000": 855,
         "1990": 829
     },
     {
-        "City ": "Burbank",
+        "Name ": "Burbank",
         "2020": 107337,
         "2010": 103340,
         "2000": 100316,
         "1990": 93643
     },
     {
-        "City ": "Calabasas",
+        "Name ": "Calabasas",
         "2020": 23241,
         "2010": 23058,
         "2000": 20033,
         "1990": -3
     },
     {
-        "City ": "Carson",
+        "Name ": "Carson",
         "2020": 95558,
         "2010": 91714,
         "2000": 89730,
         "1990": 83995
     },
     {
-        "City ": "Castaic",
+        "Name ": "Castaic",
         "2020": 18937,
         "2010": 19015,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Cerritos",
+        "Name ": "Cerritos",
         "2020": 49578,
         "2010": 49041,
         "2000": 51488,
         "1990": 53240
     },
     {
-        "City ": "Charter Oak",
+        "Name ": "Charter Oak",
         "2020": 9739,
         "2010": 9310,
         "2000": 9027,
         "1990": 8858
     },
     {
-        "City ": "Citrus*",
+        "Name ": "Citrus*",
         "2020": 10243,
         "2010": 10866,
         "2000": 10581,
         "1990": 9481
     },
     {
-        "City ": "Claremont",
+        "Name ": "Claremont",
         "2020": 37266,
         "2010": 34926,
         "2000": 33998,
         "1990": 32503
     },
     {
-        "City ": "Commerce",
+        "Name ": "Commerce",
         "2020": 12378,
         "2010": 12823,
         "2000": 12568,
         "1990": 12135
     },
     {
-        "City ": "Compton",
+        "Name ": "Compton",
         "2020": 95740,
         "2010": 96455,
         "2000": 93493,
         "1990": 90454
     },
     {
-        "City ": "Covina",
+        "Name ": "Covina",
         "2020": 51268,
         "2010": 47796,
         "2000": 46837,
         "1990": 43207
     },
     {
-        "City ": "Cudahy",
+        "Name ": "Cudahy",
         "2020": 22811,
         "2010": 23805,
         "2000": 24208,
         "1990": 22817
     },
     {
-        "City ": "Culver City",
+        "Name ": "Culver City",
         "2020": 40779,
         "2010": 38883,
         "2000": 38816,
         "1990": 38793
     },
     {
-        "City ": "Del Aire",
+        "Name ": "Del Aire",
         "2020": 10338,
         "2010": 10001,
         "2000": 9012,
         "1990": 8040
     },
     {
-        "City ": "Desert View Highlands",
+        "Name ": "Desert View Highlands",
         "2020": 2676,
         "2010": 2360,
         "2000": 2337,
         "1990": 2154
     },
     {
-        "City ": "Diamond Bar",
+        "Name ": "Diamond Bar",
         "2020": 55072,
         "2010": 55544,
         "2000": 56287,
         "1990": 53672
     },
     {
-        "City ": "Downey",
+        "Name ": "Downey",
         "2020": 114355,
         "2010": 111772,
         "2000": 107323,
         "1990": 91444
     },
     {
-        "City ": "Duarte",
+        "Name ": "Duarte",
         "2020": 21727,
         "2010": 21321,
         "2000": 21486,
         "1990": 20688
     },
     {
-        "City ": "East Los Angeles",
+        "Name ": "East Los Angeles",
         "2020": 118786,
         "2010": 126496,
         "2000": 124283,
         "1990": 126379
     },
     {
-        "City ": "East Pasadena",
+        "Name ": "East Pasadena",
         "2020": 6021,
         "2010": 6144,
         "2000": 6045,
         "1990": 5910
     },
     {
-        "City ": "East Compton",
+        "Name ": "East Compton",
         "2020": 15114,
         "2010": 15135,
         "2000": 9286,
         "1990": 7967
     },
     {
-        "City ": "East San Gabriel",
+        "Name ": "East San Gabriel",
         "2020": 22769,
         "2010": 14874,
         "2000": 14512,
         "1990": 12736
     },
     {
-        "City ": " East La Mirada",
+        "Name ": " East La Mirada",
         "2020": 10394,
         "2010": 9757,
         "2000": 9538,
         "1990": 9367
     },
     {
-        "City ": "El Monte",
+        "Name ": "El Monte",
         "2020": 109450,
         "2010": 113475,
         "2000": 115965,
         "1990": 106209
     },
     {
-        "City ": "El Segundo",
+        "Name ": "El Segundo",
         "2020": 17272,
         "2010": 16654,
         "2000": 16033,
         "1990": 15223
     },
     {
-        "City ": "Elizabeth Lake",
+        "Name ": "Elizabeth Lake",
         "2020": 1651,
         "2010": 1756,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Florence",
+        "Name ": "Florence",
         "2020": 61983,
         "2010": 63387,
         "2000": 60197,
         "1990": 57147
     },
     {
-        "City ": "Gardena",
+        "Name ": "Gardena",
         "2020": 61027,
         "2010": 58829,
         "2000": 57746,
         "1990": 49847
     },
     {
-        "City ": "Glendale",
+        "Name ": "Glendale",
         "2020": 196543,
         "2010": 191719,
         "2000": 194973,
         "1990": 180038
     },
     {
-        "City ": "Glendora",
+        "Name ": "Glendora",
         "2020": 52558,
         "2010": 50073,
         "2000": 49415,
         "1990": 47828
     },
     {
-        "City ": "Green Valley",
+        "Name ": "Green Valley",
         "2020": 1036,
         "2010": 1027,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Hacienda Heights",
+        "Name ": "Hacienda Heights",
         "2020": 54191,
         "2010": 54038,
         "2000": 53122,
         "1990": 52354
     },
     {
-        "City ": "Hasley Canyon",
+        "Name ": "Hasley Canyon",
         "2020": 1195,
         "2010": 1137,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Hawaiian Gardens",
+        "Name ": "Hawaiian Gardens",
         "2020": 14149,
         "2010": 14254,
         "2000": 14779,
         "1990": 13639
     },
     {
-        "City ": "Hawthorne",
+        "Name ": "Hawthorne",
         "2020": 88083,
         "2010": 84293,
         "2000": 84112,
         "1990": 71349
     },
     {
-        "City ": "Hermosa Beach",
+        "Name ": "Hermosa Beach",
         "2020": 19728,
         "2010": 19506,
         "2000": 18566,
         "1990": 18219
     },
     {
-        "City ": "Hidden Hills",
+        "Name ": "Hidden Hills",
         "2020": 1725,
         "2010": 1856,
         "2000": 1875,
         "1990": 1729
     },
     {
-        "City ": "Huntington Park",
+        "Name ": "Huntington Park",
         "2020": 54883,
         "2010": 58114,
         "2000": 61348,
         "1990": 56065
     },
     {
-        "City ": "Industry",
+        "Name ": "Industry",
         "2020": 264,
         "2010": 219,
         "2000": 777,
         "1990": 631
     },
     {
-        "City ": "Inglewood",
+        "Name ": "Inglewood",
         "2020": 107762,
         "2010": 109673,
         "2000": 112580,
         "1990": 109602
     },
     {
-        "City ": "Irwindale",
+        "Name ": "Irwindale",
         "2020": 1472,
         "2010": 1422,
         "2000": 1446,
         "1990": 1050
     },
     {
-        "City ": "La Ca?ada Flintridge",
+        "Name ": "La Ca?ada Flintridge",
         "2020": 20573,
         "2010": 20246,
         "2000": 20318,
         "1990": 19378
     },
     {
-        "City ": "La Crescenta-Montrose",
+        "Name ": "La Crescenta-Montrose",
         "2020": 19997,
         "2010": 19653,
         "2000": 18532,
         "1990": 16968
     },
     {
-        "City ": "La Habra Heights",
+        "Name ": "La Habra Heights",
         "2020": 5682,
         "2010": 5325,
         "2000": 5712,
         "1990": 6226
     },
     {
-        "City ": "La Mirada",
+        "Name ": "La Mirada",
         "2020": 48008,
         "2010": 48527,
         "2000": 46783,
         "1990": 40452
     },
     {
-        "City ": "La Puente",
+        "Name ": "La Puente",
         "2020": 38062,
         "2010": 39816,
         "2000": 41063,
         "1990": 36955
     },
     {
-        "City ": "La Verne",
+        "Name ": "La Verne",
         "2020": 31334,
         "2010": 31063,
         "2000": 31638,
         "1990": 30897
     },
     {
-        "City ": "Ladera Heights",
+        "Name ": "Ladera Heights",
         "2020": 6654,
         "2010": 6498,
         "2000": 6568,
         "1990": 6316
     },
     {
-        "City ": "Lake Hughes",
+        "Name ": "Lake Hughes",
         "2020": 544,
         "2010": 649,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Lake Los Angeles",
+        "Name ": "Lake Los Angeles",
         "2020": 13187,
         "2010": 12328,
         "2000": 11523,
         "1990": 7977
     },
     {
-        "City ": "Lakewood",
+        "Name ": "Lakewood",
         "2020": 82496,
         "2010": 80048,
         "2000": 79345,
         "1990": 73557
     },
     {
-        "City ": "Lancaster",
+        "Name ": "Lancaster",
         "2020": 173516,
         "2010": 156633,
         "2000": 118718,
         "1990": 97291
     },
     {
-        "City ": "Lawndale",
+        "Name ": "Lawndale",
         "2020": 31807,
         "2010": 32769,
         "2000": 31711,
         "1990": 27331
     },
     {
-        "City ": "Lennox",
+        "Name ": "Lennox",
         "2020": 20323,
         "2010": 22753,
         "2000": 22950,
         "1990": 22757
     },
     {
-        "City ": "Leona Valley",
+        "Name ": "Leona Valley",
         "2020": 1555,
         "2010": 1607,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Littlerock",
+        "Name ": "Littlerock",
         "2020": 1535,
         "2010": 1377,
         "2000": 1402,
         "1990": 1320
     },
     {
-        "City ": "Lomita",
+        "Name ": "Lomita",
         "2020": 20921,
         "2010": 20256,
         "2000": 20046,
         "1990": 19382
     },
     {
-        "City ": "Long Beach",
+        "Name ": "Long Beach",
         "2020": 466742,
         "2010": 462257,
         "2000": 461522,
         "1990": 429433
     },
     {
-        "City ": "Lynwood",
+        "Name ": "Lynwood",
         "2020": 67265,
         "2010": 69772,
         "2000": 69845,
         "1990": 61945
     },
     {
-        "City ": "Malibu",
+        "Name ": "Malibu",
         "2020": 10654,
         "2010": 12645,
         "2000": 12575,
         "1990": 0
     },
     {
-        "City ": "Manhattan Beach",
+        "Name ": "Manhattan Beach",
         "2020": 35506,
         "2010": 35135,
         "2000": 33852,
         "1990": 32063
     },
     {
-        "City ": "Marina del Rey",
+        "Name ": "Marina del Rey",
         "2020": 11373,
         "2010": 8866,
         "2000": 8176,
         "1990": 7431
     },
     {
-        "City ": "Mayflower Village",
+        "Name ": "Mayflower Village",
         "2020": 5402,
         "2010": 5515,
         "2000": 5081,
         "1990": 4978
     },
     {
-        "City ": "Maywood",
+        "Name ": "Maywood",
         "2020": 25138,
         "2010": 27395,
         "2000": 28083,
         "1990": 27850
     },
     {
-        "City ": "Monrovia",
+        "Name ": "Monrovia",
         "2020": 37931,
         "2010": 36590,
         "2000": 36929,
         "1990": 35761
     },
     {
-        "City ": "Montebello",
+        "Name ": "Montebello",
         "2020": 62640,
         "2010": 62500,
         "2000": 62150,
         "1990": 59564
     },
     {
-        "City ": "Monterey Park",
+        "Name ": "Monterey Park",
         "2020": 61096,
         "2010": 60269,
         "2000": 60051,
         "1990": 60738
     },
     {
-        "City ": "North El Monte",
+        "Name ": "North El Monte",
         "2020": 3730,
         "2010": 3723,
         "2000": 3703,
         "1990": 3384
     },
     {
-        "City ": "Norwalk",
+        "Name ": "Norwalk",
         "2020": 102773,
         "2010": 105549,
         "2000": 103298,
         "1990": 94279
     },
     {
-        "City ": "Palmdale",
+        "Name ": "Palmdale",
         "2020": 169450,
         "2010": 152750,
         "2000": 116670,
         "1990": 68842
     },
     {
-        "City ": "Palos Verdes Estates",
+        "Name ": "Palos Verdes Estates",
         "2020": 13347,
         "2010": 13438,
         "2000": 13340,
         "1990": 13512
     },
     {
-        "City ": "Paramount",
+        "Name ": "Paramount",
         "2020": 53733,
         "2010": 54098,
         "2000": 55266,
         "1990": 47669
     },
     {
-        "City ": "Pasadena",
+        "Name ": "Pasadena",
         "2020": 138699,
         "2010": 137122,
         "2000": 133936,
         "1990": 131591
     },
     {
-        "City ": "Pepperdine University",
+        "Name ": "Pepperdine University",
         "2020": 2747,
         "2010": 0,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Pico Rivera",
+        "Name ": "Pico Rivera",
         "2020": 62088,
         "2010": 62942,
         "2000": 63428,
         "1990": 59177
     },
     {
-        "City ": "Pomona",
+        "Name ": "Pomona",
         "2020": 151713,
         "2010": 149058,
         "2000": 149473,
         "1990": 131723
     },
     {
-        "City ": "Quartz Hill",
+        "Name ": "Quartz Hill",
         "2020": 11447,
         "2010": 10912,
         "2000": 9890,
         "1990": 9626
     },
     {
-        "City ": "Rancho Palos Verdes",
+        "Name ": "Rancho Palos Verdes",
         "2020": 42287,
         "2010": 41643,
         "2000": 41145,
         "1990": 41659
     },
     {
-        "City ": "Redondo Beach",
+        "Name ": "Redondo Beach",
         "2020": 71576,
         "2010": 66748,
         "2000": 63261,
         "1990": 60167
     },
     {
-        "City ": "Rolling Hills",
+        "Name ": "Rolling Hills",
         "2020": 1739,
         "2010": 1860,
         "2000": 1871,
         "1990": 1871
     },
     {
-        "City ": "Rolling Hills Estates",
+        "Name ": "Rolling Hills Estates",
         "2020": 8280,
         "2010": 8067,
         "2000": 7676,
         "1990": 7789
     },
     {
-        "City ": "Rose Hills",
+        "Name ": "Rose Hills",
         "2020": 2927,
         "2010": 2803,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Rosemead",
+        "Name ": "Rosemead",
         "2020": 51185,
         "2010": 53764,
         "2000": 53505,
         "1990": 51638
     },
     {
-        "City ": "Rowland Heights",
+        "Name ": "Rowland Heights",
         "2020": 48231,
         "2010": 48993,
         "2000": 48553,
         "1990": 42647
     },
     {
-        "City ": "San Dimas",
+        "Name ": "San Dimas",
         "2020": 34924,
         "2010": 33371,
         "2000": 34980,
         "1990": 32397
     },
     {
-        "City ": "San Fernando",
+        "Name ": "San Fernando",
         "2020": 23946,
         "2010": 23645,
         "2000": 23564,
         "1990": 22580
     },
     {
-        "City ": "San Gabriel",
+        "Name ": "San Gabriel",
         "2020": 39568,
         "2010": 39718,
         "2000": 39804,
         "1990": 37120
     },
     {
-        "City ": "San Marino",
+        "Name ": "San Marino",
         "2020": 12513,
         "2010": 13147,
         "2000": 12945,
         "1990": 12959
     },
     {
-        "City ": "San Pasqual",
+        "Name ": "San Pasqual",
         "2020": 2101,
         "2010": 2041,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Santa Clarita",
+        "Name ": "Santa Clarita",
         "2020": 228673,
         "2010": 176320,
         "2000": 151088,
         "1990": 110642
     },
     {
-        "City ": "Santa Fe Springs",
+        "Name ": "Santa Fe Springs",
         "2020": 19219,
         "2010": 16223,
         "2000": 17438,
         "1990": 15520
     },
     {
-        "City ": "Santa Monica",
+        "Name ": "Santa Monica",
         "2020": 93076,
         "2010": 89736,
         "2000": 84084,
         "1990": 86905
     },
     {
-        "City ": "Sierra Madre",
+        "Name ": "Sierra Madre",
         "2020": 11268,
         "2010": 10917,
         "2000": 10578,
         "1990": 10762
     },
     {
-        "City ": "Signal Hill",
+        "Name ": "Signal Hill",
         "2020": 11848,
         "2010": 11016,
         "2000": 9333,
         "1990": 8371
     },
     {
-        "City ": "South El Monte",
+        "Name ": "South El Monte",
         "2020": 19567,
         "2010": 20116,
         "2000": 21144,
         "1990": 20850
     },
     {
-        "City ": "South Gate",
+        "Name ": "South Gate",
         "2020": 92726,
         "2010": 94396,
         "2000": 96375,
         "1990": 86284
     },
     {
-        "City ": "South Monrovia Island",
+        "Name ": "South Monrovia Island",
         "2020": 6515,
         "2010": 6777,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "South Pasadena",
+        "Name ": "South Pasadena",
         "2020": 26943,
         "2010": 25619,
         "2000": 24292,
         "1990": 23936
     },
     {
-        "City ": "South San Gabriel",
+        "Name ": "South San Gabriel",
         "2020": 7920,
         "2010": 8070,
         "2000": 7595,
         "1990": 7700
     },
     {
-        "City ": "South San Jose Hills",
+        "Name ": "South San Jose Hills",
         "2020": 19855,
         "2010": 20551,
         "2000": 20218,
         "1990": 17814
     },
     {
-        "City ": "South Whittier",
+        "Name ": "South Whittier",
         "2020": 56415,
         "2010": 57156,
         "2000": 55193,
         "1990": 49514
     },
     {
-        "City ": "Stevenson Ranch",
+        "Name ": "Stevenson Ranch",
         "2020": 20178,
         "2010": 17557,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Sun Village",
+        "Name ": "Sun Village",
         "2020": 12345,
         "2010": 11565,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Temple City",
+        "Name ": "Temple City",
         "2020": 36494,
         "2010": 35558,
         "2000": 33377,
         "1990": 31100
     },
     {
-        "City ": "Topanga",
+        "Name ": "Topanga",
         "2020": 8560,
         "2010": 8289,
         "2000": 0,
         "1990": 0
     },
     {
-        "City ": "Torrance",
+        "Name ": "Torrance",
         "2020": 147067,
         "2010": 145438,
         "2000": 137946,
         "1990": 133107
     },
     {
-        "City ": "Val Verde",
+        "Name ": "Val Verde",
         "2020": 2399,
         "2010": 2468,
         "2000": 1472,
         "1990": 1689
     },
     {
-        "City ": "Valinda",
+        "Name ": "Valinda",
         "2020": 22437,
         "2010": 22822,
         "2000": 21776,
         "1990": 18735
     },
     {
-        "City ": "Vernon",
+        "Name ": "Vernon",
         "2020": 222,
         "2010": 112,
         "2000": 91,
         "1990": 152
     },
     {
-        "City ": "View Park-Windsor Hills",
+        "Name ": "View Park-Windsor Hills",
         "2020": 11419,
         "2010": 11075,
         "2000": 10958,
         "1990": 11769
     },
     {
-        "City ": "Vincent",
+        "Name ": "Vincent",
         "2020": 15714,
         "2010": 15922,
         "2000": 15097,
         "1990": 13713
     },
     {
-        "City ": "Walnut",
+        "Name ": "Walnut",
         "2020": 28430,
         "2010": 29172,
         "2000": 30004,
         "1990": 29105
     },
     {
-        "City ": "Walnut Park",
+        "Name ": "Walnut Park",
         "2020": 15214,
         "2010": 15966,
         "2000": 16180,
         "1990": 14722
     },
     {
-        "City ": "West Athens",
+        "Name ": "West Athens",
         "2020": 9393,
         "2010": 8729,
         "2000": 9101,
         "1990": 8859
     },
     {
-        "City ": "West Carson",
+        "Name ": "West Carson",
         "2020": 22870,
         "2010": 21699,
         "2000": 21138,
         "1990": 20143
     },
     {
-        "City ": "West Covina",
+        "Name ": "West Covina",
         "2020": 109501,
         "2010": 106098,
         "2000": 105080,
         "1990": 96086
     },
     {
-        "City ": "West Hollywood",
+        "Name ": "West Hollywood",
         "2020": 35757,
         "2010": 34399,
         "2000": 35716,
         "1990": 36118
     },
     {
-        "City ": "West Puente Valley",
+        "Name ": "West Puente Valley",
         "2020": 22959,
         "2010": 22636,
         "2000": 22589,
         "1990": 20254
     },
     {
-        "City ": " West Compton",
+        "Name ": " West Compton",
         "2020": 24347,
         "2010": 5669,
         "2000": 5435,
         "1990": 5451
     },
     {
-        "City ": "West Whittier-Los Nietos",
+        "Name ": "West Whittier-Los Nietos",
         "2020": 25325,
         "2010": 25540,
         "2000": 25129,
         "1990": 24164
     },
     {
-        "City ": "Westlake Village",
+        "Name ": "Westlake Village",
         "2020": 8029,
         "2010": 8270,
         "2000": 8368,
         "1990": 7455
     },
     {
-        "City ": "Westmont",
+        "Name ": "Westmont",
         "2020": 33913,
         "2010": 31853,
         "2000": 31623,
         "1990": 31044
     },
     {
-        "City ": "Whittier",
+        "Name ": "Whittier",
         "2020": 87306,
         "2010": 85331,
         "2000": 83680,
         "1990": 77671
     },
     {
-        "City ": "Willowbrook",
+        "Name ": "Willowbrook",
         "2020": 24295,
         "2010": 35983,
         "2000": 34138,
