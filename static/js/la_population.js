@@ -17,7 +17,7 @@
 
     function initLineChart() {
         var option = {
-            title: { text: 'Select a city to view data' },  // Initial placeholder title
+             title: { text: cityName },
             tooltip: { trigger: 'axis' },
             xAxis: { type: 'category', data: ['1990', '2000', '2010', '2020'] },
             yAxis: { type: 'value' },
@@ -26,12 +26,9 @@
         lineChart.setOption(option);
     }
 
-    function updateLineChart(cityData, cityName) {
+    function updateLineChart(cityData) {
         var populationValues = ['1990', '2000', '2010', '2020'].map(year => cityData[year] || null);
         lineChart.setOption({
-            title: {
-                text: cityName + ' Population Trend'  // Dynamic title based on city name
-            },
             series: [{ data: populationValues }]
         });
     }
@@ -57,7 +54,7 @@
 
             echarts.registerMap('Los Angeles', laJson);
             var option = {
-                title: { text: 'Los Angeles County Population by City (1990 - 2020)', left: 'right' },
+                title: { text: 'Los Angeles County Population by Neighborhood (1990 - 2020)', left: 'right' },
                 tooltip: {
                     trigger: 'item',
                     formatter: function(params) {
@@ -97,14 +94,14 @@
             myChart.setOption(option);
             myChart.hideLoading();
 
-            // Set the first city data to be default value for line chart
+            // Set the first neighborhood data to be default value for line chart
             if (populationData.length > 0) {
-                updateLineChart(populationData[0], populationData[0].Name);  // Update line chart with first city's data
+                updateLineChart(populationData[0]);  // Update line chart with first neighborhood's data
             }
 
             myChart.on('click', function(params) {
                 if (dataLookup[params.name.toLowerCase().trim()]) {
-                    updateLineChart(dataLookup[params.name.toLowerCase().trim()], params.name);
+                    updateLineChart(dataLookup[params.name.toLowerCase().trim()]);
                 }
             });
 
