@@ -2740,6 +2740,8 @@ footer.osr-footer-3 li {
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    width:300px;
+    height:240px;
 }
 .info.legend h4 {
     font-size: 20px; /* Increase the size of the legend title */
@@ -2748,7 +2750,8 @@ footer.osr-footer-3 li {
 
 .info.legend div {
     font-size: 16px; /* Increase the font size of the legend entries */
-    margin: 8px 0; /* Increase spacing between entries for better readability */
+    margin: 8px 0 ; /* Increase spacing between entries for better readability */
+   
 }
 
 .info.legend i {
@@ -2768,6 +2771,7 @@ footer.osr-footer-3 li {
     cursor: pointer;
     outline: none;
     color:back;
+  
 }
 
 .year-controls button:hover {
@@ -2778,14 +2782,46 @@ footer.osr-footer-3 li {
 .year-controls button.active {
     background-color: #ccc;
 }
+#dataTypeSelect {
+    font-weight: bold;
+    color: black;
+    font-size:18px;
+    width: 300px;
+}
 
+#dataTypeSelect option {
+    font-weight: bold;
+    color: black;
+}
+/*css file for the interactive line chart*/
+/* Clear Chart button styling */
+#clearChartBtn {
+    display: block; /* Make the button extend full container width */
+    width: 200px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+#clearChartBtn:hover {
+    background-color: #e01414; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Elevated shadow on hover */
+}
+#clearChartBtn.active {
+    background-color: #e01414; /* Keeps the background red even after the click */
+}
 
 /*style for metro mapbox map*/
 .map-container {
-    display: inline-block; /* 将地图容器设置为内联块元素，使其水平排列 */
-    width: 45%; /* 设置地图容器的宽度 */
-    height: 300px; /* 设置地图容器的高度 */
-    margin-right: 20px; /* 设置地图容器之间的右边距 */
+    display: inline-block; 
+    width: 45%; 
+    height: 300px; 
+    margin-right: 20px; 
 }
 
 }

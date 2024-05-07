@@ -6,19 +6,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const imagePaths = ["static/images/1975.png", "static/images/1990.png", "static/images/2005.png", "static/images/2020.png"];
 
-    // 更新图片和年份显示函数
+    // function to update the image and year
     function updateImageAndYear() {
-        const index = (slider.value - 1975) / 15; // 根据年份计算索引
+        const index = (slider.value - 1975) / 15; // calculate the index of the image path according to year
         const year = slider.value;
         const imageUrl = imagePaths[index];
         image.src = imageUrl;
         yearDisplay.textContent = year;
     }
 
-    // 初始化时先调用一次更新函数
+    // call the update function while initailizing
     updateImageAndYear();
 
-    // 监听滑块变化
+    // monitor the change of the slider
     slider.addEventListener("input", updateImageAndYear);
 });
 })();

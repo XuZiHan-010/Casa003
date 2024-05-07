@@ -1,4 +1,6 @@
-const map = L.map('map').setView([34.0522, -118.2437], 10);
+(function() {
+let chartDataSets = [];
+const map = L.map('map').setView([34.0522, -118.2437], 9);
 L.tileLayer('https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}', {
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://maps.google.com/">Google</a>'
@@ -19,6 +21,39 @@ const localUrls = {
 let geojsonLayer;
 let currentYear = 2021;
 let dataType = 'percentile';
+let chart;
+let chartElement = document.getElementById('areaChart');
+let ctx = chartElement.getContext('2d');
+window.myLineChart = null;  // Initialize chart instance holder
+
+
+
+function initializeChart(dataSets) {
+    if (window.myLineChart) {
+        window.myLineChart.destroy(); // Destroy any existing chart instance
+    }
+    window.myLineChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['2014', '2017', '2021'],
+            datasets: dataSets
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                fontSize: 22,  
+                fontColor: '#000', 
+                padding: 0  
+            },
+            scales: {
+                y: {
+                    beginAtZero: false
+                }
+            }
+        }
+    });
+}
 
 async function loadData(url, fallbackUrl) {
     try {
@@ -41,20 +76,55 @@ async function fetchData() {
 
 function getColor(pm25) {
     if (dataType === 'percentile') {
-        return pm25 > 77 ? '#800026' :// dark maroon for above 77
-               pm25 > 57 ? '#BD0026' :// maroon for above 57
-               pm25 > 39 ? '#E31A1C' ://red for above 39
-               pm25 > 20 ? '#FC4E2A' :// orange for above 20
-                           '#FD8D3C'; // yellow for below 20
-                        }
-    else {
-            return pm25 > 12.31 ? '#800026' :  // dark maroon 
-                   pm25 > 11.56 ? '#BD0026' :  
-                   pm25 > 10.49 ? '#E31A1C' :  
-                   pm25 > 8.49  ? '#FC4E2A' :  
-                                  '#FD8D3C';   
-                        }
+        return pm25 > 77 ? '#800026' :
+               pm25 > 57 ? '#BD0026' :
+               pm25 > 39 ? '#FC4E2A' :
+               pm25 > 20 ? '#FD8D3C' :
+                           '#FFFF00';
+    } else {
+        return pm25 > 12.31 ? '#800026' :
+               pm25 > 11.56 ? '#BD0026' :
+               pm25 > 10.49 ? '#FC4E2A' :
+               pm25 > 8.49  ? '#FD8D3C' :
+                              '#FFFF00';
+    }
 }
+
+
+
+function updateYear(year) {
+    currentYear = parseInt(year, 10);
+    chartDataSets = [];  // Clear the datasets
+    initializeChart(chartDataSets);  // Re-initialize the chart
+    updateMap();
+    updateLegend();
+}
+
+function updateDataType() {
+    dataType = document.getElementById('dataTypeSelect').value;
+    chartDataSets = [];  // Clear the datasets
+    initializeChart(chartDataSets);  // Re-initialize the chart
+    updateMap();
+    updateLegend();
+}
+
+// Optional: Function to remove an area from the chart
+function removeAreaFromChart(areaName) {
+    chartDataSets = chartDataSets.filter(dataset => dataset.label !== `${areaName} PM2.5 Levels`);
+    if (window.myLineChart) {
+        window.myLineChart.data.datasets = chartDataSets;
+        window.myLineChart.update();
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('[data-year-button]').forEach(button => {
+        button.addEventListener('click', function() {
+            updateYear(this.getAttribute("data-year"));
+        });
+    });
+});
 
 async function updateMap() {
     const data = await fetchData();
@@ -72,44 +142,85 @@ async function updateMap() {
                 color: 'white',
                 fillOpacity: 0.7
             };
+        },
+        onEachFeature: function (feature, layer) {
+            layer.on('click', function () {
+                updateChartData(feature.properties.name);
+            });
         }
     }).addTo(map);
 }
+
+async function updateChartData(areaName) {
+    const data = await fetchData();
+    const areaData = data.find(d => d.name === areaName);
+
+    if (!areaData || !areaData.pm25) {
+        console.error("No data found for area or PM2.5 data missing:", areaName);
+        return;
+    }
+
+    const pm25Values = ['2014', '2017', '2021'].map(year => areaData.pm25[year]);
+
+    let dataset = chartDataSets.find(dataset => dataset.label === `${areaName} PM2.5 Levels`);
+    if (!dataset) {
+        dataset = {
+            label: `${areaName} PM2.5 Levels`,
+            data: pm25Values,
+            backgroundColor: `rgba(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255}, 0.2)`,
+            borderColor: `rgba(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255}, 1)`,
+            borderWidth: 1
+        };
+        chartDataSets.push(dataset);
+    } else {
+        dataset.data = pm25Values;  // Update data if area is already plotted
+    }
+
+    initializeChart(chartDataSets);  // Initialize or update chart
+}
+
+
+
+
+
 
 function updateLegend() {
     const legendTitle = document.getElementById('legendTitle');
     const legendContent = document.getElementById('legendContent');
     if (dataType === 'percentile') {
-        legendTitle.innerHTML = "PM2.5 Air Quality Index";
+        legendTitle.innerHTML = "PM2.5 Percentile " + currentYear;
         legendContent.innerHTML = `
             <div><i style="background: #800026"></i>Above 77</div>
             <div><i style="background: #BD0026"></i>57 - 77</div>
-            <div><i style="background: #E31A1C"></i>39 - 57</div>
-            <div><i style="background: #FC4E2A"></i>20 - 39</div>
-            <div><i style="background: #FD8D3C"></i>Below 20</div>
+            <div><i style="background: #FC4E2A"></i>39 - 57</div>
+            <div><i style="background: #FD8D3C"></i>20 - 39</div>
+            <div><i style="background: #FFFF00"></i>Below 20</div>
         `;
     } else {
-        legendTitle.innerHTML = "PM2.5 Concentration";
+        legendTitle.innerHTML = "PM2.5 Concentration " + currentYear;
         legendContent.innerHTML = `
             <div><i style="background: #800026"></i>Above 12.31</div>
             <div><i style="background: #BD0026"></i>11.56 - 12.31</div>
-            <div><i style="background: #E31A1C"></i>10.49 - 11.56</div>
-            <div><i style="background: #FC4E2A"></i>8.49 - 10.49</div>
-            <div><i style="background: #FD8D3C"></i>Below 8.49</div>
+            <div><i style="background: #FC4E2A"></i>10.49 - 11.56</div>
+            <div><i style="background: #FD8D3C"></i>8.49 - 10.49</div>
+            <div><i style="background: #FFFF00"></i>Below 8.49</div>
         `;
     }
 }
 
-function updateYear(year) {
-    currentYear = parseInt(year, 10);
-    updateMap();
+
+//function to clear the chart
+document.getElementById('clearChartBtn').addEventListener('click', clearChartData);
+
+function clearChartData() {
+    chartDataSets = []; // Clear the data sets array
+    if (window.myLineChart) {
+        window.myLineChart.data.datasets = chartDataSets; // Assign the empty array to the chart's datasets
+        window.myLineChart.update(); // Update the chart to reflect the changes
+    }
 }
 
-function updateDataType() {
-    dataType = document.getElementById('dataTypeSelect').value;
-    updateMap();
-    updateLegend();
-}
 
-updateMap(); // Initial map load
-updateLegend(); // Initial legend setup
+updateMap();
+updateLegend();
+})();
