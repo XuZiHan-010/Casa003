@@ -37,7 +37,10 @@
 <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.css" rel="stylesheet">   
+<link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.css" rel="stylesheet">
+<!-- import leaflet javascript and css file-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 <style>
         /* 设置地图容器的样式 */
         .map-container {
@@ -510,8 +513,32 @@
 						<!-- /Blog Thumb End -->
 					</div>
 					
+					
+
+
+
+
 				</div>
 			</div>
+			
+			<div id="map" style="height: 90vh;"></div>
+<div class="controls">
+    <div class="info legend">
+        <h4>PM2.5 Air Quality Index</h4>
+        <div><i style="background: #800026"></i>Above 77</div>
+        <div><i style="background: #BD0026"></i>57 - 77</div>
+        <div><i style="background: #E31A1C"></i>39 - 57</div>
+        <div><i style="background: #FC4E2A"></i>20 - 39</div>
+        <div><i style="background: #FD8D3C"></i>Below 20</div>
+        <div id="yearControls" class="year-controls">
+            <button onclick="updateYear(2014)">2014</button>
+            <button onclick="updateYear(2017)">2017</button>
+            <button onclick="updateYear(2021)">2021</button>
+        </div>
+    </div>
+</div>
+
+					
 		</section>
 		<!-- Blog Section End -->
 		<!-- Testimonial Section Start -->
@@ -838,9 +865,12 @@
 <script charset="utf-8" src="https://d3js.org/d3.v6.js"></script>
 <script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
 
-<!--d3 population map-->
+<!--echart population map with interactive line chart-->
 <script src="static/js/la_population.js"></script>
 <!-- Import air quality javascript -->
 <script src="static/js/d3_airquality.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- Import air quality percentile map javascript -->
+<script src="static/js/air_quality_percentile.js"></script>
 </body>
 </html>

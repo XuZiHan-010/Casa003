@@ -1,3 +1,4 @@
+(function() {
 //based on the sample from https://www.chartjs.org/docs/latest/samples/line/line.html
 document.addEventListener('DOMContentLoaded', function() {
     var ctx1 = document.getElementById('populationChangeChart1').getContext('2d');
@@ -135,4 +136,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+})();

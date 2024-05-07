@@ -2716,4 +2716,50 @@ footer.osr-footer-3 li {
     border-color:#fff; 
     background-color:#fff;
 }
+#map {
+    width: 100%;
+    height: 90vh; /* Adjust height to fit your layout */
+}
+.year-switcher {
+    background: white;
+    padding: 5px;
+}
+.info.legend {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.info.legend div {
+    line-height: 18px;
+    color: #555;
+}
+.info.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+.year-controls button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+
+.year-controls button:hover {
+    background-color: #ddd;
+}
+
+.year-controls button:focus,
+.year-controls button.active {
+    background-color: #ccc;
+}
+
 }
