@@ -267,39 +267,41 @@
 					</div>
 
 					<!-- Static Banner Wrap Metro Map -->
-	<div class="main-banner">
-		<div class="container">
-			<div class="row d-lg-flex align-items-lg-center">
-				<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
-					<div class="about-caption-3">
-						<h3 class="title">Metro Change</h3>
-						<p>Existing and Under construction(black line). Include A Line, B & D Lines, C Line, E Line, K Line. </p>
-						<a href="#" class="btn th-bg">Read More</a>
+					<div class="main-banner">
+						<div class="container">
+							<div class="row d-lg-flex align-items-lg-center">
+								<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
+									<div class="about-caption-3">
+										<h3 class="title">Metro Rail Change</h3>
+										<p>Existing and Under construction(black line). Include A Line, B & D Lines, C Line, E Line, K Line. </p>
+										<p>
+											<span style="color: #32CD32;">Light green: line A</span><br> <!-- Light green for line A -->
+											<span style="color: #FFC0CB;">Pink: lines B&D</span><br> <!-- Pink for lines B&D -->
+											<span style="color: #8B0000;">Dark red: line C</span><br> <!-- Dark red for line C -->
+											<span style="color: #006400;">Dark green: line E</span><br> <!-- Dark green for line E -->
+											<span style="color: #000000;">Black: K line and others which are still under construction</span><br> <!-- Dark green for line E -->
+										</p>
+										<p>*Note that: <br>
+											 1. B & D Lines are combined together. <br>
+											2. The Airport Metro Connector and Aviation/Century Station of K line won’t be in service until late 2024 </p>
+										<a href="#" class="btn th-bg">Read More</a>
+									</div>
+								</div>
+								<div id="map1" class="map-container">1</div>
+								<script>
+								mapboxgl.accessToken = 'pk.eyJ1IjoibGFiYml0OXUiLCJhIjoiY2xyaHBidGY3MDFpeDJqcDh5c3htcW9tbyJ9.MIEvLBcTmBQOKa0acImNcQ'; // Replace with your Mapbox access token
+				
+								var map = new mapboxgl.Map({
+									container: 'map1',
+									style: 'mapbox://styles/labbit9u/clvmzxzix01k501qp8asw857y', // 这里换成适合洛杉矶地铁线的地图样式
+									center: [-118.2437, 34.0522], // 洛杉矶的经纬度坐标
+									zoom: 9
+								});
+								</script>
+							</div>			
+						</div>
+						
 					</div>
-				</div>
-				<div id="map1" class="map-container">1</div>
-				<div id="map2" class="map-container">2</div>
-				<script>
-				mapboxgl.accessToken = 'pk.eyJ1IjoibGFiYml0OXUiLCJhIjoiY2xyaHBidGY3MDFpeDJqcDh5c3htcW9tbyJ9.MIEvLBcTmBQOKa0acImNcQ'; // Replace with your Mapbox access token
-
-				var map = new mapboxgl.Map({
-					container: 'map1',
-					style: 'mapbox://styles/labbit9u/clvmy00r901jo01qv7nb0b41b', // 这里换成适合洛杉矶地铁线的地图样式
-					center: [-118.2437, 34.0522], // 洛杉矶的经纬度坐标
-					zoom: 9
-				});
-
-				var map = new mapboxgl.Map({
-					container: 'map2',
-					style: 'mapbox://styles/labbit9u/clvmzxzix01k501qp8asw857y', // 这里换成适合洛杉矶地铁线的地图样式
-					center: [-118.2437, 34.0522], // 洛杉矶的经纬度坐标
-					zoom: 9
-				});
-				</script>
-			</div>
-		</div>
-		
-	</div>
 	<!-- /Static Banner Wrap -->
 
 
@@ -471,6 +473,47 @@
 		</section>
 		<!-- Pricing Section End -->
 
+		<div class="container">			
+			<div class="row d-lg-flex align-items-lg-center">
+				<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
+					<div class="about-caption-3">
+						<h3 class="title">Build-Up Area</h3>
+						<p>11 </p>
+						<a href="#" class="btn th-bg">Read More</a>
+					</div>
+				</div>
+				<div class="col-md-10 col-sm-10">
+					<img id="image" src="" alt="Image">
+					<div id="year-display">1975</div>
+					<input type="range" id="slider" min="1975" max="2020" value="1975" step="15">
+				</div>
+				<script>
+					document.addEventListener("DOMContentLoaded", function() {
+						const slider = document.getElementById("slider");
+						const image = document.getElementById("image");
+						const yearDisplay = document.getElementById("year-display");
+				
+						const imagePaths = ["static/images/1975.png", "static/images/1990.png", "static/images/2005.png", "static/images/2020.png"];
+                
+						// 更新图片和年份显示函数
+						function updateImageAndYear() {
+							const index = (slider.value - 1975) / 15; // 根据年份计算索引
+							const year = slider.value;
+							const imageUrl = imagePaths[index];
+							image.src = imageUrl;
+							yearDisplay.textContent = year;
+						}
+				
+						// 初始化时先调用一次更新函数
+						updateImageAndYear();
+				
+						// 监听滑块变化
+						slider.addEventListener("input", updateImageAndYear);
+					});
+				</script>
+				
+			</div>
+		</div>
 
 		<!-- Blog Section Start -->
 		<section id="AirQuality">
