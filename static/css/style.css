@@ -2315,7 +2315,7 @@ footer.dark-black .widget_recent_entries ul li{
     float: left;
     width: 100%;
     text-align: left;
-    background: #fff;
+    /* background: #fff; */
     position: relative;
     padding:32px;
     border-radius: 20px;
@@ -2373,12 +2373,18 @@ footer.dark-black .widget_recent_entries ul li{
     font-size: 10px;
     line-height: 10px;
 }
-.price-unit{
+.price-unit {
     font-size: 32px;
     font-weight: 500;
     margin: 0;
     line-height: 40px;
+    color: #333; /* Ensuring text color is explicitly set for visibility */
 }
+
+.price-unit p {
+    color: #333; /* Adding this to ensure paragraph text is visible */
+}
+
 .price-unit sub{
     font-size: 14px;
     color:#9192A6;
@@ -2398,7 +2404,7 @@ footer.dark-black .widget_recent_entries ul li{
     border-radius: 50px;
     border:1px solid #e1e1e1;
 }
-.pricing-table .list-group{
+/* .pricing-table .list-group{
     float: left;
     width: 100%;
     margin: 0 0 15px;
@@ -2430,7 +2436,7 @@ footer.dark-black .widget_recent_entries ul li{
     line-height: 18px;
     font-size: 10px;
 
-}
+} */
 .testimonial-bg + * .pricing-table *{
     color: #656565;
 }
@@ -2716,6 +2722,8 @@ footer.osr-footer-3 li {
     border-color:#fff; 
     background-color:#fff;
 }
+
+/*css file for the population density map and interactive line chart*/
 #map {
     width: 100%;
     height: 90vh; /* Adjust height to fit your layout */
@@ -2726,23 +2734,31 @@ footer.osr-footer-3 li {
 }
 .info.legend {
     padding: 6px 8px;
-    font: 14px/16px Arial, Helvetica, sans-serif;
+    font: bold 16px Arial, Helvetica, sans-serif; /* Updated to make all text bold and increase font size */
+    color: black; /* Ensure text is in black */
     background: white;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
+.info.legend h4 {
+    font-size: 20px; /* Increase the size of the legend title */
+    font-weight: bold; /* Optional: make the title bolder */
+}
+
 .info.legend div {
-    line-height: 18px;
-    color: #555;
+    font-size: 16px; /* Increase the font size of the legend entries */
+    margin: 8px 0; /* Increase spacing between entries for better readability */
 }
+
 .info.legend i {
-    width: 18px;
-    height: 18px;
-    float: left;
-    margin-right: 8px;
-    opacity: 0.7;
+    height: 20px; /* Increase the height of the color boxes */
+    width: 40px; /* Increase the width of the color boxes */
+    display: inline-block;
+    margin-right: 10px; /* Ensure space between the color box and the text */
+    vertical-align: middle; /* Align the color box with the middle of the text */
 }
+
 .year-controls button {
     margin: 5px;
     padding: 5px 10px;
@@ -2751,6 +2767,7 @@ footer.osr-footer-3 li {
     border-radius: 3px;
     cursor: pointer;
     outline: none;
+    color:back;
 }
 
 .year-controls button:hover {
@@ -2760,6 +2777,15 @@ footer.osr-footer-3 li {
 .year-controls button:focus,
 .year-controls button.active {
     background-color: #ccc;
+}
+
+
+/*style for metro mapbox map*/
+.map-container {
+    display: inline-block; /* 将地图容器设置为内联块元素，使其水平排列 */
+    width: 45%; /* 设置地图容器的宽度 */
+    height: 300px; /* 设置地图容器的高度 */
+    margin-right: 20px; /* 设置地图容器之间的右边距 */
 }
 
 }

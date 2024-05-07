@@ -41,15 +41,7 @@
 <!-- import leaflet javascript and css file-->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-<style>
-        /* 设置地图容器的样式 */
-        .map-container {
-            display: inline-block; /* 将地图容器设置为内联块元素，使其水平排列 */
-            width: 45%; /* 设置地图容器的宽度 */
-            height: 300px; /* 设置地图容器的高度 */
-            margin-right: 20px; /* 设置地图容器之间的右边距 */
-        }
-</style>
+
 
 
 </head>
@@ -94,7 +86,7 @@
 	<!-- Static Banner Wrap -->
 	<div class="main-banner">
 		<div class="container">
-			<div class="row">
+			<div class="row d-lg-flex align-items-lg-center">
 				<!-- First section with smaller paragraph content -->
 				<div class="col-md-2">
 					<div class="banner-caption-wrap">
@@ -288,16 +280,7 @@
 									</div>
 								</div>
 								<div id="map1" class="map-container">1</div>
-								<script>
-								mapboxgl.accessToken = 'pk.eyJ1IjoibGFiYml0OXUiLCJhIjoiY2xyaHBidGY3MDFpeDJqcDh5c3htcW9tbyJ9.MIEvLBcTmBQOKa0acImNcQ'; // Replace with your Mapbox access token
-				
-								var map = new mapboxgl.Map({
-									container: 'map1',
-									style: 'mapbox://styles/labbit9u/clvmzxzix01k501qp8asw857y', // 这里换成适合洛杉矶地铁线的地图样式
-									center: [-118.2437, 34.0522], // 洛杉矶的经纬度坐标
-									zoom: 9
-								});
-								</script>
+							
 							</div>			
 						</div>
 						
@@ -363,158 +346,28 @@
 		</section>
 		<!-- Features Section End -->
 
-		<!-- Pricing Section Start -->
 		<section class="price-section" id="Built-up">
+
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<!-- Section Heading Start -->
+				<div class="row d-lg-flex align-items-lg-center">
+					<div class="col-md-8">
 						<div class="section-heading-2 text-center mb-61">
-							<h2 class="title">Built-up Areas</h2>
-							<p></p>
+							<h2 class="title">Built-up Areas Change 1975-2020</h2>
+							<img id="image" src="" alt="Image showing changes in built-up areas">
+							<div id="year-display">1975</div>
+							<input type="range" id="slider" min="1975" max="2020" value="1975" step="15">
 						</div>
-						<!-- Section Heading End -->
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3 col-sm-6">
-						<!-- Pricing Table Start -->
-
-						<!--temporary comment-->
-
-						<!-- <div class="pricing-table mb-30">
-							<div class="price-area">
-								<h6 class="price-type">Free</h6>
-								<h5 class="price-unit"><sub>$</sub> 0 <sub>/ Month</sub></h5>
-							</div> -->
-
-<!--temporary comment-->
-							<!-- <ul class="list-group">
-							  <li class="list-group-item">1 Project</li>
-							  <li class="list-group-item">Dashboard</li>
-							  <li class="list-group-item">2 TB Storage</li>
-							  <li class="list-group-item">Data Reports</li>
-							  <li class="list-group-item">5 Users</li>
-							</ul> -->
-							<!-- <a href="#" class="btn th-bg ">Get Started</a> -->
+					<div class="col-md-4">
+						<div class="price-unit">
+							<p>Additional details about built-up areas...</p>
+							<a href="#" class="btn th-bg">Read More</a>
 						</div>
-						<!-- Pricing Table End -->
-					</div>
-					<div class="col-md-3 col-sm-6">
-
-
-						<!-- Pricing Table Start -->
-
-						<!--temporary comment-->
-
-						<!-- <div class="pricing-table mb-30">
-							<div class="price-area">
-								<h6 class="price-type">Basic</h6>
-								<h5 class="price-unit"><sub>$</sub> 39 <sub>/ Month</sub></h5>
-							</div>
-							<ul class="list-group">
-							  <li class="list-group-item">10 Project</li>
-							  <li class="list-group-item">Dashboard</li>
-							  <li class="list-group-item">50 TB Storage</li>
-							  <li class="list-group-item">Data Reports</li>
-							  <li class="list-group-item">20 Users</li>
-							</ul>
-							<a href="#" class="btn th-bg ">Get Started</a>
-						</div> -->
-						<!-- Pricing Table End -->
-
-					</div>
-					<div class="col-md-3 col-sm-6">
-						
-						<!-- Pricing Table Start -->
-
-						<!--temporary comment-->
-
-						<!-- <div class="pricing-table mb-30 active">
-							<div class="price-area">
-								<h6 class="price-type">Premium <label class="badge">Popular</label></h6>
-								<h5 class="price-unit"><sub>$</sub> 99 <sub>/ Month</sub></h5>
-							</div>
-							<ul class="list-group">
-							  <li class="list-group-item">Unlimited Projects</li>
-							  <li class="list-group-item">Dashboard</li>
-							  <li class="list-group-item">200 TB Storage</li>
-							  <li class="list-group-item">Data Reports</li>
-							  <li class="list-group-item">Unlimited Users</li>
-							</ul>
-							<a href="#" class="btn th-bg ">Get Started</a>
-						</div> -->
-
-						<!-- Pricing Table End -->
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<!-- Pricing Table Start -->
-
-						<!--temporary comment-->
-
-						<!-- <div class="pricing-table mb-30">
-							<div class="price-area">
-								<h6 class="price-type">Enterprise</h6>
-								<h5 class="price-unit"><sub>$</sub> 199 <sub>/ Month</sub></h5>
-							</div>
-							<ul class="list-group">
-							  <li class="list-group-item">Unlimited Projects</li>
-							  <li class="list-group-item">Dashboard</li>
-							  <li class="list-group-item">1000 TB Storage</li>
-							  <li class="list-group-item">Data Reports</li>
-							  <li class="list-group-item">Unlimited Users</li>
-							</ul>
-							<a href="#" class="btn th-bg ">Get Started</a>
-						</div> -->
-						<!-- Pricing Table End -->
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- Pricing Section End -->
-
-		<div class="container">			
-			<div class="row d-lg-flex align-items-lg-center">
-				<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
-					<div class="about-caption-3">
-						<h3 class="title">Build-Up Area</h3>
-						<p>11 </p>
-						<a href="#" class="btn th-bg">Read More</a>
-					</div>
-				</div>
-				<div class="col-md-10 col-sm-10">
-					<img id="image" src="" alt="Image">
-					<div id="year-display">1975</div>
-					<input type="range" id="slider" min="1975" max="2020" value="1975" step="15">
-				</div>
-				<script>
-					document.addEventListener("DOMContentLoaded", function() {
-						const slider = document.getElementById("slider");
-						const image = document.getElementById("image");
-						const yearDisplay = document.getElementById("year-display");
-				
-						const imagePaths = ["static/images/1975.png", "static/images/1990.png", "static/images/2005.png", "static/images/2020.png"];
-                
-						// 更新图片和年份显示函数
-						function updateImageAndYear() {
-							const index = (slider.value - 1975) / 15; // 根据年份计算索引
-							const year = slider.value;
-							const imageUrl = imagePaths[index];
-							image.src = imageUrl;
-							yearDisplay.textContent = year;
-						}
-				
-						// 初始化时先调用一次更新函数
-						updateImageAndYear();
-				
-						// 监听滑块变化
-						slider.addEventListener("input", updateImageAndYear);
-					});
-				</script>
-				
-			</div>
-		</div>
-
+		
 		<!-- Blog Section Start -->
 		<section id="AirQuality">
 			<div class="container">
@@ -555,31 +408,42 @@
 						<div id="airquality"></div>
 						<!-- /Blog Thumb End -->
 					</div>
-					
-					
-
-
-
-
+									
 				</div>
-			</div>
-			
-			<div id="map" style="height: 90vh;"></div>
-<div class="controls">
-    <div class="info legend">
-        <h4>PM2.5 Air Quality Index</h4>
-        <div><i style="background: #800026"></i>Above 77</div>
-        <div><i style="background: #BD0026"></i>57 - 77</div>
-        <div><i style="background: #E31A1C"></i>39 - 57</div>
-        <div><i style="background: #FC4E2A"></i>20 - 39</div>
-        <div><i style="background: #FD8D3C"></i>Below 20</div>
-        <div id="yearControls" class="year-controls">
-            <button onclick="updateYear(2014)">2014</button>
-            <button onclick="updateYear(2017)">2017</button>
-            <button onclick="updateYear(2021)">2021</button>
-        </div>
-    </div>
-</div>
+				<div class="intro-section section-heading-2 mb-61">
+					<h2 class="title">PM2.5 Percentile & Concentration</h2>
+				</div>
+
+				<div class="row">
+					<div class="col-md-9 col-sm-6">
+						
+						<div id="map"></div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+						<div class="controls">
+							<div class="info legend">
+								<h4 id="legendTitle">PM2.5 Air Quality Index</h4>
+								<div id="legendContent">
+									<!-- Dynamic legend content will be inserted here -->
+								</div>
+								<div id="yearControls" class="year-controls">
+									<button onclick="updateYear(2014)">2014</button>
+									<button onclick="updateYear(2017)">2017</button>
+									<button onclick="updateYear(2021)">2021</button>
+								</div>
+							</div>
+							<div class="data-type-controls">
+								<select id="dataTypeSelect" onchange="updateDataType()">
+									<option value="percentile">Percentile</option>
+									<option value="concentration">Concentration</option>
+								</select>
+							</div>
+						</div>
+						<!--end of second column-->
+						</div>
+					</div>
+				</div>
+
 
 					
 		</section>
@@ -910,8 +774,13 @@
 
 <!--echart population map with interactive line chart-->
 <script src="static/js/la_population.js"></script>
+<!--mapbox metro map with constructed and planned lines-->
+<script src="static/js/metro_mapbox.js"></script>
+<!--slider for showing the built-up area change-->
+<script src="static/js/builtup_area.js"></script>
 <!-- Import air quality javascript -->
 <script src="static/js/d3_airquality.js"></script>
+<!-- use for http request-->
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <!-- Import air quality percentile map javascript -->
 <script src="static/js/air_quality_percentile.js"></script>
