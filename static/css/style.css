@@ -2822,13 +2822,14 @@ footer.osr-footer-3 li {
     width: 45%; 
     height: 300px; 
     margin-right: 20px; 
+     z-index: 1;
 }
 
 
 /*tab switch for images*/
 .focus {
-    width: 1000px;
-    height: 600px;
+    width: 500px;
+    height: 800px;
     background-color: pink;
     margin: 100px auto;
 }
