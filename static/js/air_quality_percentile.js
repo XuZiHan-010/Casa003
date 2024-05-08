@@ -124,6 +124,14 @@ document.addEventListener("DOMContentLoaded", function() {
             updateYear(this.getAttribute("data-year"));
         });
     });
+
+    document.getElementById('dataTypeSelect').addEventListener('change', function() {
+        dataType = this.value;
+        chartDataSets = []; // Clear the datasets
+        if (window.myLineChart) window.myLineChart.destroy(); // Destroy the chart to clear it
+        updateMap();
+        updateLegend();
+    });
 });
 
 async function updateMap() {
@@ -155,10 +163,10 @@ async function updateChartData(areaName) {
     const data = await fetchData();
     const areaData = data.find(d => d.name === areaName);
 
-    if (!areaData || !areaData.pm25) {
-        console.error("No data found for area or PM2.5 data missing:", areaName);
-        return;
-    }
+    // if (!areaData || !areaData.pm25) {
+    //     console.error("No data found for area or PM2.5 data missing:", areaName);
+    //     return;
+    // }
 
     const pm25Values = ['2014', '2017', '2021'].map(year => areaData.pm25[year]);
 
