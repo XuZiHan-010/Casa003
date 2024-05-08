@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zxx">
 
 <head>
@@ -35,7 +35,7 @@
 	<link href="static/css/color.css" rel="stylesheet">
 	<!-- Responsive CSS -->
 	<link href="static/css/responsive.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<!-- import Mapbox GL Draw plugin and JavaScript  CSS file-->
 	<link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
 	<script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
@@ -44,8 +44,7 @@
 	<!-- import leaflet javascript and css file-->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
 		integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-		integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
 
 
 
@@ -511,14 +510,41 @@
 				</div>
 				<div class="intro-section section-heading-2 mb-61">
 					<h2 class="title">PM2.5 Percentile & Concentration</h2>
-					<a href="#" class="btn th-bg">Instruction</a>
+				
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+	Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		  
+		</div>
+		<div class="modal-body">
+		  ...
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 				</div>
+				
 
-				<div class="row">
-					<div class="col-md-9 col-sm-6">
+				<div class="row" d-lg-flex align-items-lg-center>
+					<div class="col-md-8 col-sm-6">
 						<div id="map" class="map-container"></div>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-4 col-sm-6">
 						<div class="controls">
 							<div class="info legend">
 								<h4 id="legendTitle">PM2.5 Percentile</h4>
@@ -533,10 +559,11 @@
 								</div>
 							</div>
 							<div class="data-type-controls">
-								<select id="dataTypeSelect" onchange="updateDataType()">
+								<select id="dataTypeSelect">
 									<option value="percentile">Percentile</option>
 									<option value="concentration">Concentration</option>
 								</select>
+								
 							</div>
 						</div>
 					
@@ -544,6 +571,7 @@
 							<button id="clearChartBtn" onclick="toggleButtonColor(this)">Clear Chart</button>
 							<canvas id="areaChart"></canvas>
 						</div>
+
 					</div>
 				</div>
 
@@ -864,9 +892,9 @@
 	</div><!-- /Main Wrapper End-->
 
 	<!-- bootstrap jQuery -->
-    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
 	<!-- bootstrap js -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/js/bootstrap.js"></script>
 	<!-- jQuery -->
 	<script src="static/js/js-bundle.js"></script>
 	<!--Custom Script-->
@@ -881,7 +909,10 @@
 	<!--javascript libraries for using d3 charts-->
 	<script charset="utf-8" src="https://d3js.org/d3.v6.js"></script>
 	<script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
-
+	<!-- Import jquery and boostrap javascript Library -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<!--echart population map with interactive line chart-->
 	<script src="static/js/la_population.js"></script>
 	<!--mapbox metro map with constructed and planned lines-->
@@ -892,6 +923,9 @@
 	<script src="static/js/d3_airquality.js"></script>
 	<!-- use for http request-->
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+			
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+		integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 	<!-- Import air quality percentile map javascript -->
 	<script src="static/js/air_quality_percentile.js"></script>
 	<script>function toggleButtonColor(button) {
