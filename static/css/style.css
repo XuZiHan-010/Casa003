@@ -78,6 +78,14 @@ section{
 }
 .parallax-section {background-attachment: fixed !important;}
 .border-bottom{border-bottom:1px solid #edecec;}
+
+p {
+    font-size: 14px; 
+}
+ li {
+    font-size: 14px; /* Adjust size as needed */
+}
+
 /*
     ==============================================================
      HOME PAGE CSS START 
@@ -379,8 +387,7 @@ section{
 .main-banner p{
     float: left;
     width: 100%;
-    color:#25265E;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 28px;
     margin: 0 0 20px;
 }
@@ -2830,14 +2837,14 @@ footer.osr-footer-3 li {
 .focus {
     width: 500px;
     height: 800px;
-    background-color: pink;
+    background-color:white;
     margin: 100px auto;
 }
 
 .carousel,
 .carousel img {
     width: 100%;
-    height: 600px!important;
+    height: 800px!important;
     .carousel-caption {
         position: absolute;
         bottom: 0;

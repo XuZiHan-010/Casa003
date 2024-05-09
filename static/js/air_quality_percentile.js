@@ -1,10 +1,11 @@
 (function() {
 let chartDataSets = [];
 const map = L.map('map').setView([34.0522, -118.2437], 9);
-L.tileLayer('https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}', {
-    maxZoom: 18,
-    attribution: 'Map data &copy; <a href="https://maps.google.com/">Google</a>'
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    maxZoom: 19,
+    attribution: 'Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
 }).addTo(map);
+
 
 const urls = {
     percentile: 'https://raw.githubusercontent.com/XuZiHan-010/Casa003.github.io/main/data/Airquality_Percentile.json',
@@ -24,6 +25,9 @@ let dataType = 'percentile';
 let chart;
 let chartElement = document.getElementById('areaChart');
 let ctx = chartElement.getContext('2d');
+let bounds = [[90, -180], [-90, 180]]; // A rectangle large enough to cover the whole map
+
+
 window.myLineChart = null;  // Initialize chart instance holder
 
 
@@ -74,19 +78,22 @@ async function fetchData() {
     return await loadData(dataUrl, fallbackUrl);
 }
 
+
+
+
 function getColor(pm25) {
     if (dataType === 'percentile') {
-        return pm25 > 77 ? '#800026' :
-               pm25 > 57 ? '#BD0026' :
+        return pm25 > 77 ?  '#FFFF00':
+               pm25 > 57 ? '#FD8D3C':
                pm25 > 39 ? '#FC4E2A' :
-               pm25 > 20 ? '#FD8D3C' :
-                           '#FFFF00';
+               pm25 > 20 ?  '#BD0026':
+                            '#babfbc';
     } else {
-        return pm25 > 12.31 ? '#800026' :
-               pm25 > 11.56 ? '#BD0026' :
+        return pm25 > 12.31 ? '#FFFF00' :
+               pm25 > 11.56 ? '#FD8D3C' :
                pm25 > 10.49 ? '#FC4E2A' :
-               pm25 > 8.49  ? '#FD8D3C' :
-                              '#FFFF00';
+               pm25 > 8.49  ? '#BD0026' :
+               '#babfbc';
     }
 }
 
@@ -141,24 +148,38 @@ async function updateMap() {
     if (geojsonLayer) map.removeLayer(geojsonLayer);
 
     geojsonLayer = L.geoJson(geoJsonData, {
-        style: feature => {
+        style: function (feature) {
+            // Check if there is data for the current year and feature
             const areaData = data.find(d => d.name === feature.properties.name);
-            return {
-                fillColor: areaData && areaData.pm25 && areaData.pm25[currentYear] !== undefined ? getColor(areaData.pm25[currentYear]) : '#ccc',
-                weight: 2,
-                opacity: 1,
-                color: 'white',
-                fillOpacity: 0.7
-            };
+            if (areaData && areaData.pm25 && areaData.pm25[currentYear] !== undefined) {
+                return {
+                    fillColor: getColor(areaData.pm25[currentYear]),
+                    weight: 2,
+                    opacity: 1,
+                    color: 'white',
+                    fillOpacity: 0.7
+                };
+            } else {
+                // Style for areas without data
+                return {
+                    fillColor: '#ccc', // Grey color for areas without data
+                    weight: 2,
+                    opacity: 1,
+                    color: 'white',
+                    fillOpacity: 0.5 // Slightly transparent
+                };
+            }
         },
         onEachFeature: function (feature, layer) {
             layer.on('click', function () {
-                updateChartData(feature.properties.name);
+                // Assuming the data exists, update the chart
+                if (data.find(d => d.name === feature.properties.name)) {
+                    updateChartData(feature.properties.name);
+                }
             });
         }
     }).addTo(map);
 }
-
 async function updateChartData(areaName) {
     const data = await fetchData();
     const areaData = data.find(d => d.name === areaName);
@@ -195,25 +216,30 @@ async function updateChartData(areaName) {
 function updateLegend() {
     const legendTitle = document.getElementById('legendTitle');
     const legendContent = document.getElementById('legendContent');
+
+    let legendHtml = "";
+
     if (dataType === 'percentile') {
         legendTitle.innerHTML = "PM2.5 Percentile " + currentYear;
-        legendContent.innerHTML = `
-            <div><i style="background: #800026"></i>Above 77</div>
-            <div><i style="background: #BD0026"></i>57 - 77</div>
+        legendHtml = `
+            <div><i style="background: #FFFF00"></i>Above 77</div>
+            <div><i style="background: #FD8D3C"></i>57 - 77</div>
             <div><i style="background: #FC4E2A"></i>39 - 57</div>
-            <div><i style="background: #FD8D3C"></i>20 - 39</div>
-            <div><i style="background: #FFFF00"></i>Below 20</div>
+            <div><i style="background: #BD0026"></i>20 - 39</div>
+            <div><i style="background: #babfbc"></i>Below 20</div>
         `;
     } else {
         legendTitle.innerHTML = "PM2.5 Concentration " + currentYear;
-        legendContent.innerHTML = `
-            <div><i style="background: #800026"></i>Above 12.31</div>
-            <div><i style="background: #BD0026"></i>11.56 - 12.31</div>
+        legendHtml = `
+            <div><i style="background: #FFFF00"></i>Above 12.31</div>
+            <div><i style="background: #FD8D3C"></i>11.56 - 12.31</div>
             <div><i style="background: #FC4E2A"></i>10.49 - 11.56</div>
-            <div><i style="background: #FD8D3C"></i>8.49 - 10.49</div>
-            <div><i style="background: #FFFF00"></i>Below 8.49</div>
+            <div><i style="background: #BD0026"></i>8.49 - 10.49</div>
+            <div><i style="background: #babfbc"></i>Below 8.49</div>
         `;
     }
+
+    legendContent.innerHTML = legendHtml;
 }
 
 

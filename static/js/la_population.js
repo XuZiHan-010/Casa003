@@ -15,7 +15,7 @@
         });
     }
 
-    function initLineChart(cityName = 'Select a city') {
+    function initLineChart(cityName = 'Select a neighborhood') {
         var option = {
             title: { text: cityName + ' Population Trend' },
             tooltip: { trigger: 'axis' },
@@ -74,7 +74,7 @@
 
             echarts.registerMap('Los Angeles', laJson);
             var option = {
-                title: { text: 'Los Angeles County Population by City (2010 - 2022)', left: 'right' },
+                title: { text: 'Los Angeles County Population by Neighborhoods (2010 - 2022)', left: 'right' },
                 tooltip: {
                     trigger: 'item',
                     formatter: function(params) {

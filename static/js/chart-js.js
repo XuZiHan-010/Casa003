@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         x: {
                             title: {
                                 display: true,
-                                text: 'Location',
+                              
                                 font: {
                                     size: 12
                                 }
