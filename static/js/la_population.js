@@ -79,7 +79,7 @@
                     trigger: 'item',
                     formatter: function(params) {
                         return params.name + ': ' + (params.value > 0 ? params.value : 'No data');
-                    }
+                    }s
                 },
                 visualMap: {
                     left: 'left',
