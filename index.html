@@ -348,39 +348,43 @@
 					</div>
 
 					<!-- Static Banner Wrap Metro Map -->
-					<div class="main-banner">
 						<div class="container">
 							<div class="row d-lg-flex align-items-lg-center">
-								<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
-									<div class="about-caption-3">
-										<h3 class="title">Metro Rail Change</h3>
-										<p>Existing and Under construction(black line). Include A Line, B & D Lines, C
-											Line, E Line, K Line. </p>
-										<p>
-											<span style="color: #32CD32;">Light green: line A</span><br>
-											<!-- Light green for line A -->
-											<span style="color: #FFC0CB;">Pink: lines B&D</span><br>
-											<!-- Pink for lines B&D -->
-											<span style="color: #8B0000;">Dark red: line C</span><br>
-											<!-- Dark red for line C -->
-											<span style="color: #006400;">Dark green: line E</span><br>
-											<!-- Dark green for line E -->
-											<span style="color: #000000;">Black: K line and others which are still under
-												construction</span><br> <!-- Dark green for line E -->
-										</p>
-										<p>*Note that: <br>
-											1. B & D Lines are combined together. <br>
-											2. The Airport Metro Connector and Aviation/Century Station of K line won’t
-											be in service until late 2024 </p>
-										<a href="#" class="btn th-bg">Read More</a>
-									</div>
+								<div class="section-heading-2 text-left mb-61">
+									<h2 class="title">Metro Rail Change</h2>				
 								</div>
-								<div id="map1" class="map-container">1</div>
+								<p>Los Angeles once had the world's largest tram system, with the famous "Red Cars" of the Pacific Electric Railway and the "Yellow Cars" of the Los Angeles Railway. However, as cars became more common and the city grew, the tram system declined. Starting in the 1950s, suburbanization and highway construction reduced tram demand, leading to service closures or conversions to buses.<br>
+
+									In the 1980s, LA faced severe traffic congestion. To combat this, the government levied sales taxes to build a new rail network. The A Line opened in 1990, marking rail transit's return. Subsequent years saw the opening of underground railways and more light rail lines, including the first underground line in 1993.<br>
+									
+									As the city expanded, LA's rail network grew, with lines like the C Line (1995), E Line (2012), and K Line (2022). These projects aimed to improve public transit and ease congestion.<br>
+								</p>
+								<div class="col-md-3">
+									<p>
+										<span style="color: #32CD32;">---- A line (1990) </span><br>
+										<!-- Light green for line A -->
+										<span style="color: #FFC0CB;">---- B&D lines (1993)</span><br>
+										<!-- Pink for lines B&D -->
+										<span style="color: #8B0000;">---- C line (1995)</span><br>
+										<!-- Dark red for line C -->
+										<span style="color: #006400;">---- E line (2012)</span><br>
+										<!-- Dark green for line E -->
+										<span style="color: #000000;">---- K line and others which are still under
+											construction</span><br> <!-- Dark green for line E -->
+									</p>
+									<br>
+									<p>*Note that: <br>
+										1. B & D Lines are combined together. <br>
+										2. The Airport Metro Connector and Aviation/Century Station of K line won’t
+										be in service until late 2024 
+									</p>
+									<a href="#" class="btn th-bg">Read More</a>
+								</div>
+								<div id="map1" class="map-container_metro">1</div>
 
 							</div>
 						</div>
 
-					</div>
 					<!-- /Static Banner Wrap -->
 
 
@@ -442,23 +446,32 @@
 		</section>
 		<!-- Features Section End -->
 
-		<section class="price-section" id="Built-up">
+		<section class="gray-bg" id="Built-up">
 
 			<div class="container">
-				<div class="row d-lg-flex align-items-lg-center">
-					<div class="col-md-8">
-						<div class="section-heading-2 text-center mb-61">
-							<h2 class="title">Built-up Areas Change 1975-2020</h2>
+				<div class="section-heading-2 text-left mb-61">
+					<h2 class="title">Human Settlement Built-up Areas Change <br> 1975-2020</h2>	
+					<p>The images illustrate the changes in the distribution of human settlement built-up surfaces in Los Angeles over a period of 45 years, with data covering both the total built-up surface and the built-up surface allocated to dominant non-residential (NRES) uses.</p>			
+				</div>
+				<div class="col-md-8">					
+					<div class="section-heading-2 text-center mb-61">
+						<div class="image-container" style="position: relative;">
 							<img id="image" src="" alt="Image showing changes in built-up areas">
-							<div id="year-display">1975</div>
-							<input type="range" id="slider" min="1975" max="2020" value="1975" step="15">
+							<div id="year-display" class="year-display">1975</div>
 						</div>
+						<input type="range" id="slider" min="1975" max="2020" value="1975" step="15">
 					</div>
-					<div class="col-md-4">
-						<div class="price-unit">
-							<p>Additional details about built-up areas...</p>
-							<a href="#" class="btn th-bg">Read More</a>
-						</div>
+				</div>
+				<div class="col-md-4">
+					<div>
+						<p>
+							We can observe that with the increase in years, there are more white areas visible within the image, especially at the boundaries, indicating continuous expansion of the city over the 45-year period.
+							<br><br>							
+							In the late 19th and early 20th centuries, with the discovery of oil, Los Angeles began to rise and rapidly developed into the largest city in the American West. After World War II, the rise of modern industry, commerce, finance, and tourism flourished, and the urban area continued to expand outward. Even though the city was already very prosperous before 1975, as shown in the image, the urban architecture continued to expand after that year.
+							<br><br>
+							*Using the WGS84 coordinate system, with a resolution of 3 arcseconds.													
+							<a href="#" readmore-btn th-cl">Read More</a>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -477,22 +490,23 @@
 						<!-- /Blog Thumb Start -->
 						<div class="blog-thumb">
 							<div class="text">
-								<h5 class="title"><a href="#"> Trends in Moderate Air Quality Days (1980-2020)</a></h5>
-
+								<h5 class="title"><a href="#"> Trends in diffirent type of Air Quality Days (1980-2020)</a></h5>
 								<p>This line graph illustrates the annual count of days classified as 'Moderate' in
 									terms of air quality from 1980 to 2020.
 									The data provides insight into the fluctuations and trends in air quality over
 									four decades.</p>
-								<p>Starting from 1980, the graph shows a steady increase in the number of moderate air
-									quality days, peaking in the year 2000</p>
-								<p>The peak in 2000, followed by a sharp decline,
-									suggests significant improvements in air quality management or changes
-									in regional industrial activities. </p>
-								<p>Post-2010, the numbers show a slight recovery but still remain below the year 2000
-									levels,
-									indicating sustained efforts towards air quality improvement or possibly changes
-									in the factors contributing to air pollution.</p>
-								<a href="#" class="readmore-btn th-cl">Read More </a>
+								<p>We can see that the number of days with good air quality has been increasing year by year, 
+									while unhealthy days do not show such a steady trend. 
+									In 2010, there was a trough in unhealthy days, and at the same time, 
+									we can see a peak in moderate days in the same year, which is somewhat strange. </p>
+								<p>One possible explanation is the National Ambient Air Quality Standards (NAAQS) established in 2008, 
+									which scientists considered too loose, resulting in some days that should have been classified as unhealthy being categorized as moderate. 
+									This also led to the public not being alerted to these days of unhealthy air. 
+									Subsequently, based on the unanimous recommendation of the independent board of air experts and scientists established under the Clean Air Act, 
+									the standards were updated in 2013, 
+									which to some extent explains why there were no more seemingly abnormal data in 2020. </p>
+								
+								<a href="https://environmentamerica.org/resources/danger-in-the-air-unhealthy-air-days-in-2010-and-2011/" class="readmore-btn th-cl">Read More </a>
 							</div>
 						</div>
 						<!-- /Blog Thumb End -->
