@@ -79,18 +79,19 @@
                     trigger: 'item',
                     formatter: function(params) {
                         return params.name + ': ' + (params.value > 0 ? params.value : 'No data');
-                    }s
+                    }
                 },
                 visualMap: {
                     left: 'left',
                     min: 100,
                     max: 500000,
                     inRange: {
-                        color: ['#ffffff', '#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+                        color: ['#00FF00', '#ADFF2F', '#FFFF00', '#FFD700', '#FFA500', '#FF4500', '#FF0000']
                     },
                     text: ['High', 'Low'],
                     calculable: true
                 },
+                
                 toolbox: {
                     show: true,
                     left: 'left',
