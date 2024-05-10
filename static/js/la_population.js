@@ -27,8 +27,14 @@
                 nameGap: 30  // Gap between the X-axis label and numbers
             },
             yAxis: {
-                type: 'value'
-               
+                type: 'value',
+                name: 'Population',
+                nameLocation: 'middle',
+                nameGap: 50,
+                nameRotate: 90,
+                axisLabel: {
+                    margin: 0  // Increase margin to avoid cutting off labels
+                }
             },
             series: [{
                 name: 'Population',
@@ -39,12 +45,15 @@
         lineChart.setOption(option);
     }
     
-
+    
     function updateLineChart(cityData, cityName) {
         var populationValues = ['2010', '2015', '2020', '2022'].map(year => cityData[year] || null);
         lineChart.setOption({
             title: {
                 text: cityName + ' Population Trend'  // Update title dynamically
+            },
+            yAxis: {
+                name: 'Population', // Ensure yAxis name updates if needed
             },
             series: [{
                 name: 'Population',
@@ -52,6 +61,7 @@
             }]
         });
     }
+    
 
     function initializeChart() {
         Promise.all([

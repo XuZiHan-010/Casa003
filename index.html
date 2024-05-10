@@ -131,7 +131,7 @@
 				<div class="featured-slider-section">
 					<div class="container">
 						<!-- Population Map by city name -->
-						<!-- <div class="row featured-slider featured-slider-2"> -->
+				<!-- <div class="row featured-slider featured-slider-2">  -->
 						<div>
 							<h3>Population Map with Interactive Line Chart</h3>
 							<p>Explore the map below to view detailed population statistics for each neighborhood within
@@ -149,6 +149,7 @@
 								time periods,
 								users can gain a deeper understanding of the demographic shifts that shape the region.
 							</p>
+						
 							<ul>
 								<li>
 									<strong>Explore the map:</strong> Use your cursor to explore different cities within
@@ -162,9 +163,13 @@
 								<li>
 									<strong>Deep dive with the line chart:</strong> After clicking on a city, observe
 									the line chart to analyze the population trend over time for detailed insights.
+								
 								</li>
+								
 							</ul>
+							<a href="https://xuzihan-010.github.io/Casa003.github.io/map.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" target="_blank">Try Interactive Map</a>
 						</div>
+					
 						<!-- Featured Slider End -->
 					</div>
 				</div>
@@ -172,29 +177,7 @@
 			</section>
 			<!-- Featured Section End -->
 			<!--temporary comment-->
-			<section class="intro-section section-heading-2 gray-bg">
-				<div class="container ">
-					<div class="row d-lg-flex align-items-lg-center">
-						<div class="col-md-8 col-sm-6">
-						
-							<div id="lamap" style="width: 100%; height: 600px;"></div>
-							<div class="controls">
-								<label for="year-selector">Select Year:</label>
-								<select id="year-selector">
-									<option value="2010">2010</option>
-									<option value="2015">2015</option>
-									<option value="2020">2020</option>
-									<option value="2022" selected>2022</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div id="lineChart" style="width: 100%; height: 350px;"></div>
-						</div>
-					</div>
-				</div>
-		</div>
-		</section>
+			
 
 
 		<!-- About Us Section Start -->
@@ -581,7 +564,7 @@
 							</div>
 						</div>
 					
-						<div id="chartContainer" style="width: 100%; height: 400px; margin-top: 30px; ">
+						<div id="chartContainer" style="width: 100%; height: 450px; margin-top: 30px; ">
 							<button id="clearChartBtn" onclick="toggleButtonColor(this)">Clear Chart</button>
 							<canvas id="areaChart"></canvas>
 						</div>
@@ -915,8 +898,7 @@
 	<script src="static/js/custom.js"></script>
 	<!-- chart-Js Javascript-->
 	<script src="static/js/chart-js.js"></script>
-	<!--import the javascript library for echarts -->
-	<script src="static/js/echarts.min.js"></script>
+
 	<!-- Import Chartjs Library -->
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<!-- <script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script> -->
@@ -924,11 +906,10 @@
 	<script charset="utf-8" src="https://d3js.org/d3.v6.js"></script>
 	<script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
 	<!-- Import jquery and boostrap javascript Library -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<!--echart population map with interactive line chart-->
-	<script src="static/js/la_population.js"></script>
+
 	<!--mapbox metro map with constructed and planned lines-->
 	<script src="static/js/metro_mapbox.js"></script>
 	<!--slider for showing the built-up area change-->
