@@ -2881,4 +2881,17 @@ footer.osr-footer-3 li {
     
 
 }
+/* csv for population map*/
+ /* Styling the select dropdown */
+ #year-selector {
+    font-size: 16px; /* Set the font size */
+    color:black; /* Set the text color */
+    background-color: #f8f8f8; /* Set the background color */
+}
+
+/* Styling individual options */
+#year-selector option {
+    color: black; /* Color of the option text */
+    font-size: 18px; /* Font size of the option text */
+}
 }
