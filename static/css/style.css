@@ -2832,6 +2832,27 @@ footer.osr-footer-3 li {
      z-index: 1;
 }
 
+/*style for metro mapbox map*/
+.map-container_metro {
+    display: inline-block; 
+    width: 70%; 
+    height: 450px; 
+    margin-right: 20px; 
+     z-index: 1;
+}
+
+/* style for build-up area */
+.image-container {
+    position: relative;
+}
+.year-display {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
+    font-size: 24px; 
+    color: white;
+}
+
 
 /*tab switch for images*/
 .focus {
