@@ -29,7 +29,7 @@ d3.csv(remoteUrl, d3.autoType).then(initializeChart).catch(function(error) {
 // Function to initialize the chart with the loaded data
 function initializeChart(data) {
 // specify the columns used
-var allGroup = [ "Good Days", "Moderate Days", "Unhealthy for Sensitive Groups Days", "Unhealthy Days"  , "Days PM2.5", "Days PM10"];
+var allGroup = [ "Good Days", "Moderate Days", "Unhealthy for Sensitive Groups Days", "Unhealthy Days"  , "Days PM2.5"];
 
 // Add the options to the button
 d3.select("#selectButton")
