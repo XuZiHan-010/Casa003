@@ -36,6 +36,9 @@
 <link href="static/css/style.css" rel="stylesheet">
 <!-- Color CSS -->
 <link href="static/css/color.css" rel="stylesheet">
+
+<link href="static/css/transition.css" rel="stylesheet">
+
 <!-- Responsive CSS -->
 <link href="static/css/responsive.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -121,7 +124,7 @@
 
 		<!-- Urban Extent Section Start -->
 		<section id="UrbanHistory" class="gray-bg">
-			<div class="container">
+			<div class="container"  id="history">
 				<!-- Section Heading Start -->
 				<div class="section-heading-2 text-center mb-61">
 					<h2 class="title">Urban History</h2>
@@ -219,7 +222,7 @@
 
 
 		<!-- Static Banner Wrap -->
-		<div class="main-banner" id="Population">
+		<div class="main-banner" id="population-tran">
 			<div class="container">
 				<!--the carousel for the first page-->
 		
@@ -228,9 +231,9 @@
 					<div class="col-md-2">
 						<div class="banner-caption-wrap">
 							<h3 class="banner-title">Population </h3>
-							<p>The population of Los Angeles county has shown consistent growth from 1990 to 2020,
+							<p id="animated-text-population">The population of Los Angeles county has shown consistent growth from 1990 to 2020,
 								increasing from around 3.5 million to just under 4 million.</p>
-							<p>The 1990-2000 decade shows higher growth rates across all three locations compared to
+							<p id="animated-text-population">The 1990-2000 decade shows higher growth rates across all three locations compared to
 								later decades. However, growth in Los Angeles remains relatively robust compared to
 								national trends, suggesting sustained urban attraction or local growth dynamics</p>
 						</div>
@@ -969,21 +972,6 @@
 	</script>
 	<!-- <script src="static/js/transition.js"></script> -->
 	<script>
-		function mapSection() {
-			var showId = document.getElementById('mapSection');
-			var clients = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-			var divTop = showId.getBoundingClientRect().top;
-			if(divTop<=clients){
-				showId.classList.add('fadeInRight');
-			}else{
-				showId.classList.remove('fadeInRight');
-			}
-			}
-			window.onscroll = mapSection;
-		
-	</script>
-
-	<script>
 		function animateElementById(elementId, animationClass) {
 			var showId = document.getElementById(elementId);
 			var clients = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
@@ -996,9 +984,12 @@
 		}
 
 		function handleScroll() {
-			animateElementById('mapSection', 'fadeInRight'); // 对id为mapSection的div应用动画效果
-			animateElementById('population-tran', 'slideInFromBottom'); // 对id为population-tran的div应用动画效果，这里假设使用了fadeInLeft类名
+			animateElementById('history', 'fadeInLeft'); // 对id为mapSection的div应用动画效果
+			animateElementById('population-tran', 'fadeInDownBig'); // 对id为population-tran的div应用动画效果，这里假设使用了fadeInLeft类名
 			// 如果有其他需要实现动画效果的部分，可以在这里继续添加
+			
+			animateElementById('animated-text-population', 'bounceInLeft'); // 对id为population-tran的div应用动画效果，这里假设使用了fadeInLeft类名
+
 		}
 
 		window.onscroll = handleScroll;
