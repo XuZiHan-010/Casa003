@@ -14,46 +14,47 @@
 	<meta name="theme-color" content="#4b6fff">
 	<title>Home</title>
 	<!-- Bootstrap -->
-	<link href="static/css/bootstrap.css" rel="stylesheet">
-	<!-- Animate CSS -->
-	<link href="static/css/animate.css" rel="stylesheet">
-	<!-- Flat Icon CSS -->
-	<link href="static/css/svg.css" rel="stylesheet">
-	<!-- Slick Slider CSS -->
-	<link href="static/css/slick.css" rel="stylesheet">
-	<!-- Responsive Menu css -->
-	<link rel="stylesheet" href="static/css/responsivemenu.css">
-	<!-- Typography CSS -->
-	<link href="static/css/typography.css" rel="stylesheet">
-	<!-- Widget Css -->
-	<link href="static/css/widget.css" rel="stylesheet">
-	<!-- Short Code CSS -->
-	<link href="static/css/shortcode.css" rel="stylesheet">
-	<!-- Custom Style CSS -->
-	<link href="static/css/style.css" rel="stylesheet">
-	<!-- Color CSS -->
-	<link href="static/css/color.css" rel="stylesheet">
-	<!-- Responsive CSS -->
-	<link href="static/css/responsive.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<!-- import Mapbox GL Draw plugin and JavaScript  CSS file-->
-	<link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
-	<script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
-	<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.js"></script>
-	<link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.css" rel="stylesheet">
-	<!-- import leaflet javascript and css file-->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-		integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+<link href="static/css/bootstrap.css" rel="stylesheet">
+<link href="static/css/bootstrap.min.css">
+<!--Boostrap Font css-->
+<link href="static/css/shortcode.css" rel="stylesheet">
+<!-- Animate CSS -->
+<link href="static/css/animate.css" rel="stylesheet">
+<!-- Flat Icon CSS -->
+<link href="static/css/svg.css" rel="stylesheet">
+<!-- Slick Slider CSS -->
+<link href="static/css/slick.css" rel="stylesheet">
+<!-- Responsive Menu css -->
+<link rel="stylesheet" href="static/css/responsivemenu.css">
+<!-- Typography CSS -->
+<link href="static/css/typography.css" rel="stylesheet">
+<!-- Widget Css -->
+<link href="static/css/widget.css" rel="stylesheet">
+<!-- Short Code CSS -->
+<link href="static/fonts/bootstrap-icons.css">
+<!-- Custom Style CSS -->
+<link href="static/css/style.css" rel="stylesheet">
+<!-- Color CSS -->
+<link href="static/css/color.css" rel="stylesheet">
+<!-- Responsive CSS -->
+<link href="static/css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- import Mapbox GL Draw plugin and JavaScript  CSS file-->
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.css" rel="stylesheet">
+<!-- import leaflet javascript and css file-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+	integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 
 
 
 
 </head>
-
-<body class="grad-version" id="Population">
+<body class="grad-version" >
 	<!-- LOADER -->
 	<div id="loader-overflow">
-		<div id="loader3" class="loader-cont">Please enable JS</div>
 	</div>
 	<div class="main-wrapper">
 		<!-- Header Start -->
@@ -61,24 +62,18 @@
 			<!-- Navigation Outer Wrap Start -->
 			<div class="nav-outer sticky-header">
 				<div class="container">
-					<!-- Logo Start -->
-					<!-- <h1 class="logo">
-					<a href="index.html" title="oscarthemes">
-						<img src="static/picture/logo.svg" alt="oscarthemes">
-					</a>
-				</h1> -->
-					<!-- /Logo End -->
 					<div class="pull-right menu-holder">
 						<div class="mobile-menu"></div>
 						<div id="opg-nav" class="main-menu navigation">
 							<nav>
 								<ul>
-									<li class="active"><a href="#Population">Population</a></li>
-									<li><a href="#UrbanExtent">Urban Extent</a></li>
+									<li class="active"><a href="#UrbanHistory">Urban History</a></li>
+									<li><a href="#Population">Population</a></li>
+									<li><a href="#Metro">Metro Change</a></li>
 									<li><a href="#Built-up">Built-up Area</a></li>
 									<li><a href="#AirQuality">Air Quality</a></li>
-									<li><a href="#GreenSpace">Green Space</a></li>
-									<li><a href="#contact">Contact</a></li>
+									<li><a href="#GreenSpace">Conclusion</a></li>
+									<!-- <li><a href="#contact">Contact</a></li> -->
 								</ul>
 							</nav>
 						</div>
@@ -86,148 +81,54 @@
 				</div>
 			</div>
 			<!-- /Navigation Outer Wrap End -->
+
 		</header>
 		<!-- /Header End -->
-		<!-- Static Banner Wrap -->
-		<div class="main-banner">
-			<div class="container">
-				<div class="row d-lg-flex align-items-lg-center">
-					<!-- First section with smaller paragraph content -->
-					<div class="col-md-2">
-						<div class="banner-caption-wrap">
-							<h3 class="banner-title">Population </h3>
-							<p>The population of Los Angeles county has shown consistent growth from 1990 to 2020,
-								increasing from around 3.5 million to just under 4 million.</p>
-							<p>The 1990-2000 decade shows higher growth rates across all three locations compared to
-								later decades. However, growth in Los Angeles remains relatively robust compared to
-								national trends, suggesting sustained urban attraction or local growth dynamics</p>
-						</div>
-					</div>
-					<!-- Second section with larger first chart -->
-					<div class="col-md-6">
-						<div class="banner-thumb">
-							<canvas id="populationChangeChart2" height="500"></canvas>
-						</div>
-					</div>
-					<!-- Third section with larger second chart -->
-					<div class="col-md-4">
-						<div class="banner-thumb2">
-							<canvas id="populationChangeChart1" height="500"></canvas>
-						</div>
-					</div>
-				</div>
+
+		<!--Carousel Switching Tab-->
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
 			</div>
-
-		</div>
-		<!-- /Static Banner Wrap -->
-
-
-
-		<!-- oscar Contant Wrapper Start-->
-		<div id="main-contant" class="main-contant">
-			<!-- Featured Section Start -->
-			<section class="">
-				<!-- Featured Item Section Start -->
-				<div class="featured-slider-section">
-					<div class="container">
-						<!-- Population Map by city name -->
-				<!-- <div class="row featured-slider featured-slider-2">  -->
-						<div>
-							<h3>Population Map with Interactive Line Chart</h3>
-							<p>Explore the map below to view detailed population statistics for each neighborhood within
-								Los Angeles County.
-								Click on any city on the map to view its population trend from 2010 to 2022
-								in the adjacent line chart. The interactive map provides a visual representation of
-								population distribution across Los Angeles County.
-								The color gradient reflects population density,
-								with darker colors indicating higher density.</p>
-							<p>This interactive visualization tool offers a comprehensive view of the population trends
-								in Los Angeles County,
-								highlighting the varying dynamics across different cities. It provides valuable insights
-								into how population densities have evolved in response to urban development, economic
-								factors, and other influences over the past 12 years. By exploring different areas and
-								time periods,
-								users can gain a deeper understanding of the demographic shifts that shape the region.
-							</p>
-						
-							
-							<a href="https://xuzihan-010.github.io/Casa003.github.io/populationmap" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" target="_blank">Try Interactive Map</a>
-						</div>
-					
-						<!-- Featured Slider End -->
-					</div>
-				</div>
-				<!-- Featured Item Section End -->
-			</section>
-			<!-- Featured Section End -->
-			<!--temporary comment-->
-			
-
-
-		<!-- About Us Section Start -->
-
-		<!--temporary comment-->
-
-		<!-- <section  id="about-us">
-			<div class="container">
-				<div class="row d-lg-flex align-items-lg-center">
-					<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
-						<div class="about-caption-3">
-							<h3 class="title">Complete Data Reports <br> & Analysis history</h3>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
-							<a href="#" class="btn th-bg">Read More</a>
-						</div>
-					</div>
-					<div data-aos="fade-left" class="col-md-6 col-sm-6">
-						<div class="shadow-thumb">
-							<figure><img src="static/picture/img1.svg" alt=""></figure>
-						</div>
-					</div>
-				</div>
-				<div class="row d-lg-flex align-items-lg-center">
-					<div data-aos="fade-left" class="col-md-6 col-sm-6">
-						<div class="shadow-thumb">
-							<figure><img src="static/picture/img2.svg" alt=""></figure>
-						</div>
-					</div>
-					<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
-						<div class="about-caption-3">
-							<h3 class="title">Project Management Solution System</h3>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
-							<a href="#" class="btn th-bg">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="row d-lg-flex align-items-lg-center">
-					<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
-						<div class="about-caption-3">
-							<h3 class="title">Timeline Management System</h3>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
-							<a href="#" class="btn th-bg">Read More</a>
-						</div>
-					</div>
-					<div data-aos="fade-left" class="col-md-6 col-sm-6">
-						<div class="shadow-thumb">
-							<figure><img src="static/picture/img3.svg" alt=""></figure>
-						</div>
-					</div>
-				</div>
+			<div class="carousel-inner">
+			  <div class="carousel-item active" data-bs-interval="3000">
+				<!-- Content of Slide 1 -->
+			  </div>
+			  <div class="carousel-item" data-bs-interval="3000">
+				<!-- Content of Slide 2 -->
+			  </div>
+			  <div class="carousel-item" data-bs-interval="3000">
+				<!-- Content of Slide 3 -->
+			  </div>
+			  <div class="carousel-item" data-bs-interval="3000">
+				<!-- Content of Slide 4 -->
+			  </div>
 			</div>
-		</section> -->
-
-		<!-- About Us Section End -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			 
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	
+			</button>
+		  </div>
+		  <!--End of Switching Tab-->
 
 
 		<!-- Urban Extent Section Start -->
-		<section id="UrbanExtent" class="gray-bg">
+		<section id="UrbanHistory" class="gray-bg">
 			<div class="container">
 				<!-- Section Heading Start -->
 				<div class="section-heading-2 text-center mb-61">
-					<h2 class="title">Urban Extent</h2>
-					<p>Urban Extent</p>
+					<h2 class="title">Urban History</h2>
+					<p>Urban History</p>
 				</div>
 				<!-- Section Heading End -->
-				<div class="row">
+				<section class="row">
 					<div class="col-md-12 col-sm-6">
 						<!-- Features Thumb Start -->
 						<div class="features-thumb-2 radius-5">
@@ -313,7 +214,143 @@
 
 						<!-- Features Thumb Start -->
 					</div>
+				</section>
 
+
+
+		<!-- Static Banner Wrap -->
+		<div class="main-banner" id="Population">
+			<div class="container">
+				<!--the carousel for the first page-->
+		
+				<div class="row d-lg-flex align-items-lg-center">
+					<!-- First section with smaller paragraph content -->
+					<div class="col-md-2">
+						<div class="banner-caption-wrap">
+							<h3 class="banner-title">Population </h3>
+							<p>The population of Los Angeles county has shown consistent growth from 1990 to 2020,
+								increasing from around 3.5 million to just under 4 million.</p>
+							<p>The 1990-2000 decade shows higher growth rates across all three locations compared to
+								later decades. However, growth in Los Angeles remains relatively robust compared to
+								national trends, suggesting sustained urban attraction or local growth dynamics</p>
+						</div>
+					</div>
+					<!-- Second section with larger first chart -->
+					<div class="col-md-6">
+						<div class="banner-thumb">
+							<canvas id="populationChangeChart2" height="500"></canvas>
+						</div>
+					</div>
+					<!-- Third section with larger second chart -->
+					<div class="col-md-4">
+						<div class="banner-thumb2">
+							<canvas id="populationChangeChart1" height="500"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- /Static Banner Wrap -->
+
+
+
+		<!-- oscar Contant Wrapper Start-->
+		<div id="main-contant" class="main-contant">
+			<!-- Featured Section Start -->
+			<section class="">
+				<!-- Featured Item Section Start -->
+				<div class="featured-slider-section">
+					<div class="container">
+						<!-- Population Map by city name -->
+				<!-- <div class="row featured-slider featured-slider-2">  -->
+						<div>
+							<h3>Population Map with Interactive Line Chart</h3>
+							<p>Explore the map below to view detailed population statistics for each neighborhood within
+								Los Angeles County.
+								Click on any city on the map to view its population trend from 2010 to 2022
+								in the adjacent line chart. The interactive map provides a visual representation of
+								population distribution across Los Angeles County.
+								The color gradient reflects population density,
+								with darker colors indicating higher density.</p>
+							<p>This interactive visualization tool offers a comprehensive view of the population trends
+								in Los Angeles County,
+								highlighting the varying dynamics across different cities. It provides valuable insights
+								into how population densities have evolved in response to urban development, economic
+								factors, and other influences over the past 12 years. By exploring different areas and
+								time periods,
+								users can gain a deeper understanding of the demographic shifts that shape the region.
+							</p>
+						
+							
+							<a href="populationmap.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" target="_blank">Try Interactive Map</a>
+						</div>
+					
+						<!-- Featured Slider End -->
+					</div>
+				</div>
+				<!-- Featured Item Section End -->
+			</section>
+			<!-- Featured Section End -->
+			<!--temporary comment-->
+			
+
+
+		<!-- About Us Section Start -->
+
+		<!--temporary comment-->
+
+		<!-- <section  id="about-us">
+			<div class="container">
+				<div class="row d-lg-flex align-items-lg-center">
+					<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
+						<div class="about-caption-3">
+							<h3 class="title">Complete Data Reports <br> & Analysis history</h3>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
+							<a href="#" class="btn th-bg">Read More</a>
+						</div>
+					</div>
+					<div data-aos="fade-left" class="col-md-6 col-sm-6">
+						<div class="shadow-thumb">
+							<figure><img src="static/picture/img1.svg" alt=""></figure>
+						</div>
+					</div>
+				</div>
+				<div class="row d-lg-flex align-items-lg-center">
+					<div data-aos="fade-left" class="col-md-6 col-sm-6">
+						<div class="shadow-thumb">
+							<figure><img src="static/picture/img2.svg" alt=""></figure>
+						</div>
+					</div>
+					<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
+						<div class="about-caption-3">
+							<h3 class="title">Project Management Solution System</h3>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
+							<a href="#" class="btn th-bg">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="row d-lg-flex align-items-lg-center">
+					<div data-aos="fade-right" data-aos-delay="500" class="col-md-6 col-sm-6">
+						<div class="about-caption-3">
+							<h3 class="title">Timeline Management System</h3>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
+							<a href="#" class="btn th-bg">Read More</a>
+						</div>
+					</div>
+					<div data-aos="fade-left" class="col-md-6 col-sm-6">
+						<div class="shadow-thumb">
+							<figure><img src="static/picture/img3.svg" alt=""></figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<!-- About Us Section End -->
+
+
+					<section id="Metro" class="gray-bg">
 					<!-- Static Banner Wrap Metro Map -->
 						<div class="container">
 							<div class="row d-lg-flex align-items-lg-center">
@@ -872,10 +909,12 @@
 	</div><!-- /Copyright End-->
 	</div><!-- /Main Wrapper End-->
 
+
 	<!-- bootstrap jQuery -->
     <script src="static/js/jquery.min.js"></script>
 	<!-- bootstrap js -->
-    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- jQuery -->
 	<script src="static/js/js-bundle.js"></script>
 	<!--Custom Script-->
@@ -892,7 +931,7 @@
 	<!-- Import jquery and boostrap javascript Library -->
 	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
 	<!--mapbox metro map with constructed and planned lines-->
 	<script src="static/js/metro_mapbox.js"></script>
@@ -907,7 +946,15 @@
 		integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 	<!-- Import air quality percentile map javascript -->
 	<script src="static/js/air_quality_percentile.js"></script>
-	<script>function toggleButtonColor(button) {
+	
+	<script>
+	  var myCarousel = document.querySelector('#carouselExampleIndicators')
+  var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 3000,
+    ride: 'carousel'
+  });
+
+	function toggleButtonColor(button) {
 		button.classList.toggle('active');
 	}
 	</script>
