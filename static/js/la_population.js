@@ -6,7 +6,7 @@
     function loadData(url, fallbackUrl) {
         return fetch(url).then(response => {
             if (!response.ok) {
-                throw new Error('Problem of network response');
+                throw new Error('Network response was not ok');
             }
             return response.json();
         }).catch(error => {
@@ -28,7 +28,6 @@
             },
             yAxis: {
                 type: 'value',
-               
                 nameLocation: 'middle',
                 nameGap: 50,
                 nameRotate: 90,
@@ -44,14 +43,13 @@
         };
         lineChart.setOption(option);
     }
-    
+
     function updateLineChart(cityData, cityName) {
         var densityValues = ['2010', '2015', '2020', '2022'].map(year => cityData[year] || null);
         lineChart.setOption({
             title: {
-                text: cityName + 'Population Trend'
+                text: cityName + ' Population Trend'
             },
-           
             series: [{
                 name: 'Population',
                 data: densityValues
@@ -68,28 +66,37 @@
             var laJson = values[0];
             var densityData = values[1];
             var populationData = values[2];
-
+    
             const dataLookup = densityData.reduce((acc, item) => {
                 acc[item.Name.toLowerCase().trim()] = item;
                 return acc;
             }, {});
-
-
+    
             const populationLookup = populationData.reduce((acc, item) => {
                 acc[item.Name.toLowerCase().trim()] = item;
                 return acc;
             }, {});
+    
+            var seriesData = [];
 
-            var seriesData = laJson.features.map(feature => {
-                var name = feature.properties.name;
-                var density = dataLookup[name.toLowerCase().trim()];
-                var value = density ? density[document.getElementById('year-selector').value] : -1;
-                return { name: name, value: value };
-            });
-
+            function setMapData(year) {
+                var seriesData = laJson.features.map(feature => {
+                    var name = feature.properties.name;
+                    var density = dataLookup[name.toLowerCase().trim()];
+                    return { name: name, value: density ? density[year] : -1 };
+                });
+            
+                myChart.setOption({
+                    series: [{ data: seriesData }],
+                    title: { text: 'Los Angeles County Population Density by Neighborhood (' + year + ')' } // Update title with selected year
+                });
+            }
+          
+          
+    
             echarts.registerMap('Los Angeles', laJson);
             var option = {
-                title: { text: 'Los Angeles County Population Density by Neighborhood ', 
+                title: { text: 'Los Angeles County Population Density by Neighborhood  ', 
                 subtext: '(2010-2022) per kilometer',
                 left: 'center' },
                 tooltip: {
@@ -100,8 +107,8 @@
                 },
                 visualMap: {
                     left: 'left',
-                    min: 100,
-                    max: 5000, 
+                    min: 0,
+                    max: 10000, 
                     inRange: {
                         color: ['#00FF00', '#ADFF2F', '#FFFF00', '#FFD700', '#FFA500', '#FF4500', '#FF0000']
                     },
@@ -124,42 +131,41 @@
                     roam: true,
                     map: 'Los Angeles',
                     emphasis: { label: { show: true } },
-                    data: seriesData
+                    data: seriesData // This is updated to show initial data immediately
                 }]
             };
-
+    
             myChart.setOption(option);
             myChart.hideLoading();
-
+            setMapData('2010'); 
+    
             // Set the first city data to be default value for line chart
             if (densityData.length > 0) {
                 updateLineChart(densityData[0], densityData[0].Name);  // Initialize with the first city's data
             }
-
-           // Event listeners for map interaction
+    
+            // Event listeners for map interaction and dropdown change
             myChart.on('click', function(params) {
                 if (populationLookup[params.name.toLowerCase().trim()]) {
                     updateLineChart(populationLookup[params.name.toLowerCase().trim()], params.name);
                 }
             });
-
-            document.getElementById('year-selector').addEventListener('change', function() {
-                var selectedYear = this.value;
-                seriesData = laJson.features.map(feature => {
-                    var name = feature.properties.name;
-                    var density = dataLookup[name.toLowerCase().trim()];
-                    return { name: name, value: density ? density[selectedYear] : -1 };
-                });
-                myChart.setOption({
-                    series: [{ data: seriesData }]
+    
+            var dropdownItems = document.querySelectorAll('.dropdown-item');
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    var year = this.dataset.year;  // Get year from data-year attribute
+                    setMapData(year);  // Update map with selected year data
                 });
             });
+    
         }).catch(function(error) {
             console.error('Error loading or processing data:', error);
             myChart.hideLoading();
         });
     }
-
+    
     initializeChart();
     initLineChart();
+    
 })();

@@ -2883,15 +2883,60 @@ footer.osr-footer-3 li {
 }
 /* csv for population map*/
  /* Styling the select dropdown */
- #year-selector {
-    font-size: 16px; /* Set the font size */
-    color:black; /* Set the text color */
-    background-color: #f8f8f8; /* Set the background color */
+ #year-selector:hover, button:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
-/* Styling individual options */
+/* Styling for the buttons and dropdown button for the popualtion map */
 #year-selector option {
-    color: black; /* Color of the option text */
-    font-size: 18px; /* Font size of the option text */
+    color: black; 
+    font-size: 18px; 
 }
+
+.controls > .dropdown, .controls > button {
+    margin: 0 5px; /* Add space between buttons */
+}
+
+.controls > .dropdown > button, .controls > button {
+    width: 200px; /* Increase width */
+    height: 50px; /* Increase height */
+    font-size: 16px; /* Increase font size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    background-color: #04AA6D; 
+  border: none;
+  color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid  black;
+  }
+  
+  .button1:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+  }
+  
+  .button2:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+
+
 }
