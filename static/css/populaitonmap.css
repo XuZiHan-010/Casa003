@@ -1,0 +1,63 @@
+/* css for population map*/
+ /* Styling the select dropdown */
+ #year-selector:hover, button:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.row.d-lg-flex {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Distributes space between the children */
+}
+.population-container {
+    height: 520px; 
+    background: rgb(227, 247, 242); /* Background color for visibility */
+    padding: 15px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* Styling for the buttons and dropdown button for the popualtion map */
+#year-selector option {
+    color: black; 
+    font-size: 18px; 
+}
+
+.controls > .dropdown, .controls > button {
+    margin: 0 5px; 
+}
+
+.controls > .dropdown > button, .controls > button {
+    width: 200px; 
+    height: 50px; 
+    font-size: 16px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px; 
+}
+
+/*css for modal text here*/
+.modal-text-large {
+    font-size: 18px; /* Larger text size */
+    color: black; /* Ensures text is black */
+}
+
+body {
+    background-image: url('../images/population_background.jpg');/* Provide the correct path to your image */
+    background-size: cover; /* Ensures that the background covers the entire body */
+    background-position: center center; /* Centers the background image on the page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Optional: Makes the background fixed during scroll */
+}

@@ -17,7 +17,9 @@
 
     function initLineChart(cityName = 'Select a neighborhood') {
         var option = {
-            title: { text: cityName + ' Population Density per kilometer' },
+            title: { text: cityName + ' Population Density per kilometer',
+            textStyle: { fontWeight: 'bold' }
+            },
             tooltip: { trigger: 'axis' },
             xAxis: {
                 type: 'category',
@@ -88,7 +90,9 @@
             
                 myChart.setOption({
                     series: [{ data: seriesData }],
-                    title: { text: 'Los Angeles County Population Density by Neighborhood (' + year + ')' } // Update title with selected year
+                    title: { text: 'Los Angeles County Population Density by Neighborhood (' + year + ')'
+                   
+                     } 
                 });
             }
           

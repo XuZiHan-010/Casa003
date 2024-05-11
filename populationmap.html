@@ -14,7 +14,7 @@
 	<meta name="theme-color" content="#4b6fff">
 	<title>Home</title>
 	<!-- Bootstrap -->
-	<link href="static/css/bootstrap.css" rel="stylesheet">
+	<!-- <link href="static/css/bootstrap.css" rel="stylesheet"> -->
 	<!-- Animate CSS -->
 	<link href="static/css/animate.css" rel="stylesheet">
 	<!-- Flat Icon CSS -->
@@ -29,24 +29,25 @@
 	<link href="static/css/widget.css" rel="stylesheet">
 	<!-- Short Code CSS -->
 	<link href="static/css/shortcode.css" rel="stylesheet">
-	<!-- Custom Style CSS -->
+	<!-- population map CSS -->
 	<link href="static/css/style.css" rel="stylesheet">
+	<!-- Custom Style CSS -->
+	<link href="static/css/populaitonmap.css" rel="stylesheet">
 	<!-- Color CSS -->
 	<link href="static/css/color.css" rel="stylesheet">
 	<!-- Responsive CSS -->
 	<link href="static/css/responsive.css" rel="stylesheet">
 	<!-- Bootstrap Css-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<section class="intro-section section-heading-2 gray-bg">
+</head>
+<body>
+<section >
   
         <div class="row d-lg-flex align-items-lg-center">
-            <div class="col-md-8 col-sm-6">
+            <div class="col-md-8 ">
             
-                <div id="lamap" style="width: 100%; height: 600px;"></div>
+                <div id="lamap" style="width: 100%; " class='population-container' ></div>
 				<div class="controls" style="display: flex; align-items: center; gap: 10px;">
 					<div class="dropdown">
 						<button class="btn btn-secondary dropdown-toggle" type="button" id="year-selector" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,21 +61,64 @@
 						</ul>
 						
 					</div>
-					<button class="button button1" onclick="window.location.href='index.html';" style="width: 170px; height: 40px; font-size: 14px;">Home Page</button>
-					<button class="button button2" style="width: 170px; height: 40px; font-size: 14px;">Button 2</button>
+				
+					<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						Instruction
+					  </button>
+					  <button class="btn btn-outline-primary uniform-btn btn-hover-effect" onclick="window.location.href='https://xuzihan-010.github.io/Casa003.github.io/#UrbanExtent';">Home Page</button>
+					  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="exampleModalLabel">Instruction for the Interactive Map</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body modal-text-large">
+								<p><strong>Explore the map:</strong> Use your cursor to explore different cities within
+									the map area. Hover to see quick data tooltips or click to view detailed trends on the line
+									chart. Additioanally, you can use your mouse or touchpad to zoom in and out for a closer view of specific areas. 
+									Besides, you can scroll the slider on the colorbar to visualize specific areas accroding to your chosen range for population density.</p>
+								<p><strong>Adjust the timeframe:</strong> Select different years from the dropdown menu to
+									see how the population density of Los Angeles's neighborhoods has changed over time.
+								</p>
+								<p><strong>Deep dive with the line chart:</strong> After clicking on a city, observe
+									the line chart to analyze the population trend over time for detailed insights. 
+									The line chart will show the absolute population change for the chosen negihborhood.</p>	
+									<p><strong>Noted:</strong> the default value chosen for the map is use 2010 data.</p>								
+										
+									
+									
+									
+								
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					
 				</div>					
 				</div>
 				
            
-            <div class="col-md-4 col-sm-6">
-                <div id="lineChart" style="width: 100%; height: 350px;"></div>
+            <div class="col-md-4">
+                <div id="lineChart" style="width: 100%; "class='population-container'></div>
             </div>
         </div>
     
 </div>
 </section>
 
+
+
 <!--import the javascript library for echarts -->
 <script src="static/js/echarts.min.js"></script>
 <!--echart population map with interactive line chart-->
 <script src="static/js/la_population.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
