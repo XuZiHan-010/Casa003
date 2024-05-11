@@ -315,6 +315,8 @@
 }
 .bounceInLeft {
     animation-name: bounceInLeft;
+    animation-duration: 2s;
+
 }
 @keyframes bounceInRight {
     from, 60%, 75%, 90%, to {
@@ -479,6 +481,8 @@
 }
 .fadeInDownBig {
     animation-name: fadeInDownBig;
+    animation-duration: 2s;
+
 }
 @keyframes fadeInLeft {
     from {
@@ -743,6 +747,7 @@
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
     animation-name: flipInY;
+    animation-duration: 2s;
 }
 @keyframes flipOutX {
     from {
@@ -829,6 +834,7 @@
 }
 .rotateIn {
     animation-name: rotateIn;
+    animation-duration: 1s;
 }
 @keyframes rotateInDownLeft {
     from {
@@ -1005,6 +1011,7 @@
 }
 .jackInTheBox {
     animation-name: jackInTheBox;
+    animation-duration: 2s;
 }
 @keyframes rollIn {
     from {
@@ -1057,6 +1064,7 @@
 }
 .zoomInDown {
     animation-name: zoomInDown;
+    animation-duration: 2s;
 }
 @keyframes zoomInLeft {
     from {
@@ -1201,6 +1209,7 @@
 }
 .slideInLeft {
     animation-name: slideInLeft;
+    animation-duration: 2s;
 }
 @keyframes slideInRight {
     from {
