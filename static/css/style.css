@@ -87,14 +87,13 @@ p {
 
 }
  #main-contant {
-    background-image: url('../images/labackground4.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
-    background-size: cover;
+    background-image: url('../images/populationdensity.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
-    padding: 50px 0; /* Adjust padding as needed for visual appeal */
-    margin-top: 30px; /* Space above the container */
-    color: #fff; /* Sets the text color to white, change as needed */
-    text-align: center; /* Centers the text, adjust as needed */
+    padding: 50px 0; 
+    margin-top: 30px; 
+    color: #fff; 
+    text-align: center; 
 } 
 
 /*
@@ -2741,98 +2740,18 @@ footer.osr-footer-3 li {
     background-color:#fff;
 }
 
-/*css file for the population density map and interactive line chart*/
-#map {
-    width: 100%;
-    height: 90vh; /* Adjust height to fit your layout */
-}
-.year-switcher {
-    background: white;
-    padding: 5px;
-}
-.info.legend {
-    padding: 6px 8px;
-    font: bold 16px Arial, Helvetica, sans-serif; /* Updated to make all text bold and increase font size */
-    color: black; /* Ensure text is in black */
-    background: white;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    width:300px;
-    height:240px;
-}
-.info.legend h4 {
-    font-size: 20px; /* Increase the size of the legend title */
-    font-weight: bold; /* Optional: make the title bolder */
+
+/*airquality pm2.5 map*/
+#airqualitymap { 
+    background-image: url('../images/airquality_background.png'); /* Replace 'path/to/your-image.jpg' with the actual path to your image */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 100%;
+    min-height: 700px;
 }
 
-.info.legend div {
-    font-size: 16px; /* Increase the font size of the legend entries */
-    margin: 8px 0 ; /* Increase spacing between entries for better readability */
-   
-}
-
-.info.legend i {
-    height: 20px; /* Increase the height of the color boxes */
-    width: 40px; /* Increase the width of the color boxes */
-    display: inline-block;
-    margin-right: 10px; /* Ensure space between the color box and the text */
-    vertical-align: middle; /* Align the color box with the middle of the text */
-}
-
-.year-controls button {
-    margin: 5px;
-    padding: 5px 10px;
-    background-color: #f4f4f4;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    outline: none;
-    color:back;
-  
-}
-
-.year-controls button:hover {
-    background-color: #ddd;
-}
-
-.year-controls button:focus,
-.year-controls button.active {
-    background-color: #ccc;
-}
-#dataTypeSelect {
-    font-weight: bold;
-    color: black;
-    font-size:18px;
-    width: 300px;
-}
-
-#dataTypeSelect option {
-    font-weight: bold;
-    color: black;
-}
-/*css file for the interactive line chart*/
-/* Clear Chart button styling */
-#clearChartBtn {
-    display: block; /* Make the button extend full container width */
-    width: 200px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
-}
-
-#clearChartBtn:hover {
-    background-color: #e01414; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Elevated shadow on hover */
-}
-#clearChartBtn.active {
-    background-color: #e01414; /* Keeps the background red even after the click */
-}
 
 /*style for metro mapbox map*/
 .map-container {
@@ -2955,10 +2874,10 @@ footer.osr-footer-3 li {
     background-image: url(../images/labackground2.jpg);
   }
   .carousel .carousel-item:nth-child(3) {
-    background-image: url(../images/labackground3.png);
+    background-image: url(../images/population_map.png);
   }
   .carousel .carousel-item:nth-child(4) {
-    background-image: url(../images/labackground4.jpg);
+    background-image: url(../images/populationdensity.jpg);
   } 
 
   /*text color and the modal's size for urban history part*/
@@ -2986,4 +2905,7 @@ footer.osr-footer-3 li {
 #imageModal .modal-content img {
     width: 100%; 
 }
+
+
+
 }
