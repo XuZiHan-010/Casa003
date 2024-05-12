@@ -26,7 +26,7 @@
 }
 .info.legend h4 {
     font-size: 20px; /* Increase the size of the legend title */
-    font-weight: bold; /* Optional: make the title bolder */
+    font-weight: bold; /* make the title bolder */
 }
 
 .info.legend div {
@@ -39,7 +39,7 @@
     height: 20px; /* Increase the height of the color boxes */
     width: 40px; /* Increase the width of the color boxes */
     display: inline-block;
-    margin-right: 10px; /* Ensure space between the color box and the text */
+    margin-right: 10px; /*space between the color box and the text */
     vertical-align: middle; /* Align the color box with the middle of the text */
 }
 
@@ -78,7 +78,7 @@
 
 /* Clear Chart button styling */
 #clearChartBtn {
-    display: block; /* Make the button extend full container width */
+    display: block; 
     width: 200px;
     background-color: black;
     color: white;
@@ -91,23 +91,72 @@
 }
 
 #clearChartBtn:hover {
-    background-color: #e01414; 
+    background-color: #555; /* Darker shade on hover */
     box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Elevated shadow on hover */
 }
+
+.button-container .btn-custom {
+    background-color: black;
+    color: white;
+    margin-bottom: 10px; /* Space between buttons */
+}
+
+.button-container .btn-custom:hover, .button-container .btn-custom:focus {
+    background-color: #555; /* Darker shade on hover/focus */
+    color: #FFF;
+}
+
+.button-container .btn-custom:active {
+    background-color: #333; /* Even darker on click */
+}
+
 #clearChartBtn.active {
-    background-color: #e01414; /* Keeps the background red even after the click */
+    background-color: #e01414; /* the background red even after the click */
 }
-#chartContainer .button-container {
+
+#airqualitybackground {
+    background-image: url('../images/airqualitymap.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.button-container {
     display: flex;
-    justify-content: start; /* Aligns items to the start of the container */
-    gap: 10px; /* Adds space between buttons */
-    margin-bottom: 20px; /* Extra space below the buttons before the canvas */
+    flex-wrap: wrap; /* Allows buttons to wrap onto the next line if not enough space */
+    justify-content: flex-start; /* Aligns buttons to the start of the div */
+    gap: 10px; /* Space between buttons */
 }
-#chartContainer .button-container button {
-    padding: 10px 20px; /* Ensures buttons are of the same size */
-    font-size: 16px; /* Consistent font size */
-    line-height: 1.5; /* Line height for better readability */
-    border-radius: 5px; /* Consistent border radius for aesthetics */
-    width: auto; /* Allows the content to determine the width */
-    flex: 1; /* Each button takes equal width in the container */
+.button-container button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    flex: 1 1 30%; /* Flex grow, flex shrink, and basis - adjust basis according to your design */
+    text-align: center; /* Centers the text within the buttons */
 }
+
+.button-container .btn-custom {
+    background-color: black;
+    color: white;
+    margin-bottom: 10px; /* Space between buttons */
+}
+
+.button-container .btn-custom:hover, .button-container .btn-custom:focus {
+    background-color: #555; /* Darker shade on hover/focus */
+    color: #FFF;
+}
+
+.button-container .btn-custom:active {
+    background-color: #333; /* Even darker on click */
+}
+/*white background for the dynamic content*/
+/* #areaChart {
+    background-color: white; 
+    padding: 15px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+} */
+.chart-background {
+    background-color: white; 
+    padding: 15px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+

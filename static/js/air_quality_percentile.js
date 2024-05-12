@@ -36,6 +36,7 @@ function initializeChart(dataSets) {
     if (window.myLineChart) {
         window.myLineChart.destroy(); // Destroy any existing chart instance
     }
+
     window.myLineChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -46,9 +47,9 @@ function initializeChart(dataSets) {
             responsive: true,
             title: {
                 display: true,
-                fontSize: 22,  
-                fontColor: '#000', 
-                padding: 0  
+                fontSize: 22,
+                fontColor: '#000',
+                padding: 0
             },
             scales: {
                 y: {
@@ -57,8 +58,19 @@ function initializeChart(dataSets) {
             }
         }
     });
+
+    // Update the background based on datasets
+    updateChartBackground(dataSets.length > 0);
 }
 
+function updateChartBackground(hasData) {
+    const chartContainer = document.getElementById('chartContainer');
+    if (hasData) {
+        chartContainer.classList.add('chart-background');
+    } else {
+        chartContainer.classList.remove('chart-background');
+    }
+}
 async function loadData(url, fallbackUrl) {
     try {
         const response = await fetch(url);
@@ -184,14 +196,14 @@ async function updateChartData(areaName) {
     const data = await fetchData();
     const areaData = data.find(d => d.name === areaName);
 
-    // if (!areaData || !areaData.pm25) {
-    //     console.error("No data found for area or PM2.5 data missing:", areaName);
-    //     return;
-    // }
+    if (!areaData) {
+        updateChartBackground(false); // No data, ensure background is hidden
+        return;
+    }
 
     const pm25Values = ['2014', '2017', '2021'].map(year => areaData.pm25[year]);
-
     let dataset = chartDataSets.find(dataset => dataset.label === `${areaName} PM2.5 Levels`);
+
     if (!dataset) {
         dataset = {
             label: `${areaName} PM2.5 Levels`,
@@ -202,11 +214,20 @@ async function updateChartData(areaName) {
         };
         chartDataSets.push(dataset);
     } else {
-        dataset.data = pm25Values;  // Update data if area is already plotted
+        dataset.data = pm25Values; // Update data if area is already plotted
     }
 
-    initializeChart(chartDataSets);  // Initialize or update chart
+    initializeChart(chartDataSets); // Initialize or update chart
 }
+
+document.getElementById('clearChartBtn').addEventListener('click', function() {
+    chartDataSets = []; // Clear the data sets array
+    updateChartBackground(false); // No data, ensure background is hidden
+    if (window.myLineChart) {
+        window.myLineChart.data.datasets = chartDataSets; // Assign the empty array to the chart's datasets
+        window.myLineChart.update(); // Update the chart to reflect the changes
+    }
+});
 
 
 

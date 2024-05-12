@@ -2753,7 +2753,7 @@ footer.osr-footer-3 li {
 }
 #airqualitymap .title {
     font-size: 54px; 
-    color: #333; 
+    color:white; 
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 40px; /* Adds some space below the title */
@@ -2761,7 +2761,7 @@ footer.osr-footer-3 li {
 }
 #airqualitymap h5 {
     font-size: 24px; 
-    color: #0c0b0be6; 
+    color: white; 
     margin-bottom: 30px;
     line-height: 1.4; 
     text-align: left;
@@ -2861,7 +2861,7 @@ footer.osr-footer-3 li {
   }
   @media (min-width: 768px) {
     .carousel .carousel-item {
-      height: 500px;
+      height: 470px;
     }
   }
   @media (min-width: 992px) {
@@ -2877,13 +2877,8 @@ footer.osr-footer-3 li {
     flex-grow: 0;
   }
 
-    .carousel .carousel-item {
-        background-size: cover;
-        background-position: center 0;
-  
-    }
- 
-   
+
+
 
     
     /* Carousel Control Icons Size */
@@ -2900,6 +2895,7 @@ footer.osr-footer-3 li {
   .carousel .carousel-item {
     background-size: cover;
     background-position: center 0;
+  
   }
   .carousel .carousel-item:nth-child(1) {
     background-image: url(../images/la_background1.jpg);
@@ -2908,10 +2904,10 @@ footer.osr-footer-3 li {
     background-image: url(../images/labackground2.jpg);
   }
   .carousel .carousel-item:nth-child(3) {
-    background-image: url(../images/population_map.png);
+    background-image: url(../images/labackground3.jpg);
   }
   .carousel .carousel-item:nth-child(4) {
-    background-image: url(../images/populationdensity.jpg);
+    background-image: url(../images/labackground4.jpg);
   } 
 
   /*text color and the modal's size for urban history part*/
