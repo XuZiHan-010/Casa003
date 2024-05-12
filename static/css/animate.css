@@ -513,6 +513,9 @@
 }
 .fadeInLeftBig {
     animation-name: fadeInLeftBig;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+
 }
 @keyframes fadeInRight {
     from {
@@ -526,6 +529,8 @@
 }
 .fadeInRight {
     animation-name: fadeInRight;
+    animation-duration: 2s;
+
 }
 @keyframes fadeInRightBig {
     from {
@@ -1068,7 +1073,7 @@
 }
 .zoomInDown {
     animation-name: zoomInDown;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 @keyframes zoomInLeft {
     from {
@@ -1193,29 +1198,34 @@
 @keyframes slideInDown {
     from {
         transform: translate3d(0, -100%, 0);
-        visibility: visible;
+        visibility: visible; 
     }
     to {
         transform: translate3d(0, 0, 0);
     }
 }
+
 .slideInDown {
     animation-name: slideInDown;
     animation-duration: 2s;
-
 }
+
+
 @keyframes slideInLeft {
     from {
+        opacity: 0;
         transform: translate3d(-100%, 0, 0);
-        visibility: visible;
     }
     to {
-        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transform: none;
     }
+    
 }
 .slideInLeft {
     animation-name: slideInLeft;
-    animation-duration: 2s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
 }
 @keyframes slideInRight {
     from {
@@ -1228,18 +1238,22 @@
 }
 .slideInRight {
     animation-name: slideInRight;
+    animation-duration: 2s;
+
 }
 @keyframes slideInUp {
     from {
         transform: translate3d(0, 100%, 0);
-        visibility: visible;
+        visibility: hidden;
     }
     to {
         transform: translate3d(0, 0, 0);
+        visibility: visible;
     }
 }
 .slideInUp {
     animation-name: slideInUp;
+
 }
 @keyframes slideOutDown {
     from {
