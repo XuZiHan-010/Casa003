@@ -68,3 +68,13 @@ body {
     color: black; /* White text */
     border: none; /* Removes the border */
 }
+.stealth-link {
+    color: black; /* Match the text color */
+    text-decoration: none; /* No underline initially */
+    transition: text-decoration 0.3s ease; /* Smooth transition for the underline */
+}
+
+.stealth-link:hover, .stealth-link:focus {
+    text-decoration: underline; /* Underline on hover or focus for accessibility */
+    color: blue; /* Optional: change color on hover */
+}

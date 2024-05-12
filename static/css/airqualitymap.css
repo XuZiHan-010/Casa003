@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+    #chartContainer .button-container {
+        flex-direction: column; /* Stacks buttons vertically on small screens */
+    }
+}
+
 /*css file for the air quality map and interactive line chart*/
 #map {
     width: 100%;
@@ -69,15 +75,7 @@
     color: black;
 }
 
-#airqualitymap { 
-    background-image: url('../images/airquality_background.png'); /* Replace 'path/to/your-image.jpg' with the actual path to your image */
-    background-size: cover; /* Ensures the image covers the entire row */
-    background-position: center; /* Centers the image in the row */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    width: 100%; /* Ensures the background spans the full width */
-    height: 100%;
-    z-index: -1;
-}
+
 /* Clear Chart button styling */
 #clearChartBtn {
     display: block; /* Make the button extend full container width */
@@ -98,4 +96,18 @@
 }
 #clearChartBtn.active {
     background-color: #e01414; /* Keeps the background red even after the click */
+}
+#chartContainer .button-container {
+    display: flex;
+    justify-content: start; /* Aligns items to the start of the container */
+    gap: 10px; /* Adds space between buttons */
+    margin-bottom: 20px; /* Extra space below the buttons before the canvas */
+}
+#chartContainer .button-container button {
+    padding: 10px 20px; /* Ensures buttons are of the same size */
+    font-size: 16px; /* Consistent font size */
+    line-height: 1.5; /* Line height for better readability */
+    border-radius: 5px; /* Consistent border radius for aesthetics */
+    width: auto; /* Allows the content to determine the width */
+    flex: 1; /* Each button takes equal width in the container */
 }

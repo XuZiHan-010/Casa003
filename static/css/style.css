@@ -2751,6 +2751,40 @@ footer.osr-footer-3 li {
     height: 100%;
     min-height: 700px;
 }
+#airqualitymap .title {
+    font-size: 54px; 
+    color: #333; 
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px; /* Adds some space below the title */
+    text-align: left;
+}
+#airqualitymap h5 {
+    font-size: 24px; 
+    color: #0c0b0be6; 
+    margin-bottom: 30px;
+    line-height: 1.4; 
+    text-align: left;
+}
+#airqualitymap .btn {
+    font-size: 18px;
+    padding: 15px 30px; 
+    background-color: #0056b3; 
+    color: white;
+    border-radius: 4px; 
+    text-transform: uppercase; 
+    font-weight: bold;
+    border: none; 
+    text-align: center;
+    display: inline-block; /* the button does not stretch full width */
+}
+#airqualitymap > div {
+    max-width: 1170px; /*a max-width similar to a Bootstrap container */
+    padding: 40px; /* Adequate padding around the content */
+    margin: auto; /* Centers the container within the section */
+}
+
+
 
 
 /*style for metro mapbox map*/
