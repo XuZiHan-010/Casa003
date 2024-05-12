@@ -42,18 +42,18 @@
 	integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 
 </head>
-<body>
+<body onload="handleScroll()">
     <div class="row" id="airqualitybackground">
 	<div class="intro-section section-heading-2 mb-61">
         <h2 class="title">PM2.5 Percentile & Concentration</h2>				
     </div>
     
-    <div class="col-md-8 col-sm-6">
+    <div class="col-md-8 col-sm-6" id="map-aq">
         <div id="map" class="map-container"></div>
     </div>
-    <div class="col-md-4 col-sm-6">
+    <div class="col-md-4 col-sm-6" id="all">
         <div class="controls">
-            <div class="info legend">
+            <div class="info legend" id="legend">
                 <h4 id="legendTitle">PM2.5 Percentile</h4>
                 <div id="legendContent">
                     <!-- Dynamic legend content will be inserted here -->
@@ -65,7 +65,7 @@
 
                 </div>
             </div>
-            <div class="data-type-controls">
+            <div class="data-type-controls" id="option">
                 <select id="dataTypeSelect">
                     <option value="percentile">Percentile</option>
                     <option value="concentration">Concentration</option>
@@ -75,9 +75,12 @@
         </div>
         <div id="chartContainer" style="width: 100%; height: 450px; margin-top: 30px;">
             <div class="button-container">
-                <button id="homeBtn" class="btn btn-custom btn-lg" onclick="location.href='index.html#AirQuality';">Home Page</button>
+                <button id="homeBtn" class="btn btn-custom btn-lg" onclick="location.href='https://xuzihan-010.github.io/Casa003.github.io/#AirQuality';">Home Page</button>
                 <button id="clearChartBtn" class="btn btn-custom btn-lg" onclick="toggleButtonColor(this)">Clear Chart</button>
                 <button type="button" class="btn btn-custom btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="button-container" id="buttons">
+                <button id="clearChartBtn" class="btn btn-primary btn-lg" onclick="toggleButtonColor(this)">Clear Chart</button>
+                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Instructions
                 </button>
             </div>
@@ -135,6 +138,36 @@ function toggleButtonColor(button) {
     }
 }
 
+
+</script>
+
+<script>
+	
+    function animateElementById(elementId, animationClass) {
+        var showId = document.getElementById(elementId);
+        var clients = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        var divTop = showId.getBoundingClientRect().top;
+        if (divTop <= clients) {
+            showId.classList.add(animationClass);
+        } else {
+            showId.classList.remove(animationClass);
+        }
+    }
+
+    function handleScroll() {
+        animateElementById('all', 'fadeInLeft'); 
+        animateElementById('legend', 'bounceInRight'); 			
+        animateElementById('option', 'bounceInRight'); 
+
+        animateElementById('buttons', 'flipInY'); 
+        animateElementById('map-aq', 'zoomInDown'); 
+        // animateElementById('buildup', 'jackInTheBox'); 
+        // animateElementById('airQuality', 'zoomInDown'); 
+
+
+    }
+
+    window.onscroll = handleScroll;
 
 </script>
 </body>

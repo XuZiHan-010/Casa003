@@ -38,18 +38,19 @@
 	<!-- Responsive CSS -->
 	<link href="static/css/responsive.css" rel="stylesheet">
 
+	<link href="static/css/transition.css" rel="stylesheet">
 
 </head>
-<body>
+<body onload="handleScroll()">
 
 <section >
   
-        <div class="row d-lg-flex align-items-lg-center">
+        <div class="row d-lg-flex align-items-lg-center  animated-div" >
             <div class="col-md-8 ">
             
                 <div id="lamap" style="width: 100%; " class='population-container' ></div>
 				<div class="controls" style="display: flex; align-items: center; gap: 10px;">
-					<div class="dropdown">
+					<div class="dropdown" id="selectYear">
 						<button class="btn btn-secondary dropdown-toggle" type="button" id="year-selector" data-bs-toggle="dropdown" aria-expanded="false">
 							Select Year
 						</button>
@@ -62,10 +63,10 @@
 						
 					</div>
 				
-					<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					<button type="button" id="instuction-button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
 						Instruction
 					  </button>
-					  <button class="btn btn-outline-success uniform-btn btn-hover-effect green-btn" onclick="window.location.href='https://xuzihan-010.github.io/Casa003.github.io/#population';">Home Page</button>
+					  <button class="btn btn-outline-success uniform-btn btn-hover-effect green-btn" id="homePage" onclick="window.location.href='https://xuzihan-010.github.io/Casa003.github.io/#population';">Home Page</button>
 					  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 						<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 						  <div class="modal-content">
@@ -115,7 +116,7 @@
 				</div>
 				
            
-            <div class="col-md-4">
+            <div class="col-md-4" id="chart">
                 <div id="lineChart" style="width: 100%; "class='population-container'></div>
             </div>
         </div>
@@ -132,6 +133,35 @@
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+<script>
+	
+		function animateElementById(elementId, animationClass) {
+			var showId = document.getElementById(elementId);
+			var clients = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+			var divTop = showId.getBoundingClientRect().top;
+			if (divTop <= clients) {
+				showId.classList.add(animationClass);
+			} else {
+				showId.classList.remove(animationClass);
+			}
+		}
+
+		function handleScroll() {
+			animateElementById('selectYear', 'bounceInRight'); 
+			animateElementById('instuction-button', 'bounceInRight'); 			
+			animateElementById('homePage', 'bounceInRight'); 
+
+			animateElementById('chart', 'flipInY'); 
+			// animateElementById('metro', 'rotateIn'); 
+			// animateElementById('buildup', 'jackInTheBox'); 
+			// animateElementById('airQuality', 'zoomInDown'); 
+
+
+		}
+
+		window.onscroll = handleScroll;
+
+	</script>
 </body>
 
 </html>
