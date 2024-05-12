@@ -13,7 +13,7 @@
     justify-content: space-between; /* Distributes space between the children */
 }
 .population-container {
-    height: 520px; 
+    height: 550px; 
     background: rgb(227, 247, 242); /* Background color for visibility */
     padding: 15px; 
     box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
@@ -47,7 +47,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 10px; 
+    margin-top: 20px; 
 }
 
 /*css for modal text here*/

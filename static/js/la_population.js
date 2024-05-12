@@ -101,7 +101,7 @@
             echarts.registerMap('Los Angeles', laJson);
             var option = {
                 title: { text: 'Los Angeles County Population Density by Neighborhood  ', 
-                subtext: '(2010-2022) per kilometer',
+                subtext: 'Population Density per kilometer (2010-2022)' ,
                 left: 'center' },
                 tooltip: {
                     trigger: 'item',
