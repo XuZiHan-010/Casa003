@@ -87,7 +87,7 @@ p {
 
 }
  #main-contant {
-    background-image: url('../images/labackground2.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+    background-image: url('../images/labackground4.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2930,15 +2930,7 @@ footer.osr-footer-3 li {
   
     }
  
-    .carousel-control-prev, .carousel-control-next {
-        background: none;
-        color: #fff;
-        border: none;
-        border-radius: 15px;
-        padding: 10px 20px;
-        font-size: 16px; 
-        font-weight: bold; 
-    }
+   
 
     
     /* Carousel Control Icons Size */
@@ -2950,9 +2942,7 @@ footer.osr-footer-3 li {
     
     
 
-    .carousel-control-prev span, .carousel-control-next span {
-        color: white; 
-    }
+
     
   .carousel .carousel-item {
     background-size: cover;
@@ -2968,6 +2958,12 @@ footer.osr-footer-3 li {
     background-image: url(../images/labackground3.png);
   }
   .carousel .carousel-item:nth-child(4) {
-    background-image: url(../images/population_background.jpg);
+    background-image: url(../images/labackground4.jpg);
   } 
+
+
+
+#imageModal .modal-content img {
+    width: 100%; /* Ensures the image is responsive and fits within the modal */
+}
 }

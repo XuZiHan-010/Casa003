@@ -14,9 +14,11 @@
 	<meta name="theme-color" content="#4b6fff">
 	<title>Home</title>
 	<!-- Bootstrap -->
-<link href="static/css/bootstrap.css" rel="stylesheet">
-<link href="static/css/bootstrap.min.css">
+	<link href="static/css/bootstrap.css"  rel="stylesheet">
+<link href="static/css/bootstrap.min.css" rel="stylesheet" >
 <!--Boostrap Font css-->
+<link href="static/fonts/bootstrap-icons.css">
+<!-- Short Code CSS -->
 <link href="static/css/shortcode.css" rel="stylesheet">
 <!-- Animate CSS -->
 <link href="static/css/animate.css" rel="stylesheet">
@@ -30,18 +32,14 @@
 <link href="static/css/typography.css" rel="stylesheet">
 <!-- Widget Css -->
 <link href="static/css/widget.css" rel="stylesheet">
-<!-- Short Code CSS -->
-<link href="static/fonts/bootstrap-icons.css">
 <!-- Custom Style CSS -->
 <link href="static/css/style.css" rel="stylesheet">
 <!-- Color CSS -->
 <link href="static/css/color.css" rel="stylesheet">
-
 <link href="static/css/transition.css" rel="stylesheet">
 
 <!-- Responsive CSS -->
 <link href="static/css/responsive.css" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <!-- import Mapbox GL Draw plugin and JavaScript  CSS file-->
 <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
@@ -136,8 +134,31 @@
 							 consequences; in short, unplanned, incremental urban growth that is often considered unsustainable.’ 
 							 Bhatta wrote in 2010 that while the exact definition of sprawl is debated, it is 'widely accepted that urban sprawl is characterised by a pattern of unplanned and uneven growth, 
 							which is driven by multiple processes and leads to inefficient use of resources. '</p>
-							
+
 				</div>
+				<div class="text-center">
+					<button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#imageModal">View Historical Boundaries</button>
+				</div>
+
+				<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="imageModalLabel">Urban History in Los Angeles</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="static/images/urban_extent.png" alt="Descriptive Alt Text" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 				<!-- Section Heading End -->
 					<div class="col-md-12 col-sm-6">
 						<!-- Features Thumb Start -->
@@ -878,11 +899,15 @@
 	</div><!-- /Copyright End-->
 	</div><!-- /Main Wrapper End-->
 
-
-	<!-- bootstrap jQuery -->
-    <script src="static/js/jquery.min.js"></script>
 	<!-- bootstrap js -->
     <script src="static/js/bootstrap.min.js"></script>
+<!-- bootstrap jQuery -->
+<script src="static/js/jquery.min.js"></script>
+	<!-- Include jQuery for the image modal -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap JS for 4.5.2 -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- jQuery -->
 	<script src="static/js/js-bundle.js"></script>
@@ -893,7 +918,6 @@
 
 	<!-- Import Chartjs Library -->
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<!-- <script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script> -->
 	<!--javascript libraries for using d3 charts-->
 	<script charset="utf-8" src="https://d3js.org/d3.v6.js"></script>
 	<script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
@@ -901,7 +925,6 @@
 	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-
 	<!--mapbox metro map with constructed and planned lines-->
 	<script src="static/js/metro_mapbox.js"></script>
 	<!--slider for showing the built-up area change-->
@@ -910,12 +933,10 @@
 	<script src="static/js/d3_airquality.js"></script>
 	<!-- use for http request-->
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-			
 	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
 		integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 	<!-- Import air quality percentile map javascript -->
 	<script src="static/js/air_quality_percentile.js"></script>
-	
 	<script>
 	  var myCarousel = document.querySelector('#carouselExampleIndicators')
   var carousel = new bootstrap.Carousel(myCarousel, {
@@ -926,9 +947,11 @@
 	function toggleButtonColor(button) {
 		button.classList.toggle('active');
 	}
-	</script>
-	<!-- <script src="static/js/transition.js"></script> -->
-	<script>
+	var myCarousel = document.querySelector('#carouselExampleIndicators')
+  var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 3000,
+    ride: 'carousel'
+  });
 		function animateElementById(elementId, animationClass) {
 			var showId = document.getElementById(elementId);
 			var clients = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
