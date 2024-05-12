@@ -254,18 +254,18 @@
 
 	<section id="population">
 		<!-- Static Banner Wrap -->
-		<div class="main-banner" id="population-tran">
+		<div class="main-banner">
 			<div class="container">
 				<!--the carousel for the first page-->
 		
-				<div class="row d-lg-flex align-items-lg-center">
+				<div class="row d-lg-flex align-items-lg-center" id="population-tran">
 					<!-- First section with smaller paragraph content -->
 					<div class="col-md-2">
 						<div class="banner-caption-wrap">
 							<h3 class="banner-title">Population </h3>
-							<p id="animated-text-population" style="color: black;">The population of Los Angeles county has shown consistent growth from 1990 to 2020,
+							<p id="animated-text-population-1" style="color: black;">The population of Los Angeles county has shown consistent growth from 1990 to 2020,
 								increasing from around 3.5 million to just under 4 million.</p>
-							<p id="animated-text-population" style="color: black;">The 1990-2000 decade shows higher growth rates across all three locations compared to
+							<p id="animated-text-population-2" style="color: black;">The 1990-2000 decade shows higher growth rates across all three locations compared to
 								later decades. However, growth in Los Angeles remains relatively robust compared to
 								national trends, suggesting sustained urban attraction or local growth dynamics</p>
 						</div>
@@ -520,8 +520,8 @@
 
 
 <section id="airqualitymap">
-				<div>
-					<div id="PM2.5-P-C">
+				<div id="PM2.5-P-C">
+					<div>
 						<h1 class="title">PM2.5 Percentile & Concentration</h1>	
 						<h5>PM2.5, fine particulate matter emitted from vehicles and industrial activities,
 							poses significant health risks, especially in rapidly expanding urban areas like Los Angeles, 
@@ -861,7 +861,7 @@
 	// 	button.classList.toggle('active');
 	// }
 	
-		function animateElementById(elementId, animationClass) {
+	function animateElementById(elementId, animationClass) {
 			var showId = document.getElementById(elementId);
 			var clients = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 			var divTop = showId.getBoundingClientRect().top;
@@ -875,14 +875,15 @@
 		function handleScroll() {
 			animateElementById('history', 'fadeInLeft'); 
 			animateElementById('his-pic', 'fadeInLeft'); 			
-			animateElementById('population-tran', 'fadeInDownBig'); 			
-			animateElementById('animated-text-population', 'bounceInLeft'); 
+			animateElementById('population-tran', 'fadeInRight'); 			
+			animateElementById('animated-text-population-1', 'bounceInLeft'); 
+			animateElementById('animated-text-population-2', 'bounceInLeft'); 
 
-			animateElementById('popu-map', 'flipInY'); 
-			animateElementById('metro', 'rotateIn'); 
-			animateElementById('buildup', 'jackInTheBox'); 
-			animateElementById('airQuality', 'zoomInDown'); 
-			animateElementById('PM2.5-P-C', 'slideInDown'); 
+			animateElementById('popu-map', 'fadeInLeftBig'); 
+			animateElementById('metro', 'slideInRight'); 
+			animateElementById('buildup', 'slideInRight'); 
+			animateElementById('airQuality', 'bounceInLeft'); 
+			animateElementById('PM2.5-P-C', 'slideInLeft'); 
 			
 
 		}
