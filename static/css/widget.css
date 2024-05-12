@@ -13,6 +13,13 @@
     float: left;
     width: 100%;
 }
+.widget-title img {
+    border-radius: 50%; 
+    width: 100px; 
+    height: 100px;
+    margin-bottom: 10px; 
+}
+
 /* .sidebar {
     float: left;
     width: 100%;
@@ -228,7 +235,7 @@ aside .sidebar-wrap{
 }
 aside .widget-title{
     margin:0 0 18px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500; 
     padding: 0 0 13px;
     border-bottom: 1px solid #e5e5e5;
