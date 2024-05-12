@@ -45,7 +45,7 @@
 <body onload="handleScroll()">
     <div class="row" id="airqualitybackground">
 	<div class="intro-section section-heading-2 mb-61">
-        <h2 class="title">PM2.5 Percentile & Concentration</h2>				
+        <!-- <h2 class="title">PM2.5 Percentile & Concentration</h2>				 -->
     </div>
     
     <div class="col-md-8 col-sm-6" id="map-aq">
@@ -77,13 +77,7 @@
             <div class="button-container">
                 <button id="homeBtn" class="btn btn-custom btn-lg" onclick="location.href='https://xuzihan-010.github.io/Casa003.github.io/#AirQuality';">Home Page</button>
                 <button id="clearChartBtn" class="btn btn-custom btn-lg" onclick="toggleButtonColor(this)">Clear Chart</button>
-                <button type="button" class="btn btn-custom btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <div class="button-container" id="buttons">
-                <button id="clearChartBtn" class="btn btn-primary btn-lg" onclick="toggleButtonColor(this)">Clear Chart</button>
-                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Instructions
-                </button>
-            </div>
+                <button type="button" class="btn btn-custom btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Instructions</button>
             <canvas id="areaChart"></canvas>
         </div>
         
