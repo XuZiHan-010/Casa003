@@ -45,6 +45,7 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dTtG2HlhUzE8wYitLJrMKpjfsPnpv9zVYQ6Hh8r3enbVjxwq7egG0yYgPjOQd+QyzOjsF+YvZHy6rJS00l3E7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -397,7 +398,7 @@
 								</p>
 								<div class="col-md-3">
 									<p>
-										<br><br><br><br><br>
+										<br>
 
 										<span style="color: #32CD32;">---- A line (1990) </span><br>
 										<!-- Light green for line A -->
@@ -410,7 +411,7 @@
 										<span style="color: #000000;">---- K line and others which are still under
 											construction</span><br> <!-- Dark green for line E -->
 									</p>
-									<br><br><br>
+									<br><br>
 									<p style="color: black;">*Note that: <br>
 										1. B & D Lines are combined together. <br>
 										2. The Airport Metro Connector and Aviation/Century Station of K line won’t
@@ -434,7 +435,7 @@
 
 		<section class="gray-bg" id="Built-up">
 
-			<div class="container animated-div" id="buildup">
+			<div class="container" id="buildup">
 				<div class="section-heading-2 text-left mb-61">
 					<h2 class="title">Human Settlement Built-up Areas Change <br> 1975-2020</h2>	
 					<p style="color: black;">The images illustrate the changes in the distribution of human settlement built-up surfaces in Los Angeles over a period of 45 years, with data covering both the total built-up surface and the built-up surface allocated to dominant non-residential (NRES) uses.</p>			
@@ -519,7 +520,7 @@
 
 <section id="airqualitymap">
 				<div>
-					<div>
+					<div id="PM2.5-P-C">
 						<h1 class="title">PM2.5 Percentile & Concentration</h1>	
 						<h5>PM2.5, fine particulate matter emitted from vehicles and industrial activities,
 							poses significant health risks, especially in rapidly expanding urban areas like Los Angeles, 
@@ -726,101 +727,78 @@
 		</div>
 	</section>
 	</div><!--/Main Contant End-->
+	
 	<footer id="contact" class="osr-footer-2 dark-black">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-3 col-sm-6">
-					<!-- Widget Nav Menu Start -->
-					<div class="widget widget_about">
-						<div class="widget-title">
-							<h5 class="title">Zihan Xu</h5>
-						</div><!-- /Widget Title -->
-						<div class="text">
-							<p>GitHub Link</p>
-							<ul class="social-list long">
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-								<li><a href="#"><i class="fas fa-map-marker-alt"></i></a></li>
-							</ul><!-- /Social List End-->
+			<div class="row justify-content-center"> <!-- 使用Bootstrap的justify-content-center类来使其内容水平居中 -->
+				<div class="col-md-3" style="margin-right: 50px;">
+					<div class="widget widget_nav_menu">
+						<div class="widget-title" style="text-align: center;">
+							<img src="static/images/1975.png" alt="Zihan Xu" style="width: 150px; height: 150px;">
+							<h5 class="title" >Zihan Xu</h5>
 						</div>
+						
+						<p>
+							<span class="fab fa-github" style="margin-right: 5px; font-size: 24px; color: inherit;"></span>
+							<a href="#" style="font-size: 18px; color: inherit;"> </a>
+						</p>
+						<p>
+							<p>
+								<span class="fas fa-envelope" style="margin-right: 5px; font-size: 24px; vertical-align: middle;"></span>
+								<span style="font-size: 18px; vertical-align: middle;">xxx</span>
+							</p>
+							
+						</p>
+						
 					</div>
-					<!-- /Widget Nav Menu End -->
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<!-- Widget Nav Menu Start -->
+				<div class="col-md-3" style="margin-right: 25px; margin-left: 25px;">
 					<div class="widget widget_nav_menu">
-						<div class="widget-title">
-							<h5 class="title">Yining Cui</h5>
-						</div><!-- /Widget Title -->
-						<ul>
-							<li><a href="#">Github</a></li>
-							<li><a href="#">Email</a></li>
-
-						</ul><!-- / Ul -->
+						<div class="widget-title" style="text-align: center;">
+							<img src="static/images/1975.png" alt="Yining Cui" style="width: 150px; height: 150px;">
+							<h5 class="title" >Yining Cui</h5>
+						</div>
+						
+						<p>
+							<span class="fab fa-github" style="margin-right: 5px; font-size: 24px; color: inherit;"></span>
+							<a href="#" style="font-size: 18px; color: inherit;"> </a>
+						</p>
+						<p>
+							<p>
+								<span class="fas fa-envelope" style="margin-right: 5px; font-size: 24px; vertical-align: middle;"></span>
+								<span style="font-size: 18px; vertical-align: middle;">xxx</span>
+							</p>
+							
+						</p>
+						
 					</div>
-					<!-- /Widget Nav Menu End -->
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<!-- Widget Nav Menu Start -->
+				<div class="col-md-3" style="margin-left: 50px;">
 					<div class="widget widget_nav_menu">
-						<div class="widget-title">
-							<h5 class="title">Yunqi Sun</h5>
-						</div><!-- /Widget Title -->
-						<ul>
-							<li><a href="#">Github</a></li>
-							<li><a href="#">Email</a></li>
-
-						</ul><!-- / Ul -->
+						<div class="widget-title" style="text-align: center;">
+							<img src="static/images/1975.png" alt="Yunqi Sun" style="width: 150px; height: 150px;">
+							<h5 class="title" >Yunqi Sun</h5>
+						</div>
+						
+						<p>
+							<span class="fab fa-github" style="margin-right: 5px; font-size: 24px; color: inherit;"></span>
+							<a href="https://github.com/Labbit9u" style="font-size: 18px; color: inherit;"> Labbit9u</a>
+						</p>
+						<p>
+							<p>
+								<span class="fas fa-envelope" style="margin-right: 5px; font-size: 24px; vertical-align: middle;"></span>
+								<span style="font-size: 18px; vertical-align: middle;">ucfnunn@ucl.ac.uk</span>
+							</p>
+							
+						</p>
+						
 					</div>
-					<!-- /Widget Nav Menu End -->
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="widget widget-newsletter">
-						<div class="widget-title">
-							<h5 class="title"></h5>
-						</div><!-- /Widget Title -->
-
-						<!--temporary comment-->
-
-						<!-- <div class="newsletter-widget">
-							<p>Stay connect with us</p>
-							<div id="mc_embed_signup" class="input-field nl-form-container clearfix">
-								<form 
-									action=""
-									method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
-									class="newsletterform validate" 
-									target="_blank" 
-									novalidate>
-									<input 
-										value="" 
-										type="email" 
-										name="EMAIL"
-										id="mce-EMAIL" 
-										maxlength="32"
-										placeholder="Email" 
-										class="email form-control nl-email-input" 
-										required>
-									<div style="position: absolute; left: -5000px;">
-										<input 
-											type="text" 
-											name="b_224c3c7777919c909b29129f9_4f4eeeae5b" 
-											tabindex="-1" 
-											value="">
-									</div>
-									<label class="search-icon"><input class="btn th-bg" id="mc-embedded-subscribe" type="submit" name="subscribe" value="Subscribe"></label>
-								</form>
-								<div id="notification_container"></div> -->
-
-
-
-					</div><!-- /Input Field End-->
-				</div><!-- / Ul -->
-			</div><!-- /Widget Nav Menu -->
+			</div>
 		</div>
-		</div>
-		</div><!-- / Container -->
-	</footer><!-- / Footer 1 -->
+		<!-- / Container -->
+	</footer>
+	
 	<div class="copy-right light-black-bg">
 		<div class="container">
 			<div class="pull-left">
@@ -902,7 +880,8 @@
 			animateElementById('metro', 'rotateIn'); 
 			animateElementById('buildup', 'jackInTheBox'); 
 			animateElementById('airQuality', 'zoomInDown'); 
-
+			animateElementById('PM2.5-P-C', 'slideInDown'); 
+			
 
 		}
 
