@@ -498,6 +498,8 @@
 }
 .fadeInLeft {
     animation-name: fadeInLeft;
+    animation-duration: 2s;
+
 }
 @keyframes fadeInLeftBig {
     from {
