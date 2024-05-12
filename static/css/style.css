@@ -2961,9 +2961,29 @@ footer.osr-footer-3 li {
     background-image: url(../images/labackground4.jpg);
   } 
 
+  /*text color and the modal's size for urban history part*/
+#history {
+    color: black; 
+}
+
+.btn-secondary {
+    color: black; /* Ensures the text color on the button is black */
+}
+
+/* modal title alignment and close button placement */
+.modal-title {
+    width: 100%;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
 
 
 #imageModal .modal-content img {
-    width: 100%; /* Ensures the image is responsive and fits within the modal */
+    width: 100%; 
 }
 }
