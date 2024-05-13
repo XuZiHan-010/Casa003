@@ -59,9 +59,10 @@ function initializeChart(dataSets) {
         }
     });
 
-    // Update the background based on datasets
+    // Update the background based on whether there are any datasets
     updateChartBackground(dataSets.length > 0);
 }
+
 
 function updateChartBackground(hasData) {
     const chartContainer = document.getElementById('chartContainer');
@@ -71,6 +72,7 @@ function updateChartBackground(hasData) {
         chartContainer.classList.remove('chart-background');
     }
 }
+
 async function loadData(url, fallbackUrl) {
     try {
         const response = await fetch(url);
@@ -95,16 +97,16 @@ async function fetchData() {
 
 function getColor(pm25) {
     if (dataType === 'percentile') {
-        return pm25 > 77 ?  '#FFFF00':
-               pm25 > 57 ? '#FD8D3C':
-               pm25 > 39 ? '#FC4E2A' :
-               pm25 > 20 ?  '#BD0026':
+        return pm25 > 77 ?  '#BD0026':
+               pm25 > 57 ? '#FC4E2A':
+               pm25 > 39 ?  '#FD8D3C' :
+               pm25 > 20 ?   '#FFFF00':
                             '#babfbc';
     } else {
-        return pm25 > 12.31 ? '#FFFF00' :
-               pm25 > 11.56 ? '#FD8D3C' :
-               pm25 > 10.49 ? '#FC4E2A' :
-               pm25 > 8.49  ? '#BD0026' :
+        return pm25 > 12.31 ? '#BD0026' :
+               pm25 > 11.56 ? '#FC4E2A' :
+               pm25 > 10.49 ? '#FD8D3C' :
+               pm25 > 8.49  ?  '#FFFF00' :
                '#babfbc';
     }
 }
@@ -122,10 +124,20 @@ function updateYear(year) {
 function updateDataType() {
     dataType = document.getElementById('dataTypeSelect').value;
     chartDataSets = [];  // Clear the datasets
-    initializeChart(chartDataSets);  // Re-initialize the chart
+
+    // Destroy any existing chart instance before switching data type
+    if (window.myLineChart) {
+        window.myLineChart.destroy();
+    }
+
+    // Initialize the chart with no data sets, which should also handle the background
+    initializeChart(chartDataSets);
+
+    // Update the map and legend according to the new data type
     updateMap();
     updateLegend();
 }
+
 
 // Optional: Function to remove an area from the chart
 function removeAreaFromChart(areaName) {
@@ -243,19 +255,19 @@ function updateLegend() {
     if (dataType === 'percentile') {
         legendTitle.innerHTML = "PM2.5 Percentile " + currentYear;
         legendHtml = `
-            <div><i style="background: #FFFF00"></i>Above 77</div>
-            <div><i style="background: #FD8D3C"></i>57 - 77</div>
-            <div><i style="background: #FC4E2A"></i>39 - 57</div>
-            <div><i style="background: #BD0026"></i>20 - 39</div>
+            <div><i style="background:#BD0026"></i>Above 77</div>
+            <div><i style="background: #FC4E2A"></i>57 - 77</div>
+            <div><i style="background: #FD8D3C"></i>39 - 57</div>
+            <div><i style="background:  #FFFF00"></i>20 - 39</div>
             <div><i style="background: #babfbc"></i>Below 20</div>
         `;
     } else {
         legendTitle.innerHTML = "PM2.5 Concentration " + currentYear;
         legendHtml = `
-            <div><i style="background: #FFFF00"></i>Above 12.31</div>
-            <div><i style="background: #FD8D3C"></i>11.56 - 12.31</div>
-            <div><i style="background: #FC4E2A"></i>10.49 - 11.56</div>
-            <div><i style="background: #BD0026"></i>8.49 - 10.49</div>
+            <div><i style="background:#BD0026"></i>Above 12.31</div>
+            <div><i style="background:  #FC4E2A"></i>11.56 - 12.31</div>
+            <div><i style="background: #FD8D3C"></i>10.49 - 11.56</div>
+            <div><i style="background: #FFFF00"></i>8.49 - 10.49</div>
             <div><i style="background: #babfbc"></i>Below 8.49</div>
         `;
     }

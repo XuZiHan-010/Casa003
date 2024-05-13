@@ -79,34 +79,63 @@ section{
 .parallax-section {background-attachment: fixed !important;}
 .border-bottom{border-bottom:1px solid #edecec;}
 
-p {
-    font-size: 14px; 
+/* p {
+    font-size: 16px; 
+    margin-bottom: 20px;
 }
  li {
-    font-size: 14px; /* Adjust size as needed */
+    font-size: 16px; 
 
-}
- #main-contant {
-    background-image: url('../images/populationdensity.jpg'); 
+} */
+#populationmap {
+    background-image: url('../images/populationdensity.jpg');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 50px 0; 
-    margin-top: 30px; 
-    color: #fff; 
-    text-align: center; 
-} 
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px; /* Increased padding */
+    min-height: 600px; /* Minimum height */
+}
+#populationmap h3 {
+    margin-bottom: 40px; /* Space below the title */
+    font-size:54px;
+    font-weight:bold;
+}
+
+#populationmap p {
+    margin-bottom: 30px; /* Space between paragraphs and below the last paragraph */
+    font-size:18px;
+}
+
+#populationmap a.btn {
+    margin-top: 20px; 
+    padding: 15px 30px; 
+    font-size: 18px; 
+    border: 2px solid transparent; 
+    background-color: #007bff; 
+    color: white; 
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+#populationmap a.btn:hover, #populationmap a.btn:focus {
+    background-color: black; /* Darker shade on hover/focus */
+    border-color: #004085; /*  Change border color on hover/focus */
+    color: #fff; /* Keep text color white on hover/focus */
+}
+
 
 /*
     ==============================================================
      HOME PAGE CSS START 
     ==============================================================
 */
-.triangle-bg{
+/* .triangle-bg{
     background-size: 75%,74%;
     background-repeat: no-repeat,no-repeat;
     background-position: 180% 66px, 180% 195px;
     background-image: url(../fonts/header-shape.svg),url(../fonts/header-shape-1.svg);
-}
+} */
 /*
     ==============================================================
        HEADER DEFAULT CSS START #HEADER
@@ -382,7 +411,7 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../images/banner-bg.svg');
+    /* background-image: url('../images/banner-bg.svg'); */
 }
 
 
@@ -397,7 +426,7 @@ p {
 .main-banner p{
     float: left;
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 28px;
     margin: 0 0 20px;
 }
@@ -1270,436 +1299,7 @@ p {
     width: 100%;
     margin: 0 0 17px;
 }
-/******************************** Faqs Accordian Start **********************************/
-.simple-accordian{
-    float: left;
-    width: 100%;
-    border-radius: 10px;
-    border:1px solid #E4E4E7;
-    box-shadow: none;
-    margin: 0 0 30px;
-    border-radius: 0px;
-    -webkit-box-shadow: none;
-    background-color: rgba(255,255,255,0.04);
-}
-.simple-accordian .panel-heading{
-    padding: 0;
-    width: 100%;
-    display: block;
-    border: none;
-    background-color: transparent;
-}
-.accordian-thumb .panel-title,
-.simple-accordian .panel-title a{
-    width: 100%;
-    padding:28px 30px 26px;
-    color: inherit;
-    display: block;
-}
-.simple-accordian .panel-title{
-    margin: 0;
-    width: 100%;
-    font-size: 16px;
-}
-.simple-accordian .panel-body,
-.simple-accordian .accordion-content,
-.simple-accordian.panel-heading{
-    padding-left:30px; 
-    padding-right:30px; 
-}
-.simple-accordian .panel-body{
-    padding-top:24px; 
-    padding-bottom:21px; 
-}
-.panel-collapse{
-    border-top:1px solid #E4E4E7;
-}
-.light-black-bg .panel-collapse,
-.light-black-bg .accordion-content,
-.light-black-bg .panel-title{
-    color: #fff;
-}
 
-
-
-
-
-
-.tokensale-wrap{
-    float: left;
-    width: 100%;
-    padding:30px 70px;
-    border-radius: 5px;
-    background-color: #1d1f29;
-    -webkit-box-shadow: 0px 3px 33px -30px rgba(0,0,0,1);
-    box-shadow: 0px 3px 33px -30px rgba(0,0,0,1);
-}
-
-
-
-
-
-.token-countdown-outer{
-    float: left;
-    width: 100%;
-    padding: 33px 0 40px;
-}
-.token-countdown{
-    float: left;
-    width: 100%;
-    margin: 0 0 17px;
-}
-.token-countdown .countdown{
-    text-align: center;
-}
-.token-countdown .countdown h6{
-    font-size: 48px;
-    line-height: 48px;
-    font-weight: normal;
-    margin: 0 0 24px;
-    position: relative;
-    float: left;
-    width: 100%;
-}
-.token-countdown .countdown h6::before{
-    top: 50%;
-    float: right;
-    content: ":";
-    right: -20px;
-    position: absolute;
-    transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-}
-.token-countdown .countdown li:last-child h6::before{
-    display: none;
-}
-.token-countdown .countdown p{
-    color:#43475a;
-    font-size:12px;
-    font-weight:300;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
-.horizontal-progress{
-    float: left;
-    width: 100%;
-    padding: 17px 20px 18px;
-    background-color: #262835;
-    -webkit-box-shadow: 0px 3px 33px -30px rgba(0,0,0,1);
-    box-shadow: 0px 3px 33px -30px rgba(0,0,0,1);
-}
-.horizontal-progress .progress {
-    height: 50px;
-    width: 100%;
-    float: left;
-    margin:0px 0 0 0%;
-    border: transparent;
-    border-radius: 5px;
-    padding: 22px 0;
-    background-color: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-.progress-outer-bg{
-    float: left;
-    width: 100%;
-    background-color: #35384a;
-}
-.horizontal-progress .progress-bar {
-    float: left;
-    width: 0;
-    height: 6px;
-    width: 100%;
-    min-width: 30px !important;
-    border-radius: 5px;
-    position: relative;
-    background: red; /* fallback for old browsers */   
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-.horizontal-progress .progress-bar::after,
-.horizontal-progress .progress-bar::before{
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    right: 0;
-    top: -3px;
-    content: "";
-    background-color: gold;
-}
-.horizontal-progress .progress-bar::after{
-    top: -14px;
-    width: 34px;
-    height: 34px;
-    right: -11px;
-    background-color:rgba(249,96,62,0.10);
-    border: 1px solid #333;
-}
-.horizontal-progress .p-absolute{
-    right: 32px;
-    left: auto;
-    bottom: 100%;
-    margin-bottom: 7px;
-    position: absolute;
-}
-.horizontal-progress .value-number{
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 14px;
-    text-transform: uppercase;
-}
-.value-number.sec{
-    font-size:12px;
-    color:#4d5169;
-}
-
-
-
-
-.vertical-progress .progress {
-    height: 301px;
-    width: 21%;
-    float: left;
-    margin:0px 0 0 5%;
-    border: transparent;
-    background-color: transparent;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0);
-    box-shadow: inset 0 0px 0px rgba(0,0,0,0);
-    transform: rotate(180deg);
-}
-.vertical-progress .progress:first-child{
-    margin: 0;
-}
-.vertical-progress .progress-bar {
-    float: left;
-    width: 0;
-    width: 100%;
-    position: relative;
-    background: #eee; /* fallback for old browsers */   
-    background-image: linear-gradient(to top, #4a506b, #3e435a, #333749, #282b39, #1d1f29);
-    background-image: -webkit-linear-gradient(to top, #4a506b, #3e435a, #333749, #282b39, #1d1f29);
-}
-.vertical-progress .p-absolute{
-    top: 100%;
-    width: 100%;
-    color: #4a506b;
-    font-size: 22px;
-    font-weight: bold;
-    padding-bottom: 15px;
-    position: absolute;
-    transform: rotate(-180deg);
-    background-color: transparent;
-}
-.animated {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-.by-token{
-    float: left;
-    width: 100%;
-    padding: 76px 0 80px;
-}
-.by-token .title{
-    font-size: 30px;
-    margin: 0 0 24px;
-    font-weight: 500;
-}
-.by-token .btn{
-    width: 100%;
-    font-size: 20px;
-    font-weight: normal;
-    border-radius: 5px;
-    padding: 18px 0px 17px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-
-
-
-
-.about-us-wrap{
-    float: left;
-    width: 100%;
-}
-.about-thumb{
-    float: left;
-    width: 100%;
-    position: relative;
-    /* min-height: 475px; */
-}
-.about-thumb .thumb {
-    position: absolute;
-    right: 0;
-    left: auto;
-    min-width: 780px;
-}
-.about-caption{
-    float: left;
-    width: 100%;
-    padding: 111px 0 105px;
-}
-.about-caption .title{
-    font-size: 50px;
-    line-height: 60px;
-    margin: 0 0 50px;
-}
-.about-caption-3{
-    /*padding:115px 0 110px;*/
-    /*margin: 0 0 30px;*/
-}
-.about-caption-3 .title{
-    font-size: 32px;
-    font-weight: normal;
-    margin: 0 0 23px;
-    line-height: 40px;
-    color: #04004D;
-    padding-right:160px; 
-}
-.about-caption-3 p{
-    margin: 0 0 32px;
-}
-.about-caption-3 p:last-child{
-    margin: 0;
-}
-.shadow-thumb{
-    float: left;
-    width: 100%;
-    position: relative;
-    margin: 0 0 30px;
-}
-.shadow-thumb::before{
-    top: auto;
-    left: -40px;
-    right: auto;
-    content: "";
-    width: 100%;
-    height: 100%;
-    bottom: -40px;
-    position: absolute;
-    background-image: url(../images/dots.png);
-    clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 0% 100%);
-    -webkit-clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 0% 100%);
-}
-[class*="col-"]:nth-child(even) > .shadow-thumb::before{
-    left:auto;
-    right: -40px;
-    transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -ms-transform: scaleX(-1);
-    -moz-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-}
-.shadow-thumb figure{
-    width: 100%;
-/*    border-radius: 5px;
-    border:1px solid #e8e8e8;
-    box-shadow: 0 0 0 1px rgba(186,186,186,0.028), 0 1.8vw 3vw -0.7vw rgba(0,0,0,0.06);
-    -webkit-box-shadow: 0 0 0 1px rgba(186,186,186,0.028), 0 1.8vw 3vw -0.7vw rgba(0,0,0,0.06);*/
-}
-.w-two-images{
-    text-align: left;
-    position: relative;
-    padding:0 215px 85px 0; 
-}
-.w-two-images::before{
-    display: none;
-}
-.w-two-images figure{
-    top:auto; 
-    right: 0;
-    margin: 0;
-    bottom: 0;
-    max-width: 355px;
-    position: absolute;
-    display: inline-block;
-    vertical-align: bottom;
-}
-.w-two-images figure:first-child{
-    top: auto;
-    right: auto;
-    left: auto;
-    float: left;
-    position: static;
-    transform: translateY(0%);
-    -o-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    -moz-transform: translateY(0%);
-    -webkit-transform: translateY(0%);
-}
-.shadow-thumb figure img{
-    display: block;
-    width: 100%;
-}
-
-/******************************** Footer Area Start **********************************/
-/*Footer Widget Title*/
-.osr-footer-2.light-black-bg{
-    border:1px solid rgba(255,255,255,0.04);
-}
-.osr-footer-2{
-    padding:84px 0 52px;
-    background-color: #04004D;
-}
-.osr-footer-2 .widget{
-    margin: 0 0 30px;
-}
-.osr-footer-2 .widget-title{
-    color:#fff;
-    margin: 0 0 29px;
-}
-.osr-footer-2 .widget-title .title{
-    color:#fff;
-}
-.osr-footer-2 .widget_about p{
-    margin-bottom: 32px;
-}
-.osr-footer-2 .widget_categories ul li, 
-.osr-footer-2 .widget_nav_menu ul li{
-    margin: 0px 0 12px;
-}
-.osr-footer-2 .widget_categories ul li:last-child, 
-.osr-footer-2 .widget_nav_menu ul li:last-child{
-    margin: 0px 0px;
-}
-.osr-footer-2.light-black-bg .widget-title .title{
-    margin: 0;
-    font-size: 16px;
-    line-height: normal;
-}
-.osr-footer-2 .widget_rss ul li,
-.osr-footer-2 .widget_meta ul li,
-.osr-footer-2 .widget_pages ul li,
-.osr-footer-2 .widget_archive ul li,
-.osr-footer-2 .widget_nav_menu ul li,
-.osr-footer-2 .widget_categories ul li,
-.osr-footer-2 .widget_recent_comments ul li,
-.osr-footer-2 .widget_recent_entries ul li{
-    color: #9E9DC0;
-}
-/******************************** Footer 2 Start **********************************/
-.osr-footer-2.light-black-bg .widget_categories ul li::before,.osr-footer-2.light-black-bg .widget_nav_menu ul li a::before{
-    background-color: #fff;
-}
-.osr-footer-2.light-black-bg .widget_categories ul li:hover,.osr-footer-2.light-black-bg .widget_nav_menu ul li a:hover,
-.osr-footer-2.light-black-bg .widget-title .title,
-.osr-footer-2.light-black-bg{
-    color: #fff;
-}
 /******************************** Copy Right Bar Start **********************************/
 .copy-right{
     float: left;
@@ -2088,7 +1688,7 @@ footer.dark-black .widget_recent_entries ul li{
     Rating Css Start
 ============================================================
 */
-.rating_down {
+/* .rating_down {
     float: none;
     width: 80px;
     height: 14px;
@@ -2305,7 +1905,7 @@ footer.dark-black .widget_recent_entries ul li{
 .testimonial-bg .testimonial-thumb-nav *{
     color: #fff;
 }
-
+ */
 
 
 
@@ -2547,7 +2147,7 @@ footer.dark-black .widget_recent_entries ul li{
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    /*background-image: url('../images/sub-banner.jpg');*/
+
 }
 .sub-banner::before {
     top: 0;
@@ -2856,12 +2456,12 @@ footer.osr-footer-3 li {
 
 @media (max-width: 768px) {
     .carousel .carousel-item {
-      height: 350px;
+      height: 400px;
     }
   }
   @media (min-width: 768px) {
     .carousel .carousel-item {
-      height: 470px;
+      height: 500px;
     }
   }
   @media (min-width: 992px) {
@@ -2936,6 +2536,5 @@ footer.osr-footer-3 li {
     width: 100%; 
 }
 
-
-
 }
+

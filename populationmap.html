@@ -45,10 +45,11 @@
 
 <section >
   
-        <div class="row d-lg-flex align-items-lg-center  animated-div" >
+        <div class="row  animated-div" >
             <div class="col-md-8 ">
             
                 <div id="lamap" style="width: 100%; " class='population-container' ></div>
+				
 				<div class="controls" style="display: flex; align-items: center; gap: 10px;">
 					<div class="dropdown" id="selectYear">
 						<button class="btn btn-secondary dropdown-toggle" type="button" id="year-selector" data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,7 +67,7 @@
 					<button type="button" id="instuction-button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
 						Instruction
 					  </button>
-					  <button class="btn btn-outline-success uniform-btn btn-hover-effect green-btn" id="homePage" onclick="window.location.href='https://xuzihan-010.github.io/Casa003.github.io/#population';">Home Page</button>
+					  <button class="btn btn-outline-success uniform-btn btn-hover-effect green-btn" id="homePage" onclick="window.location.href='https://xuzihan-010.github.io/Casa003.github.io/populationmap';">Home Page</button>
 					  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 						<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 						  <div class="modal-content">
@@ -80,20 +81,22 @@
 									the map area. Hover to see quick data tooltips or click to view detailed trends on the line
 									chart. Additioanally, you can use your mouse or touchpad to zoom in and out for a closer view of specific areas. 
 									Besides, you can scroll the slider on the colorbar to visualize specific areas accroding to your chosen range for population density.</p>
-								<p><strong>Adjust the timeframe:</strong> Select different years from the <strong>dropdown menu</strong> to
+								<p><strong>Adjust the timeframe:</strong> Select different years from the <strong class="strong-red">dropdown menu</strong> to
 									see how the population density of Los Angeles's neighborhoods has changed over time.
 								</p>
-								<p><strong>Deep dive with the line chart:</strong> After <strong>clicking on a city,</strong> observe
+								<p><strong>Deep dive with the line chart:</strong> After <strong class="strong-red">clicking on a neighborhood,</strong> observe
 									the line chart to analyze the population trend over time for detailed insights. 
-									The line chart will show the <strong>absolute population</strong> change for the chosen negihborhood.</p>
-								<p><strong>Noted:</strong> the default value when first loading the map is set to use 2010 data.</p>	
-								<p><strong>Data:</strong> the Los Angeles County population data by neighborhood is from 
-									<a href="https://la.myneighborhooddata.org/data/" target="_blank" rel="noopener noreferrer" class="stealth-link">LA Neighborhood Data Site</a>.
+									The line chart will show the <strong class="strong-red">absolute population</strong> change for the chosen negihborhood.</p>
+								<p><strong>Noted:</strong> The default value when first loading the population density map is set to use 2010 data while the line chart will display the 
+									populaiton trend of Irwindale neighborhood as default.</p>	
+								<p><strong>Data:</strong> The Los Angeles County population data by neighborhood is from 
+									<a href="https://la.myneighborhooddata.org/data/" target="_blank" rel="noopener noreferrer" class="stealth-link"><strong class="strong-blue"> Neighborhood Data for Social Change</strong></a>.
 								While the geojson data for Los Angeles County by neighborhood is from <a href="https://github.com/blackmad/
 									neighborhoods/blob/master/los-angeles-county.geojson" target="_blank" rel="noopener noreferrer" class="stealth-link">
-									https://github.com/blackmad/neighborhoods/blob/master/los-angeles-county.geojson</a>. Finally, the population density
-								for each neighborhood involves using <strong>GeoJSON polygons</strong> to define neighborhood boundaries and integrating totoal population data of each neighborhood to compute the number of people per unit are. 
-								Also, the population density is calculate in terms of the number of people <strong>per square kilometer</strong> for each Los Angeles neighborhood. </p>
+									<strong class="strong-blue">https://github.com/blackmad/neighborhoods/blob/master/los-angeles-county.geojson</strong></a>. <br>Finally, the population density
+								for each neighborhood involves using <strong class="strong-red">GeoJSON polygons</strong> to define neighborhood boundaries 
+								and integrating totoal population data of each neighborhood to compute the number of people per unit are. 
+								Also, the population density is calculate in terms of the number of people <strong class="strong-red">per square kilometer</strong> for each Los Angeles neighborhood. </p>
 									
 										
 												
@@ -104,7 +107,7 @@
 								
 							</div>
 							<div class="modal-footer">
-								<a href="https://la.myneighborhooddata.org/2021/06/demography" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" target="_blank">Read More</a>
+								<a href="https://la.myneighborhooddata.org/2021/06/demography" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" target="_blank" data-toggle="tooltip" data-placement="top" title="Read more about demography data">Read More</a>
 							  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
 							</div>
