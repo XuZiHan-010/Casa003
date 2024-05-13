@@ -138,9 +138,9 @@
 
 		<!-- Urban Extent Section Start -->
 		<section id="UrbanHistory" class="gray-bg">
-			<div class="container"  id="history">
+			<div class="container" >
 				<!-- Section Heading Start -->
-				<div class="text-center">
+				<div class="text-center" id="identify">
 					<!-- <h2 class="title">Urban Extent</h2> -->
 					<p>Urban extent or suburban extent, is a process of suburban urbanisation in which the urban population 
 						grows significantly outward, encroaching on the rural areas on the urban fringe and creating low-density, m
@@ -152,8 +152,8 @@
 							which is driven by multiple processes and leads to inefficient use of resources. '</p>
 
 				</div>
-				<div class="text-center">
-					<h2 class="title">Urban History</h2>
+				<div class="text-center" id="history" style="margin-top: 80px;">
+					<h2 class="title" style="margin-bottom: 50px;">Urban History</h2>
 					<button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#imageModal">View Historical Boundaries</button>
 				</div>
 
@@ -179,7 +179,7 @@
 				<!-- Section Heading End -->
 					<div class="col-md-12 col-sm-6">
 						<!-- Features Thumb Start -->
-						<div class="features-thumb-2 radius-5">
+						<div class="features-thumb-2 radius-5" id="his-list">
 							<div class="focus">
 								<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 								    <!-- <div class="carousel-indicators">
@@ -272,12 +272,12 @@
 	<section id="population">
 		
 		<!-- Static Banner Wrap -->
-		<div class="main-banner">
+		<div class="main-banner" id="population-tran">
 			<h3 class="banner-title">Population </h3>
 			<div class="container">
 				<!--the carousel for the first page-->
 		
-				<div class="row d-lg-flex align-items-lg-center" id="population-tran">
+				<div class="row d-lg-flex align-items-lg-center" >
 					<!-- First section with smaller paragraph content -->
 					<div class="col-md-2">
 						<div class="banner-caption-wrap">
@@ -434,7 +434,7 @@
 
 		<!-- Blog Section Start -->
 		<section id="AirQuality">
-			<div class="container">
+			<div class="container" id="airQuality">
 				<!-- Section Heading Start -->
 				<div class="intro-section section-heading-2 mb-61">
 					<h2 class="title">Sustainable Planning in Los Angeles <br>Air Quality</h2>
@@ -444,7 +444,7 @@
 					<div class="col-md-6 col-sm-6">
 						<!-- /Blog Thumb Start -->
 						<div class="blog-thumb" style="color: black;">
-							<div class="text" id="airQuality">
+							<div class="text" id="airQuality-text">
 								<h5 class="title"><a href="#"> Trends in diffirent type of Air Quality Days (1980-2020)</a></h5>
 								<p>According to the United States Environmental Protection Agency (EPA), 
 									various air quality indicators are used to classify air quality into different categories such as Good Days, Moderate Days, and Unhealthy Days. 
@@ -839,8 +839,10 @@
 		}
 
 		function handleScroll() {
+			animateElementById('identify', 'bounceInLeft'); 
 			animateElementById('history', 'fadeInLeft'); 
 			animateElementById('his-pic', 'fadeInLeft'); 			
+			animateElementById('his-list', 'fadeInLeft'); 			
 			animateElementById('population-tran', 'fadeInRight'); 			
 			animateElementById('animated-text-population-1', 'bounceInLeft'); 
 			animateElementById('animated-text-population-2', 'bounceInLeft'); 
@@ -848,7 +850,8 @@
 			animateElementById('popu-map', 'fadeInLeftBig'); 
 			animateElementById('metro', 'slideInRight'); 
 			animateElementById('buildup', 'slideInRight'); 
-			animateElementById('airQuality', 'bounceInLeft'); 
+			animateElementById('airQuality', 'fadeInRight'); 
+			animateElementById('airQuality-text', 'bounceInLeft'); 
 			animateElementById('PM2.5-P-C', 'slideInLeft'); 
 			
 
