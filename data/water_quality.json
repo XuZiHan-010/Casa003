@@ -1,7 +1,7 @@
 [
     {
         "name": "Irwindale",
-        "waterquality": {
+        "pm25": {
             "2014": 85,
             "2017": 94,
             "2021": 67
@@ -9,7 +9,7 @@
     },
     {
         "name": "Pico-Union",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -17,7 +17,7 @@
     },
     {
         "name": "Glendora",
-        "waterquality": {
+        "pm25": {
             "2014": 36,
             "2017": 27,
             "2021": 37
@@ -25,7 +25,7 @@
     },
     {
         "name": "Industry",
-        "waterquality": {
+        "pm25": {
             "2014": 71,
             "2017": 69,
             "2021": 64
@@ -33,7 +33,7 @@
     },
     {
         "name": "Sylmar",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 62,
             "2021": 58
@@ -41,7 +41,7 @@
     },
     {
         "name": "Torrance",
-        "waterquality": {
+        "pm25": {
             "2014": 16,
             "2017": 11,
             "2021": 10
@@ -49,7 +49,7 @@
     },
     {
         "name": "Alhambra",
-        "waterquality": {
+        "pm25": {
             "2014": 96,
             "2017": 97,
             "2021": 94
@@ -57,7 +57,7 @@
     },
     {
         "name": "Pico Rivera",
-        "waterquality": {
+        "pm25": {
             "2014": 47,
             "2017": 46,
             "2021": 33
@@ -65,7 +65,7 @@
     },
     {
         "name": "Rolling Hills Estates",
-        "waterquality": {
+        "pm25": {
             "2014": 5,
             "2017": 5,
             "2021": 6
@@ -73,7 +73,7 @@
     },
     {
         "name": "Signal Hill",
-        "waterquality": {
+        "pm25": {
             "2014": 23,
             "2017": 18,
             "2021": 5
@@ -81,7 +81,7 @@
     },
     {
         "name": "Hawthorne",
-        "waterquality": {
+        "pm25": {
             "2014": 33,
             "2017": 20,
             "2021": 13
@@ -89,7 +89,7 @@
     },
     {
         "name": "North Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -97,7 +97,7 @@
     },
     {
         "name": "Hacienda Heights",
-        "waterquality": {
+        "pm25": {
             "2014": 83,
             "2017": 87,
             "2021": 83
@@ -105,7 +105,7 @@
     },
     {
         "name": "Harbor Gateway",
-        "waterquality": {
+        "pm25": {
             "2014": 37,
             "2017": 49,
             "2021": 64
@@ -113,7 +113,7 @@
     },
     {
         "name": "Lopez/Kagel Canyons",
-        "waterquality": {
+        "pm25": {
             "2014": 84,
             "2017": 82,
             "2021": 51
@@ -121,7 +121,7 @@
     },
     {
         "name": "Citrus",
-        "waterquality": {
+        "pm25": {
             "2014": 49,
             "2017": 30,
             "2021": 16
@@ -129,7 +129,7 @@
     },
     {
         "name": "Lake Balboa",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -137,7 +137,7 @@
     },
     {
         "name": "Granada Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 49,
             "2021": 58
@@ -145,7 +145,7 @@
     },
     {
         "name": "Palms",
-        "waterquality": {
+        "pm25": {
             "2014": 26,
             "2017": 51,
             "2021": 24
@@ -153,7 +153,7 @@
     },
     {
         "name": "Santa Monica",
-        "waterquality": {
+        "pm25": {
             "2014": 19,
             "2017": 21,
             "2021": 21
@@ -161,7 +161,7 @@
     },
     {
         "name": "Pacoima",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 52,
             "2021": 54
@@ -169,7 +169,7 @@
     },
     {
         "name": "Toluca Lake",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 73,
             "2021": 55
@@ -177,7 +177,7 @@
     },
     {
         "name": "Veterans Administration",
-        "waterquality": {
+        "pm25": {
             "2014": 23,
             "2017": 40,
             "2021": 23
@@ -185,7 +185,7 @@
     },
     {
         "name": "Valley Village",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -193,7 +193,7 @@
     },
     {
         "name": "Brentwood",
-        "waterquality": {
+        "pm25": {
             "2014": 29,
             "2017": 42,
             "2021": 38
@@ -201,7 +201,7 @@
     },
     {
         "name": "Pomona",
-        "waterquality": {
+        "pm25": {
             "2014": 98,
             "2017": 89,
             "2021": 80
@@ -209,7 +209,7 @@
     },
     {
         "name": "South Whittier",
-        "waterquality": {
+        "pm25": {
             "2014": 67,
             "2017": 34,
             "2021": 44
@@ -217,7 +217,7 @@
     },
     {
         "name": "Pasadena",
-        "waterquality": {
+        "pm25": {
             "2014": 61,
             "2017": 52,
             "2021": 53
@@ -225,7 +225,7 @@
     },
     {
         "name": "Winnetka",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -233,7 +233,7 @@
     },
     {
         "name": "Palmdale",
-        "waterquality": {
+        "pm25": {
             "2014": 26,
             "2017": 31,
             "2021": 12
@@ -241,7 +241,7 @@
     },
     {
         "name": "Porter Ranch",
-        "waterquality": {
+        "pm25": {
             "2014": 46,
             "2017": 46,
             "2021": 55
@@ -249,7 +249,7 @@
     },
     {
         "name": "South El Monte",
-        "waterquality": {
+        "pm25": {
             "2014": 91,
             "2017": 92,
             "2021": 98
@@ -257,7 +257,7 @@
     },
     {
         "name": "Tujunga Canyons",
-        "waterquality": {
+        "pm25": {
             "2014": 55,
             "2017": 52,
             "2021": 50
@@ -265,7 +265,7 @@
     },
     {
         "name": "Commerce",
-        "waterquality": {
+        "pm25": {
             "2014": 53,
             "2017": 31,
             "2021": 32
@@ -273,7 +273,7 @@
     },
     {
         "name": "San Fernando",
-        "waterquality": {
+        "pm25": {
             "2014": 62,
             "2017": 35,
             "2021": 32
@@ -281,7 +281,7 @@
     },
     {
         "name": "Sherman Oaks",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -289,7 +289,7 @@
     },
     {
         "name": "Bradbury",
-        "waterquality": {
+        "pm25": {
             "2014": 28,
             "2017": 23,
             "2021": 40
@@ -297,7 +297,7 @@
     },
     {
         "name": "Panorama City",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -305,7 +305,7 @@
     },
     {
         "name": "Northridge",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -313,7 +313,7 @@
     },
     {
         "name": "Culver City",
-        "waterquality": {
+        "pm25": {
             "2014": 38,
             "2017": 32,
             "2021": 13
@@ -321,7 +321,7 @@
     },
     {
         "name": "Lakewood",
-        "waterquality": {
+        "pm25": {
             "2014": 20,
             "2017": 18,
             "2021": 30
@@ -329,7 +329,7 @@
     },
     {
         "name": "Compton",
-        "waterquality": {
+        "pm25": {
             "2014": 28,
             "2017": 28,
             "2021": 31
@@ -337,7 +337,7 @@
     },
     {
         "name": "Vernon",
-        "waterquality": {
+        "pm25": {
             "2014": 38,
             "2017": 34,
             "2021": 39
@@ -345,7 +345,7 @@
     },
     {
         "name": "San Dimas",
-        "waterquality": {
+        "pm25": {
             "2014": 66,
             "2017": 56,
             "2021": 51
@@ -353,7 +353,7 @@
     },
     {
         "name": "Inglewood",
-        "waterquality": {
+        "pm25": {
             "2014": 15,
             "2017": 11,
             "2021": 28
@@ -361,7 +361,7 @@
     },
     {
         "name": "Charter Oak",
-        "waterquality": {
+        "pm25": {
             "2014": 41,
             "2017": 62,
             "2021": 58
@@ -369,7 +369,7 @@
     },
     {
         "name": "Paramount",
-        "waterquality": {
+        "pm25": {
             "2014": 24,
             "2017": 21,
             "2021": 9
@@ -377,7 +377,7 @@
     },
     {
         "name": "San Pedro",
-        "waterquality": {
+        "pm25": {
             "2014": 5,
             "2017": 10,
             "2021": 17
@@ -385,7 +385,7 @@
     },
     {
         "name": "Lincoln Heights",
-        "waterquality": {
+        "pm25": {
             "2014": 36,
             "2017": 39,
             "2021": 81
@@ -393,7 +393,7 @@
     },
     {
         "name": "Boyle Heights",
-        "waterquality": {
+        "pm25": {
             "2014": 35,
             "2017": 39,
             "2021": 62
@@ -401,7 +401,7 @@
     },
     {
         "name": "Historic South-Central",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -409,7 +409,7 @@
     },
     {
         "name": "Avalon",
-        "waterquality": {
+        "pm25": {
             "2014": 1,
             "2017": 1,
             "2021": 15
@@ -417,7 +417,7 @@
     },
     {
         "name": "Westlake",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -425,7 +425,7 @@
     },
     {
         "name": "Mission Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 48,
             "2021": 55
@@ -433,7 +433,7 @@
     },
     {
         "name": "Quartz Hill",
-        "waterquality": {
+        "pm25": {
             "2014": 45,
             "2017": 58,
             "2021": 28
@@ -441,7 +441,7 @@
     },
     {
         "name": "Marina del Rey",
-        "waterquality": {
+        "pm25": {
             "2014": 41,
             "2017": 31,
             "2021": 44
@@ -449,7 +449,7 @@
     },
     {
         "name": "Bell",
-        "waterquality": {
+        "pm25": {
             "2014": 82,
             "2017": 35,
             "2021": 44
@@ -457,7 +457,7 @@
     },
     {
         "name": "Long Beach",
-        "waterquality": {
+        "pm25": {
             "2014": 9,
             "2017": 8,
             "2021": 10
@@ -465,7 +465,7 @@
     },
     {
         "name": "San Gabriel",
-        "waterquality": {
+        "pm25": {
             "2014": 70,
             "2017": 78,
             "2021": 53
@@ -473,7 +473,7 @@
     },
     {
         "name": "Downey",
-        "waterquality": {
+        "pm25": {
             "2014": 66,
             "2017": 67,
             "2021": 30
@@ -481,7 +481,7 @@
     },
     {
         "name": "Diamond Bar",
-        "waterquality": {
+        "pm25": {
             "2014": 39,
             "2017": 35,
             "2021": 38
@@ -489,7 +489,7 @@
     },
     {
         "name": "La Canada Flintridge",
-        "waterquality": {
+        "pm25": {
             "2014": 72,
             "2017": 64,
             "2021": 86
@@ -497,7 +497,7 @@
     },
     {
         "name": "West Covina",
-        "waterquality": {
+        "pm25": {
             "2014": 90,
             "2017": 87,
             "2021": 68
@@ -505,7 +505,7 @@
     },
     {
         "name": "Redondo Beach",
-        "waterquality": {
+        "pm25": {
             "2014": 17,
             "2017": 14,
             "2021": 3
@@ -513,7 +513,7 @@
     },
     {
         "name": "Vermont Square",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -521,7 +521,7 @@
     },
     {
         "name": "Santa Fe Springs",
-        "waterquality": {
+        "pm25": {
             "2014": 86,
             "2017": 61,
             "2021": 47
@@ -529,7 +529,7 @@
     },
     {
         "name": "Calabasas",
-        "waterquality": {
+        "pm25": {
             "2014": 23,
             "2017": 23,
             "2021": 24
@@ -537,7 +537,7 @@
     },
     {
         "name": "Altadena",
-        "waterquality": {
+        "pm25": {
             "2014": 88,
             "2017": 74,
             "2021": 51
@@ -545,7 +545,7 @@
     },
     {
         "name": "Bell Gardens",
-        "waterquality": {
+        "pm25": {
             "2014": 52,
             "2017": 31,
             "2021": 36
@@ -553,7 +553,7 @@
     },
     {
         "name": "Sun Valley",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 51,
             "2021": 56
@@ -561,7 +561,7 @@
     },
     {
         "name": "Playa Vista",
-        "waterquality": {
+        "pm25": {
             "2014": 23,
             "2017": 46,
             "2021": 22
@@ -569,7 +569,7 @@
     },
     {
         "name": "Carson",
-        "waterquality": {
+        "pm25": {
             "2014": 6,
             "2017": 6,
             "2021": 9
@@ -577,7 +577,7 @@
     },
     {
         "name": "Hollywood Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 59,
             "2017": 64,
             "2021": 74
@@ -585,7 +585,7 @@
     },
     {
         "name": "Lancaster",
-        "waterquality": {
+        "pm25": {
             "2014": 44,
             "2017": 41,
             "2021": 30
@@ -593,7 +593,7 @@
     },
     {
         "name": "Leona Valley",
-        "waterquality": {
+        "pm25": {
             "2014": 37,
             "2017": 37,
             "2021": 41
@@ -601,7 +601,7 @@
     },
     {
         "name": "Whittier",
-        "waterquality": {
+        "pm25": {
             "2014": 49,
             "2017": 43,
             "2021": 48
@@ -609,7 +609,7 @@
     },
     {
         "name": "Walnut",
-        "waterquality": {
+        "pm25": {
             "2014": 56,
             "2017": 55,
             "2021": 52
@@ -617,7 +617,7 @@
     },
     {
         "name": "Castaic Canyons",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 60,
             "2021": 47
@@ -625,7 +625,7 @@
     },
     {
         "name": "Silver Lake",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 64,
             "2021": 80
@@ -633,7 +633,7 @@
     },
     {
         "name": "Whittier Narrows",
-        "waterquality": {
+        "pm25": {
             "2014": 92,
             "2017": 89,
             "2021": 94
@@ -641,7 +641,7 @@
     },
     {
         "name": "Glendale",
-        "waterquality": {
+        "pm25": {
             "2014": 98,
             "2017": 99,
             "2021": 64
@@ -649,7 +649,7 @@
     },
     {
         "name": "West Whittier-Los Nietos",
-        "waterquality": {
+        "pm25": {
             "2014": 88,
             "2017": 90,
             "2021": 94
@@ -657,7 +657,7 @@
     },
     {
         "name": "Atwater Village",
-        "waterquality": {
+        "pm25": {
             "2014": 22,
             "2017": 43,
             "2021": 45
@@ -665,7 +665,7 @@
     },
     {
         "name": "East Whittier",
-        "waterquality": {
+        "pm25": {
             "2014": 50,
             "2017": 33,
             "2021": 49
@@ -673,7 +673,7 @@
     },
     {
         "name": "El Sereno",
-        "waterquality": {
+        "pm25": {
             "2014": 14,
             "2017": 41,
             "2021": 59
@@ -681,7 +681,7 @@
     },
     {
         "name": "Montecito Heights",
-        "waterquality": {
+        "pm25": {
             "2014": 11,
             "2017": 18,
             "2021": 43
@@ -689,7 +689,7 @@
     },
     {
         "name": "Florence",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 68,
             "2021": 77
@@ -697,7 +697,7 @@
     },
     {
         "name": "Huntington Park",
-        "waterquality": {
+        "pm25": {
             "2014": 51,
             "2017": 32,
             "2021": 21
@@ -705,7 +705,7 @@
     },
     {
         "name": "Cheviot Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 23,
             "2017": 64,
             "2021": 29
@@ -713,7 +713,7 @@
     },
     {
         "name": "Cypress Park",
-        "waterquality": {
+        "pm25": {
             "2014": 22,
             "2017": 21,
             "2021": 53
@@ -721,7 +721,7 @@
     },
     {
         "name": "Desert View Highlands",
-        "waterquality": {
+        "pm25": {
             "2014": 38,
             "2017": 60,
             "2021": 28
@@ -729,7 +729,7 @@
     },
     {
         "name": "Baldwin Park",
-        "waterquality": {
+        "pm25": {
             "2014": 82,
             "2017": 92,
             "2021": 72
@@ -737,7 +737,7 @@
     },
     {
         "name": "Montebello",
-        "waterquality": {
+        "pm25": {
             "2014": 65,
             "2017": 43,
             "2021": 23
@@ -745,7 +745,7 @@
     },
     {
         "name": "Leimert Park",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 71,
             "2021": 75
@@ -753,7 +753,7 @@
     },
     {
         "name": "Santa Clarita",
-        "waterquality": {
+        "pm25": {
             "2014": 64,
             "2017": 46,
             "2021": 44
@@ -761,7 +761,7 @@
     },
     {
         "name": "Elysian Park",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -769,7 +769,7 @@
     },
     {
         "name": "Wilmington",
-        "waterquality": {
+        "pm25": {
             "2014": 5,
             "2017": 7,
             "2021": 18
@@ -777,7 +777,7 @@
     },
     {
         "name": "Jefferson Park",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -785,7 +785,7 @@
     },
     {
         "name": "Downtown",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 66,
             "2021": 77
@@ -793,7 +793,7 @@
     },
     {
         "name": "Encino",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 48,
             "2021": 55
@@ -801,7 +801,7 @@
     },
     {
         "name": "West Adams",
-        "waterquality": {
+        "pm25": {
             "2014": 59,
             "2017": 65,
             "2021": 77
@@ -809,7 +809,7 @@
     },
     {
         "name": "Hawaiian Gardens",
-        "waterquality": {
+        "pm25": {
             "2014": 18,
             "2017": 21,
             "2021": 24
@@ -817,7 +817,7 @@
     },
     {
         "name": "Agoura Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 3,
             "2017": 20,
             "2021": 19
@@ -825,7 +825,7 @@
     },
     {
         "name": "Baldwin Hills/Crenshaw",
-        "waterquality": {
+        "pm25": {
             "2014": 60,
             "2017": 70,
             "2021": 75
@@ -833,7 +833,7 @@
     },
     {
         "name": "Lake View Terrace",
-        "waterquality": {
+        "pm25": {
             "2014": 50,
             "2017": 55,
             "2021": 54
@@ -841,7 +841,7 @@
     },
     {
         "name": "Adams-Normandie",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -849,7 +849,7 @@
     },
     {
         "name": "El Monte",
-        "waterquality": {
+        "pm25": {
             "2014": 92,
             "2017": 90,
             "2021": 91
@@ -857,7 +857,7 @@
     },
     {
         "name": "Rancho Dominguez",
-        "waterquality": {
+        "pm25": {
             "2014": 13,
             "2017": 22,
             "2021": 34
@@ -865,7 +865,7 @@
     },
     {
         "name": "Acton",
-        "waterquality": {
+        "pm25": {
             "2014": 26,
             "2017": 28,
             "2021": 29
@@ -873,7 +873,7 @@
     },
     {
         "name": "Studio City",
-        "waterquality": {
+        "pm25": {
             "2014": 47,
             "2017": 47,
             "2021": 56
@@ -881,7 +881,7 @@
     },
     {
         "name": "La Puente",
-        "waterquality": {
+        "pm25": {
             "2014": 93,
             "2017": 95,
             "2021": 77
@@ -889,7 +889,7 @@
     },
     {
         "name": "North Hollywood",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 53,
             "2021": 56
@@ -897,7 +897,7 @@
     },
     {
         "name": "Rosemead",
-        "waterquality": {
+        "pm25": {
             "2014": 75,
             "2017": 70,
             "2021": 63
@@ -905,7 +905,7 @@
     },
     {
         "name": "San Marino",
-        "waterquality": {
+        "pm25": {
             "2014": 88,
             "2017": 89,
             "2021": 75
@@ -913,7 +913,7 @@
     },
     {
         "name": "East San Gabriel",
-        "waterquality": {
+        "pm25": {
             "2014": 58,
             "2017": 82,
             "2021": 59
@@ -921,7 +921,7 @@
     },
     {
         "name": "South Park",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 69,
             "2021": 77
@@ -929,7 +929,7 @@
     },
     {
         "name": "Burbank",
-        "waterquality": {
+        "pm25": {
             "2014": 45,
             "2017": 87,
             "2021": 76
@@ -937,7 +937,7 @@
     },
     {
         "name": "Woodland Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 47,
             "2017": 45,
             "2021": 54
@@ -945,7 +945,7 @@
     },
     {
         "name": "Angeles Crest",
-        "waterquality": {
+        "pm25": {
             "2014": 76,
             "2017": 66,
             "2021": 61
@@ -953,7 +953,7 @@
     },
     {
         "name": "East Compton",
-        "waterquality": {
+        "pm25": {
             "2014": 18,
             "2017": 16,
             "2021": 25
@@ -961,7 +961,7 @@
     },
     {
         "name": "Chatsworth",
-        "waterquality": {
+        "pm25": {
             "2014": 46,
             "2017": 44,
             "2021": 53
@@ -969,7 +969,7 @@
     },
     {
         "name": "Mayflower Village",
-        "waterquality": {
+        "pm25": {
             "2014": 54,
             "2017": 66,
             "2021": 47
@@ -977,7 +977,7 @@
     },
     {
         "name": "Koreatown",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -985,7 +985,7 @@
     },
     {
         "name": "South Gate",
-        "waterquality": {
+        "pm25": {
             "2014": 37,
             "2017": 37,
             "2021": 50
@@ -993,7 +993,7 @@
     },
     {
         "name": "Elysian Valley",
-        "waterquality": {
+        "pm25": {
             "2014": 52,
             "2017": 60,
             "2021": 88
@@ -1001,7 +1001,7 @@
     },
     {
         "name": "Claremont",
-        "waterquality": {
+        "pm25": {
             "2014": 100,
             "2017": 78,
             "2021": 99
@@ -1009,7 +1009,7 @@
     },
     {
         "name": "Avocado Heights",
-        "waterquality": {
+        "pm25": {
             "2014": 88,
             "2017": 92,
             "2021": 96
@@ -1017,7 +1017,7 @@
     },
     {
         "name": "South San Gabriel",
-        "waterquality": {
+        "pm25": {
             "2014": 89,
             "2017": 89,
             "2021": 80
@@ -1025,7 +1025,7 @@
     },
     {
         "name": "Northwest Antelope Valley",
-        "waterquality": {
+        "pm25": {
             "2014": 64,
             "2017": 66,
             "2021": 56
@@ -1033,7 +1033,7 @@
     },
     {
         "name": "Echo Park",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1041,7 +1041,7 @@
     },
     {
         "name": "Lynwood",
-        "waterquality": {
+        "pm25": {
             "2014": 17,
             "2017": 24,
             "2021": 38
@@ -1049,7 +1049,7 @@
     },
     {
         "name": "Unincorporated Santa Susana Mountains",
-        "waterquality": {
+        "pm25": {
             "2014": 49,
             "2017": 71,
             "2021": 43
@@ -1057,7 +1057,7 @@
     },
     {
         "name": "Shadow Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 47,
             "2017": 62,
             "2021": 60
@@ -1065,7 +1065,7 @@
     },
     {
         "name": "La Habra Heights",
-        "waterquality": {
+        "pm25": {
             "2014": 43,
             "2017": 50,
             "2021": 24
@@ -1073,7 +1073,7 @@
     },
     {
         "name": "Covina",
-        "waterquality": {
+        "pm25": {
             "2014": 57,
             "2017": 50,
             "2021": 50
@@ -1081,7 +1081,7 @@
     },
     {
         "name": "Northwest Palmdale",
-        "waterquality": {
+        "pm25": {
             "2014": 83,
             "2017": 98,
             "2021": 45
@@ -1089,7 +1089,7 @@
     },
     {
         "name": "Sawtelle",
-        "waterquality": {
+        "pm25": {
             "2014": 23,
             "2017": 39,
             "2021": 26
@@ -1097,7 +1097,7 @@
     },
     {
         "name": "Rancho Park",
-        "waterquality": {
+        "pm25": {
             "2014": 23,
             "2017": 40,
             "2021": 23
@@ -1105,7 +1105,7 @@
     },
     {
         "name": "East Los Angeles",
-        "waterquality": {
+        "pm25": {
             "2014": 90,
             "2017": 68,
             "2021": 54
@@ -1113,7 +1113,7 @@
     },
     {
         "name": "Beverlywood",
-        "waterquality": {
+        "pm25": {
             "2014": 25,
             "2017": 42,
             "2021": 28
@@ -1121,7 +1121,7 @@
     },
     {
         "name": "Bellflower",
-        "waterquality": {
+        "pm25": {
             "2014": 54,
             "2017": 50,
             "2021": 25
@@ -1129,7 +1129,7 @@
     },
     {
         "name": "Azusa",
-        "waterquality": {
+        "pm25": {
             "2014": 44,
             "2017": 32,
             "2021": 19
@@ -1137,7 +1137,7 @@
     },
     {
         "name": "Del Rey",
-        "waterquality": {
+        "pm25": {
             "2014": 25,
             "2017": 48,
             "2021": 26
@@ -1145,7 +1145,7 @@
     },
     {
         "name": "Mid-Wilshire",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 67,
             "2021": 78
@@ -1153,7 +1153,7 @@
     },
     {
         "name": "North Whittier",
-        "waterquality": {
+        "pm25": {
             "2014": 67,
             "2017": 71,
             "2021": 79
@@ -1161,7 +1161,7 @@
     },
     {
         "name": "Beverly Crest",
-        "waterquality": {
+        "pm25": {
             "2014": 46,
             "2017": 89,
             "2021": 74
@@ -1169,7 +1169,7 @@
     },
     {
         "name": "Cerritos",
-        "waterquality": {
+        "pm25": {
             "2014": 26,
             "2017": 18,
             "2021": 16
@@ -1177,7 +1177,7 @@
     },
     {
         "name": "West Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 46,
             "2017": 44,
             "2021": 53
@@ -1185,7 +1185,7 @@
     },
     {
         "name": "Vincent",
-        "waterquality": {
+        "pm25": {
             "2014": 57,
             "2017": 55,
             "2021": 19
@@ -1193,7 +1193,7 @@
     },
     {
         "name": "Sun Village",
-        "waterquality": {
+        "pm25": {
             "2014": 33,
             "2017": 21,
             "2021": 29
@@ -1201,7 +1201,7 @@
     },
     {
         "name": "Playa del Rey",
-        "waterquality": {
+        "pm25": {
             "2014": 26,
             "2017": 39,
             "2021": 23
@@ -1209,7 +1209,7 @@
     },
     {
         "name": "Valinda",
-        "waterquality": {
+        "pm25": {
             "2014": 93,
             "2017": 94,
             "2021": 73
@@ -1217,7 +1217,7 @@
     },
     {
         "name": "Tujunga",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 56,
             "2021": 54
@@ -1225,7 +1225,7 @@
     },
     {
         "name": "Exposition Park",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1233,7 +1233,7 @@
     },
     {
         "name": "Eagle Rock",
-        "waterquality": {
+        "pm25": {
             "2014": 11,
             "2017": 22,
             "2021": 46
@@ -1241,7 +1241,7 @@
     },
     {
         "name": "Harbor City",
-        "waterquality": {
+        "pm25": {
             "2014": 7,
             "2017": 17,
             "2021": 24
@@ -1249,7 +1249,7 @@
     },
     {
         "name": "Southeast Antelope Valley",
-        "waterquality": {
+        "pm25": {
             "2014": 62,
             "2017": 33,
             "2021": 35
@@ -1257,7 +1257,7 @@
     },
     {
         "name": "Reseda",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -1265,7 +1265,7 @@
     },
     {
         "name": "Willowbrook",
-        "waterquality": {
+        "pm25": {
             "2014": 30,
             "2017": 36,
             "2021": 27
@@ -1273,7 +1273,7 @@
     },
     {
         "name": "Highland Park",
-        "waterquality": {
+        "pm25": {
             "2014": 11,
             "2017": 14,
             "2021": 38
@@ -1281,7 +1281,7 @@
     },
     {
         "name": "Temple City",
-        "waterquality": {
+        "pm25": {
             "2014": 68,
             "2017": 92,
             "2021": 50
@@ -1289,7 +1289,7 @@
     },
     {
         "name": "Westlake Village",
-        "waterquality": {
+        "pm25": {
             "2014": 4,
             "2017": 20,
             "2021": 11
@@ -1297,7 +1297,7 @@
     },
     {
         "name": "Pico-Robertson",
-        "waterquality": {
+        "pm25": {
             "2014": 41,
             "2017": 62,
             "2021": 59
@@ -1305,7 +1305,7 @@
     },
     {
         "name": "Monrovia",
-        "waterquality": {
+        "pm25": {
             "2014": 34,
             "2017": 75,
             "2021": 38
@@ -1313,7 +1313,7 @@
     },
     {
         "name": "Broadway-Manchester",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 68,
             "2021": 81
@@ -1321,7 +1321,7 @@
     },
     {
         "name": "Sunland",
-        "waterquality": {
+        "pm25": {
             "2014": 47,
             "2017": 51,
             "2021": 55
@@ -1329,7 +1329,7 @@
     },
     {
         "name": "Agua Dulce",
-        "waterquality": {
+        "pm25": {
             "2014": 34,
             "2017": 43,
             "2021": 47
@@ -1337,7 +1337,7 @@
     },
     {
         "name": "Malibu",
-        "waterquality": {
+        "pm25": {
             "2014": 39,
             "2017": 10,
             "2021": 3
@@ -1345,7 +1345,7 @@
     },
     {
         "name": "Topanga",
-        "waterquality": {
+        "pm25": {
             "2014": 38,
             "2017": 25,
             "2021": 33
@@ -1353,7 +1353,7 @@
     },
     {
         "name": "Northeast Antelope Valley",
-        "waterquality": {
+        "pm25": {
             "2014": 36,
             "2017": 31,
             "2021": 28
@@ -1361,7 +1361,7 @@
     },
     {
         "name": "Arleta",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -1369,7 +1369,7 @@
     },
     {
         "name": "Van Nuys",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -1377,7 +1377,7 @@
     },
     {
         "name": "Mar Vista",
-        "waterquality": {
+        "pm25": {
             "2014": 24,
             "2017": 43,
             "2021": 26
@@ -1385,7 +1385,7 @@
     },
     {
         "name": "Valley Glen",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -1393,7 +1393,7 @@
     },
     {
         "name": "Arcadia",
-        "waterquality": {
+        "pm25": {
             "2014": 53,
             "2017": 98,
             "2021": 54
@@ -1401,7 +1401,7 @@
     },
     {
         "name": "Windsor Square",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1409,7 +1409,7 @@
     },
     {
         "name": "West Puente Valley",
-        "waterquality": {
+        "pm25": {
             "2014": 93,
             "2017": 94,
             "2021": 86
@@ -1417,7 +1417,7 @@
     },
     {
         "name": "Central-Alameda",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 64,
             "2021": 77
@@ -1425,7 +1425,7 @@
     },
     {
         "name": "Arlington Heights",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1433,7 +1433,7 @@
     },
     {
         "name": "Harvard Heights",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1441,7 +1441,7 @@
     },
     {
         "name": "Harvard Park",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1449,7 +1449,7 @@
     },
     {
         "name": "East Hollywood",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1457,7 +1457,7 @@
     },
     {
         "name": "Lennox",
-        "waterquality": {
+        "pm25": {
             "2014": 24,
             "2017": 16,
             "2021": 15
@@ -1465,7 +1465,7 @@
     },
     {
         "name": "Larchmont",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1473,7 +1473,7 @@
     },
     {
         "name": "Tarzana",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -1481,7 +1481,7 @@
     },
     {
         "name": "Rolling Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 3,
             "2017": 3,
             "2021": 8
@@ -1489,7 +1489,7 @@
     },
     {
         "name": "Mid-City",
-        "waterquality": {
+        "pm25": {
             "2014": 61,
             "2017": 66,
             "2021": 76
@@ -1497,7 +1497,7 @@
     },
     {
         "name": "Westchester",
-        "waterquality": {
+        "pm25": {
             "2014": 23,
             "2017": 43,
             "2021": 31
@@ -1505,7 +1505,7 @@
     },
     {
         "name": "Manchester Square",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 63,
             "2021": 80
@@ -1513,7 +1513,7 @@
     },
     {
         "name": "Rowland Heights",
-        "waterquality": {
+        "pm25": {
             "2014": 17,
             "2017": 20,
             "2021": 31
@@ -1521,7 +1521,7 @@
     },
     {
         "name": "Ridge Route",
-        "waterquality": {
+        "pm25": {
             "2014": 72,
             "2017": 73,
             "2021": 68
@@ -1529,7 +1529,7 @@
     },
     {
         "name": "South San Jose Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 70,
             "2017": 80,
             "2021": 64
@@ -1537,7 +1537,7 @@
     },
     {
         "name": "Vermont-Slauson",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1545,7 +1545,7 @@
     },
     {
         "name": "Athens",
-        "waterquality": {
+        "pm25": {
             "2014": 19,
             "2017": 18,
             "2021": 15
@@ -1553,7 +1553,7 @@
     },
     {
         "name": "Mount Washington",
-        "waterquality": {
+        "pm25": {
             "2014": 11,
             "2017": 10,
             "2021": 33
@@ -1561,7 +1561,7 @@
     },
     {
         "name": "West Compton",
-        "waterquality": {
+        "pm25": {
             "2014": 36,
             "2017": 24,
             "2021": 17
@@ -1569,7 +1569,7 @@
     },
     {
         "name": "Los Feliz",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 80
@@ -1577,7 +1577,7 @@
     },
     {
         "name": "Chinatown",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1585,7 +1585,7 @@
     },
     {
         "name": "Century City",
-        "waterquality": {
+        "pm25": {
             "2014": 23,
             "2017": 61,
             "2021": 23
@@ -1593,7 +1593,7 @@
     },
     {
         "name": "Florence-Firestone",
-        "waterquality": {
+        "pm25": {
             "2014": 94,
             "2017": 62,
             "2021": 40
@@ -1601,7 +1601,7 @@
     },
     {
         "name": "University Park",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1609,7 +1609,7 @@
     },
     {
         "name": "Hollywood Hills West",
-        "waterquality": {
+        "pm25": {
             "2014": 47,
             "2017": 61,
             "2021": 65
@@ -1617,7 +1617,7 @@
     },
     {
         "name": "Unincorporated Santa Monica Mountains",
-        "waterquality": {
+        "pm25": {
             "2014": 20,
             "2017": 14,
             "2021": 11
@@ -1625,7 +1625,7 @@
     },
     {
         "name": "West Los Angeles",
-        "waterquality": {
+        "pm25": {
             "2014": 23,
             "2017": 40,
             "2021": 23
@@ -1633,7 +1633,7 @@
     },
     {
         "name": "Hancock Park",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1641,7 +1641,7 @@
     },
     {
         "name": "Canoga Park",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 46,
             "2021": 55
@@ -1649,7 +1649,7 @@
     },
     {
         "name": "Chesterfield Square",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1657,7 +1657,7 @@
     },
     {
         "name": "Hidden Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 30,
             "2017": 26,
             "2021": 7
@@ -1665,7 +1665,7 @@
     },
     {
         "name": "Norwalk",
-        "waterquality": {
+        "pm25": {
             "2014": 38,
             "2017": 30,
             "2021": 40
@@ -1673,7 +1673,7 @@
     },
     {
         "name": "North El Monte",
-        "waterquality": {
+        "pm25": {
             "2014": 93,
             "2017": 98,
             "2021": 40
@@ -1681,7 +1681,7 @@
     },
     {
         "name": "Monterey Park",
-        "waterquality": {
+        "pm25": {
             "2014": 93,
             "2017": 97,
             "2021": 72
@@ -1689,7 +1689,7 @@
     },
     {
         "name": "Hollywood",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1697,7 +1697,7 @@
     },
     {
         "name": "Fairfax",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 77
@@ -1705,7 +1705,7 @@
     },
     {
         "name": "Glassell Park",
-        "waterquality": {
+        "pm25": {
             "2014": 13,
             "2017": 23,
             "2021": 36
@@ -1713,7 +1713,7 @@
     },
     {
         "name": "Watts",
-        "waterquality": {
+        "pm25": {
             "2014": 65,
             "2017": 73,
             "2021": 76
@@ -1721,7 +1721,7 @@
     },
     {
         "name": "La Verne",
-        "waterquality": {
+        "pm25": {
             "2014": 95,
             "2017": 80,
             "2021": 100
@@ -1729,7 +1729,7 @@
     },
     {
         "name": "Rancho Palos Verdes",
-        "waterquality": {
+        "pm25": {
             "2014": 10,
             "2017": 13,
             "2021": 2
@@ -1737,7 +1737,7 @@
     },
     {
         "name": "Green Meadows",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 78,
             "2021": 92
@@ -1745,7 +1745,7 @@
     },
     {
         "name": "Del Aire",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 23,
             "2021": 10
@@ -1753,7 +1753,7 @@
     },
     {
         "name": "Vermont Knolls",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 80
@@ -1761,7 +1761,7 @@
     },
     {
         "name": "Castaic",
-        "waterquality": {
+        "pm25": {
             "2014": 62,
             "2017": 49,
             "2021": 43
@@ -1769,7 +1769,7 @@
     },
     {
         "name": "Westwood",
-        "waterquality": {
+        "pm25": {
             "2014": 23,
             "2017": 42,
             "2021": 23
@@ -1777,7 +1777,7 @@
     },
     {
         "name": "Venice",
-        "waterquality": {
+        "pm25": {
             "2014": 26,
             "2017": 39,
             "2021": 29
@@ -1785,7 +1785,7 @@
     },
     {
         "name": "South Diamond Bar",
-        "waterquality": {
+        "pm25": {
             "2014": 20,
             "2017": 20,
             "2021": 23
@@ -1793,7 +1793,7 @@
     },
     {
         "name": "Universal City",
-        "waterquality": {
+        "pm25": {
             "2014": 47,
             "2017": 62,
             "2021": 70
@@ -1801,7 +1801,7 @@
     },
     {
         "name": "Pacific Palisades",
-        "waterquality": {
+        "pm25": {
             "2014": 25,
             "2017": 40,
             "2021": 26
@@ -1809,7 +1809,7 @@
     },
     {
         "name": "Bel-Air",
-        "waterquality": {
+        "pm25": {
             "2014": 43,
             "2017": 64,
             "2021": 61
@@ -1817,7 +1817,7 @@
     },
     {
         "name": "East Pasadena",
-        "waterquality": {
+        "pm25": {
             "2014": 87,
             "2017": 95,
             "2021": 99
@@ -1825,7 +1825,7 @@
     },
     {
         "name": "Cudahy",
-        "waterquality": {
+        "pm25": {
             "2014": 46,
             "2017": 25,
             "2021": 44
@@ -1833,7 +1833,7 @@
     },
     {
         "name": "Palos Verdes Estates",
-        "waterquality": {
+        "pm25": {
             "2014": 10,
             "2017": 6,
             "2021": 2
@@ -1841,7 +1841,7 @@
     },
     {
         "name": "Ladera Heights",
-        "waterquality": {
+        "pm25": {
             "2014": 88,
             "2017": 74,
             "2021": 34
@@ -1849,7 +1849,7 @@
     },
     {
         "name": "Walnut Park",
-        "waterquality": {
+        "pm25": {
             "2014": 32,
             "2017": 14,
             "2021": 8
@@ -1857,7 +1857,7 @@
     },
     {
         "name": "La Crescenta-Montrose",
-        "waterquality": {
+        "pm25": {
             "2014": 43,
             "2017": 59,
             "2021": 75
@@ -1865,7 +1865,7 @@
     },
     {
         "name": "Gardena",
-        "waterquality": {
+        "pm25": {
             "2014": 25,
             "2017": 18,
             "2021": 17
@@ -1873,7 +1873,7 @@
     },
     {
         "name": "Duarte",
-        "waterquality": {
+        "pm25": {
             "2014": 23,
             "2017": 22,
             "2021": 3
@@ -1881,7 +1881,7 @@
     },
     {
         "name": "La Mirada",
-        "waterquality": {
+        "pm25": {
             "2014": 28,
             "2017": 20,
             "2021": 30
@@ -1889,7 +1889,7 @@
     },
     {
         "name": "Maywood",
-        "waterquality": {
+        "pm25": {
             "2014": 15,
             "2017": 24,
             "2021": 35
@@ -1897,7 +1897,7 @@
     },
     {
         "name": "Alondra Park",
-        "waterquality": {
+        "pm25": {
             "2014": 28,
             "2017": 16,
             "2021": 15
@@ -1905,7 +1905,7 @@
     },
     {
         "name": "Beverly Grove",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 76,
             "2021": 85
@@ -1913,7 +1913,7 @@
     },
     {
         "name": "Vermont Vista",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 65,
             "2021": 81
@@ -1921,7 +1921,7 @@
     },
     {
         "name": "Lawndale",
-        "waterquality": {
+        "pm25": {
             "2014": 24,
             "2017": 17,
             "2021": 15
@@ -1929,7 +1929,7 @@
     },
     {
         "name": "Hyde Park",
-        "waterquality": {
+        "pm25": {
             "2014": 57,
             "2017": 74,
             "2021": 79
@@ -1937,7 +1937,7 @@
     },
     {
         "name": "Lomita",
-        "waterquality": {
+        "pm25": {
             "2014": 17,
             "2017": 12,
             "2021": 20
@@ -1945,7 +1945,7 @@
     },
     {
         "name": "South Pasadena",
-        "waterquality": {
+        "pm25": {
             "2014": 84,
             "2017": 67,
             "2021": 80
@@ -1953,7 +1953,7 @@
     },
     {
         "name": "Westmont",
-        "waterquality": {
+        "pm25": {
             "2014": 33,
             "2017": 25,
             "2021": 21
@@ -1961,7 +1961,7 @@
     },
     {
         "name": "San Pasqual",
-        "waterquality": {
+        "pm25": {
             "2014": 82,
             "2017": 45,
             "2021": 75
@@ -1969,7 +1969,7 @@
     },
     {
         "name": "West Hollywood",
-        "waterquality": {
+        "pm25": {
             "2014": 71,
             "2017": 72,
             "2021": 73
@@ -1977,7 +1977,7 @@
     },
     {
         "name": "Artesia",
-        "waterquality": {
+        "pm25": {
             "2014": 21,
             "2017": 24,
             "2021": 24
@@ -1985,7 +1985,7 @@
     },
     {
         "name": "Manhattan Beach",
-        "waterquality": {
+        "pm25": {
             "2014": 1,
             "2017": 2,
             "2021": 1
@@ -1993,7 +1993,7 @@
     },
     {
         "name": "West Carson",
-        "waterquality": {
+        "pm25": {
             "2014": 6,
             "2017": 6,
             "2021": 9
@@ -2001,7 +2001,7 @@
     },
     {
         "name": "Hermosa Beach",
-        "waterquality": {
+        "pm25": {
             "2014": 14,
             "2017": 12,
             "2021": 3
@@ -2009,7 +2009,7 @@
     },
     {
         "name": "Carthay",
-        "waterquality": {
+        "pm25": {
             "2014": 63,
             "2017": 75,
             "2021": 84
@@ -2017,7 +2017,7 @@
     },
     {
         "name": "Beverly Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 40,
             "2017": 52,
             "2021": 32
@@ -2025,7 +2025,7 @@
     },
     {
         "name": "El Segundo",
-        "waterquality": {
+        "pm25": {
             "2014": 8,
             "2017": 19,
             "2021": 1
@@ -2033,7 +2033,7 @@
     },
     {
         "name": "View Park-Windsor Hills",
-        "waterquality": {
+        "pm25": {
             "2014": 85,
             "2017": 37,
             "2021": 47
@@ -2041,7 +2041,7 @@
     },
     {
         "name": "Sierra Madre",
-        "waterquality": {
+        "pm25": {
             "2014": 40,
             "2017": 94,
             "2021": 39
@@ -2049,7 +2049,7 @@
     },
     {
         "name": "Gramercy Park",
-        "waterquality": {
+        "pm25": {
             "2014": 52,
             "2017": 74,
             "2021": 87
@@ -2057,7 +2057,7 @@
     },
     {
         "name": "Aggregated",
-        "waterquality": {
+        "pm25": {
             "2014": 48,
             "2017": 48,
             "2021": 48
