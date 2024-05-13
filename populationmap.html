@@ -46,7 +46,7 @@
 <section >
   
         <div class="row  animated-div" >
-            <div class="col-md-8 ">
+            <div class="col-md-8" id="all">
             
                 <div id="lamap" style="width: 100%; " class='population-container' ></div>
 				
@@ -68,10 +68,10 @@
 					</div>
 				
 					
-					  <button class="btn btn-outline-success uniform-btn btn-hover-effect green-btn" id="homePage" onclick="window.location.href='https://xuzihan-010.github.io/Casa003.github.io/populationmap';">Home Page</button>
+					  <button class="btn btn-outline-success uniform-btn btn-hover-effect green-btn" id="homePage" onclick="window.location.href='https://xuzihan-010.github.io/Casa003.github.io/';">Home Page</button>
 					  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 						<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-						  <div class="modal-content">
+						  <div class="modal-content" id="instr">
 							<div class="modal-header">
 							  <h5 class="modal-title" id="exampleModalLabel">Instruction for the Interactive Map</h5>
 							  
@@ -151,15 +151,13 @@
 		}
 
 		function handleScroll() {
-			animateElementById('selectYear', 'bounceInRight'); 
-			animateElementById('instuction-button', 'bounceInRight'); 			
-			animateElementById('homePage', 'bounceInRight'); 
-
-			animateElementById('chart', 'flipInY'); 
-			// animateElementById('metro', 'rotateIn'); 
-			// animateElementById('buildup', 'jackInTheBox'); 
-			// animateElementById('airQuality', 'zoomInDown'); 
-
+			
+			animateElementById('all', 'fadeInRight'); 
+			animateElementById('selectYear', 'fadeInDown'); 
+			animateElementById('instuction-button', 'fadeInDown'); 			
+			animateElementById('homePage', 'fadeInDown'); 
+			animateElementById('chart', 'fadeInRight'); 
+			animateElementById('instr', 'slideInRight'); 
 
 		}
 
