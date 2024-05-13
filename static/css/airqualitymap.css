@@ -169,3 +169,8 @@
 .strong-blue{
     color:blue;
 }
+/*css for modal text here*/
+.modal-text-large {
+    font-size: 18px; 
+    color: black; 
+}
