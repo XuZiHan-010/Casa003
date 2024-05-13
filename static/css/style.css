@@ -99,7 +99,7 @@ section{
 }
 #populationmap h3 {
     margin-bottom: 50px; /* Space below the title */
-    font-size:54px;
+    font-size:60px;
     font-weight:bold;
 }
 
@@ -2350,14 +2350,15 @@ footer.osr-footer-3 li {
     width: 100%; 
     height: 100%;
     min-height: 700px;
+    align-items: center;
+    text-align: center;
 }
 #airqualitymap .title {
-    font-size: 54px; 
+    font-size: 60px; 
     color:white; 
     font-weight: bold;
-    text-transform: uppercase;
     margin-bottom: 40px; /* Adds some space below the title */
-    text-align: left;
+    text-align: center;
 }
 #airqualitymap h5 {
     font-size: 24px; 
@@ -2367,16 +2368,17 @@ footer.osr-footer-3 li {
     text-align: left;
 }
 #airqualitymap .btn {
+    margin-top:20px;
     font-size: 18px;
     padding: 15px 30px; 
     background-color: #0056b3; 
     color: white;
-    border-radius: 4px; 
-    text-transform: uppercase; 
     font-weight: bold;
     border: none; 
     text-align: center;
-    display: inline-block; /* the button does not stretch full width */
+    display: inline-block; 
+    justify-content: center;
+
 }
 #airqualitymap > div {
     max-width: 1170px; /*a max-width similar to a Bootstrap container */
@@ -2567,8 +2569,8 @@ margin-bottom:50px;
 .carousel-caption p {
 
     font-size: 18px;
-    color: white; /* Gray color */
-    line-height: 1.5; /* Adjust line spacing */
+    color: white; 
+    line-height: 1.5; 
 }
 }
 

@@ -67,17 +67,20 @@
             </div>
             <div class="data-type-controls" id="options">
                 <select id="dataTypeSelect">
-                    <option value="percentile">Percentile</option>
-                    <option value="concentration">Concentration</option>
+                    <option value="percentile">PM2.5 Percentile</option>
+                    <option value="concentration">PM2.5 Concentration</option>
+                    <option value="waterquality">Water Quality</option>
                 </select>
                 
             </div>
         </div>
         <div id="chartContainer" style="width: 100%; height: 450px; margin-top: 30px;">
             <div class="button-container" id="buttons">
-                <button id="homeBtn" class="btn btn-custom btn-lg" onclick="location.href='https://xuzihan-010.github.io/Casa003.github.io/#airqualitymap';">Home Page</button>
-                <button id="clearChartBtn" class="btn btn-custom btn-lg" onclick="toggleButtonColor(this)">Clear Chart</button>
                 <button type="button" class="btn btn-custom btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Instructions</button>
+                <button id="clearChartBtn" class="btn btn-custom btn-lg" onclick="toggleButtonColor(this)">Clear Chart</button>
+                <button id="homeBtn" class="btn btn-custom btn-lg" onclick="location.href='https://xuzihan-010.github.io/Casa003.github.io/#airqualitymap';">Home Page</button>
+               
+              
             </div> 
            <canvas id="areaChart"></canvas>
         </div>
@@ -92,29 +95,32 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body modal-text-large">
-                        <p><strong>Overview:</strong> This interactive map displays the PM2.5 air quality levels, across <strong class="strong-red
-                            ">Los Angeles County by neighborhood</strong> for the years 2014, 2017, and 2021.
+                        <p><strong>Overview:</strong> This interactive map displays the <strong class="strong-red">PM2.5 percentile, concentration and the water 
+                            quality percentile</strong>, across <strong class="strong-red">Los Angeles County by neighborhood</strong> for the years 2014, 2017, and 2021.
                              Users can view data in terms of <strong class="strong-red">percentile 
                                 rankings or concentration values</strong>. 
                             </p>
+                            <p><strong>PM2.5 Concentration:</strong> The average annual concentration of fine particulate matter (PM2.5) in the air, measured in micrograms per cubic meter (µg/m³) of air.</p>
+                            <p><strong>PM2.5 Percentile:</strong> The percentile of a given neighborhood's PM2.5 concentration, compared to the rest of LA County.</p>
+                            <p><strong>Water Quality Percentile:</strong> The percentile of a given neighborhood's average annual concentration of 13 common water contaminants across drinking water system boundaries in LA County.</p>
                             <p>
                                 <strong>Selecting Data Year:</strong> Use the buttons labeled 2014, 2017, and 2021 in the legend section to choose the data year you wish to view.</p>
                         <p>
                             <strong>Switching Data Views:</strong>Choose between Percentile and Concentration views from the <strong class="strong-red">dropdown menu</strong> to see data represented by percentile rankings or actual concentration measurements. </p>
                         <p>
-                            <strong>Exploring Neighborhood Data:</strong>Click on any neighborhood in the map to bring up a <strong class="strong-red">line chart</strong> displaying the trend of PM2.5 changes from 2014 to 2021. 
-                            This helps visualize how air quality has evolved in that specific area.</p>
+                            <strong>Exploring Neighborhood Data:</strong>Click on any neighborhood in the map to bring up a <strong class="strong-red">line chart</strong> displaying the trend of PM2.5 changes or the water quality percentile change from 2014 to 2021. 
+                            This helps visualize how air and water quality has evolved in that specific area.</p>
                             <p><strong>Interacting with the Line Chart:</strong>Hover over the chart to view specific data points for each year. While clicking on the <strong class="strong-red">legend labels</strong> to add or remove data series from the chart.
                                </p>
 <p><strong>Clearing the Chart:</strong>Use the Clear Chart button to remove all active charts from your view.</p>
 <p>
-    <strong>Data:</strong>The pm2.5 percentile and concentration data is from<a href="https://la.myneighborhooddata.org/data/" target="_blank" rel="noopener noreferrer" class="stealth-link">
+    <strong>Data:</strong>The pm2.5 percentile, concentration and the water quality data is from<a href="https://la.myneighborhooddata.org/data/" target="_blank" rel="noopener noreferrer" class="stealth-link">
         <strong class="strong-blue">Neighborhood Data for Social Change</strong></a>.</strong>
 </p>
                         <!-- More instructional content here -->
                     </div>
                     <div class="modal-footer">
-                        <a href="https://la.myneighborhooddata.org/2021/06/environment/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" target="_blank" data-toggle="tooltip" data-placement="top" title="Read more about air quality data">Read More</a>
+                        <a href="https://la.myneighborhooddata.org/2021/06/environment/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" target="_blank" data-toggle="tooltip" data-placement="top" title="Read more about environmental data">Read More</a>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
