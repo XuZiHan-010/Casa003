@@ -2555,7 +2555,7 @@ footer.osr-footer-3 li {
     background-image: url(../images/labackground2.jpg);
   }
   .carousel .carousel-item:nth-child(3) {
-    background-image: url(../images/labackground3.jpg);
+    background-image: url(../images/population_map.png);
   }
   .carousel .carousel-item:nth-child(4) {
     background-image: url(../images/labackground4.jpg);
@@ -2630,7 +2630,7 @@ z-index: 1;
 }
 
 #GreenSpace { 
-    background-image: url('../images/population_map.png'); 
+    background-image: url('../images/labackground3.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -2678,12 +2678,13 @@ z-index: 1;
 
 }
 #animated-text-population-1 {
+    margin-top:0;
     margin-bottom: 0; /* Removes space below the first paragraph */
 }
 #animated-text-population-2 {
     margin-top: 0; /* Removes space above the second paragraph */
 }
-}
+
 #airquality
 {
     height:500px;
@@ -2702,4 +2703,8 @@ z-index: 1;
 #airquality-text2{
 margin-top:0;
 margin-bottom:0;
+}
+
+.section-heading-2 h1{
+    margin-bottom:10px;
 }

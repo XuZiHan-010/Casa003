@@ -45,7 +45,8 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dTtG2HlhUzE8wYitLJrMKpjfsPnpv9zVYQ6Hh8r3enbVjxwq7egG0yYgPjOQd+QyzOjsF+YvZHy6rJS00l3E7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous">
+
 
 
 
@@ -145,7 +146,6 @@
 							 consequences; in short, unplanned, incremental urban growth that is often considered unsustainable.’ 
 							 Bhatta wrote in 2010 that while the exact definition of sprawl is debated, it is 'widely accepted that urban sprawl is characterised by a pattern of unplanned and uneven growth, 
 							which is driven by multiple processes and leads to inefficient use of resources. '</p>
-
 				</div>
 
 				<div class="text-center" id="history" style="margin-top: 100px;">
@@ -269,20 +269,11 @@
 				<!--the carousel for the first page-->
 		
 				<div class="row d-lg-flex align-items-lg-center" >
-					<div class="section-heading-2 text-left mb-61">
+					<div class="section-heading-2 text-left mb-61" style="margin-bottom: 10px;">
 						<h1>Population</h1>				
 					</div>
 					<!-- First section with smaller paragraph content -->
-					<div class="col-md-2">
-						<div class="banner-caption-wrap">
-							
-							<p id="animated-text-population-1" style="color: black; font-size: 18px;">The population of Los Angeles county has shown consistent growth from 1990 to 2020,
-								increasing from around 3.5 million to just under 4 million.</p>
-							<p id="animated-text-population-2" style="color: black; font-size: 18px;">The 1990-2000 decade shows higher growth rates across all three locations compared to
-								later decades. However, growth in Los Angeles remains relatively robust compared to
-								national trends, suggesting sustained urban attraction or local growth dynamics</p>
-						</div>
-					</div>
+				
 					<!-- Second section with larger first chart -->
 					<div class="col-md-6">
 						<div class="banner-thumb">
@@ -290,9 +281,21 @@
 						</div>
 					</div>
 					<!-- Third section with larger second chart -->
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<div class="banner-thumb2">
 							<canvas id="populationChangeChart1" height="500"></canvas>
+						</div>
+					</div>
+
+				</div>
+				<div class="row">
+					<div>
+						<div class="banner-caption-wrap">
+							<p id="animated-text-population-1" style="color: black; font-size: 18px;">The population of Los Angeles county has shown consistent growth from 1990 to 2020,
+								increasing from around 3.5 million to just under 4 million.</p>
+							<p id="animated-text-population-2" style="color: black; font-size: 18px;">The 1990-2000 decade shows higher growth rates across all three locations compared to
+								later decades. However, growth in Los Angeles remains relatively robust compared to
+								national trends, suggesting sustained urban attraction or local growth dynamics</p>
 						</div>
 					</div>
 				</div>
