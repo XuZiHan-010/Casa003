@@ -146,8 +146,12 @@
     background-color: #333; /* Even darker on click */
 }
 
-.chart-background {
-    background-color: white; 
+
+#areaChart {
+    width: 100%;
+    display:none;
+    height:400px;
+    background-color: white;
     padding: 15px; 
     border-radius: 5px; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); 

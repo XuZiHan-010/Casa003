@@ -95,23 +95,29 @@ section{
     color: #fff;
     text-align: center;
     padding: 100px 20px; /* Increased padding */
-    min-height: 700px; /* Minimum height */
+    min-height: 800px; /* Minimum height */
 }
 #populationmap h3 {
+    margin-top:60px;
     margin-bottom: 50px; /* Space below the title */
     font-size:60px;
     font-weight:bold;
 }
-
+#Metro .row p{
+    font-size:18px;
+    color:black;
+}
 #populationmap p {
     margin-bottom: 30px; /* Space between paragraphs and below the last paragraph */
-    font-size:18px;
+    font-size:24px;
+    line-height: 1.4; 
+    text-align: left;
 }
 
 #populationmap a.btn {
     margin-top: 30px; 
     padding: 15px 30px; 
-    font-size: 18px; 
+    font-size: 24px; 
     border: 2px solid transparent; 
     background-color: #007bff; 
     color: white; 
@@ -2349,16 +2355,17 @@ footer.osr-footer-3 li {
     background-repeat: no-repeat; 
     width: 100%; 
     height: 100%;
-    min-height: 700px;
+    min-height: 800px;
     align-items: center;
     text-align: center;
 }
 #airqualitymap .title {
-    font-size: 60px; 
+    font-size: 65px; 
     color:white; 
     font-weight: bold;
     margin-bottom: 40px; /* Adds some space below the title */
     text-align: center;
+    margin-top:50px;
 }
 #airqualitymap h5 {
     font-size: 24px; 
@@ -2369,7 +2376,7 @@ footer.osr-footer-3 li {
 }
 #airqualitymap .btn {
     margin-top:20px;
-    font-size: 18px;
+    font-size: 24px;
     padding: 15px 30px; 
     background-color: #0056b3; 
     color: white;
@@ -2385,8 +2392,22 @@ footer.osr-footer-3 li {
     padding: 40px; /* Adequate padding around the content */
     margin: auto; /* Centers the container within the section */
 }
+/*css design for all sections title font*/
+#AirQuality .intro-section h1
+#Metro .section-heading-2 h1
+#Built-up .section-heading-2 h1{
+    font-size:60px;
+    font-weight:bold;
+    color:black;
+}
 
-
+#UrbanHistory .text-center h1{
+    color:black;
+    font-weight: bold;
+    font-size:60px;
+    margin-top: 150px;
+    }
+/*font design for the metro*/
 
 
 /*style for metro mapbox map*/
@@ -2419,14 +2440,30 @@ footer.osr-footer-3 li {
     color: white;
 }
 
+#Built-up .section-heading-2 p{
+    font-size:18px;
+    color:black;
+    margin-top:20px;
 
+}
+
+#AirQuality .text p
+{
+    font-size:18px;
+    color:black;
+}
+#Built-up .col-md-4 p{
+    font-size:18px;
+    color:black;
+}
 /*tab switch for images*/
 .focus {
     width: 80%;
     height: 800px;
    
-    margin: 100px auto;
+    margin: 30px auto;
 }
+
 
 .carousel-caption {
     font-size: 16px; /* Set the font size */
@@ -2571,6 +2608,65 @@ margin-bottom:50px;
     font-size: 18px;
     color: white; 
     line-height: 1.5; 
+}
+
+#UrbanHistory .text-center p {
+    color: black;
+    font-size: 18px;
+}
+
+#GreenSpace { 
+    background-image: url('../images/population_map.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 100%;
+    min-height: 800px;
+    align-items: center;
+    text-align: center;
+}
+.epilogue-section {
+    width: 60%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    color: white;
+    text-align: justify; 
+    font-size: 20px; 
+}
+
+.epilogue-section h2 {
+    margin-top:50px;
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 25px; /* Space between the heading and paragraph */
+ font-size:65px;
+}
+.epilogue-section p {
+    line-height: 1.6; 
+    margin-top:30px;
+}
+
+
+#UrbanHistory .btn{
+    
+    font-size: 18px;      
+    color: black;     
+}
+#UrbanHistory .button-container{
+    text-align:center;
+}
+
+
+#population .section-heading-2{
+    font-size:60px;
+    font-weight:bold;
+
+}
+#animated-text-population-1 {
+    margin-bottom: 0; /* Removes space below the first paragraph */
+}
+#animated-text-population-2 {
+    margin-top: 0; /* Removes space above the second paragraph */
 }
 }
 

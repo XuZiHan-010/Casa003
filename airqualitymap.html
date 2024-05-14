@@ -74,7 +74,7 @@
                 
             </div>
         </div>
-        <div id="chartContainer" style="width: 100%; height: 450px; margin-top: 30px;">
+        <div id="chartContainer" style="width: 100%; height: 450px; margin-top: 20px;">
             <div class="button-container" id="buttons">
                 <button type="button" class="btn btn-custom btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Instructions</button>
                 <button id="clearChartBtn" class="btn btn-custom btn-lg" onclick="toggleButtonColor(this)">Clear Chart</button>
@@ -82,7 +82,9 @@
                
               
             </div> 
-           <canvas id="areaChart"></canvas>
+            <div class="chart-background" id="canvasBackground" style="width: 100%; height: 450px;">
+                <canvas id="areaChart"></canvas>
+            </div>
         </div>
             
        
