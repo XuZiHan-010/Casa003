@@ -1227,7 +1227,7 @@
 }
 .slideInLeft {
     animation-name: slideInLeft;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
 }
 @keyframes slideInRight {
