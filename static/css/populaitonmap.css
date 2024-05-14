@@ -74,12 +74,13 @@
     color: black; 
 }
 
-body {
-    background-image: url('../images/population_map.png');
-    background-size: cover; 
-    background-position: center center; 
-    min-height: 100vh;
 
+.full-screen-background {
+    background-image: url('../images/population_map.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
 }
 .green-btn {
   
