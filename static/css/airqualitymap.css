@@ -118,6 +118,7 @@
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    margin: 0;
 }
 .button-container {
     display: flex;
