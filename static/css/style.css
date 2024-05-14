@@ -2486,8 +2486,7 @@ footer.osr-footer-3 li {
         width: 100%;
         color: black;
         font-weight: bold;
-        
-        background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+        background-color: white; /* Semi-transparent background */
         padding: 10px;
         text-align: center;
     }
@@ -2497,12 +2496,12 @@ footer.osr-footer-3 li {
 
 @media (max-width: 768px) {
     .carousel .carousel-item {
-      height: 400px;
+      height: 450px;
     }
   }
   @media (min-width: 768px) {
     .carousel .carousel-item {
-      height: 500px;
+      height: 600px;
     }
   }
   @media (min-width: 992px) {
@@ -2535,9 +2534,18 @@ footer.osr-footer-3 li {
 #carouselExampleIndicatorsfirstpage 
   .carousel .carousel-item {
     background-size: cover;
-    background-position: center 0;
-  
+    background-position: center center;
+    padding: 0;
+    margin: 0;
+
   }
+
+ 
+/* #carouselExampleIndicatorsfirstpage  .carousel-caption h1
+{
+    z-index:-30;
+    transform: translateY(-50%);
+} */
   .carousel .carousel-item:nth-child(1) {
     background-image: url(../images/la_background1.jpg);
   }
@@ -2590,6 +2598,7 @@ footer.osr-footer-3 li {
     background-color: transparent;
     padding: 20px;
     border-radius: 10px; /* Optional: rounded corners */
+    z-index: 1;
   }
 
   #carouselExampleIndicatorsfirstpage
@@ -2599,6 +2608,8 @@ font-weight:bold;
 color:white;
 margin-top:50px;
 margin-bottom:50px;
+z-index: 1;
+
   }
 
 
@@ -2608,6 +2619,7 @@ margin-bottom:50px;
     font-size: 18px;
     color: white; 
     line-height: 1.5; 
+    z-index: 1;
 }
 
 #UrbanHistory .text-center p {
@@ -2640,6 +2652,7 @@ margin-bottom:50px;
     text-align: center; /* Center-align the heading */
     margin-bottom: 25px; /* Space between the heading and paragraph */
  font-size:65px;
+ color:white;
 }
 .epilogue-section p {
     line-height: 1.6; 
@@ -2669,4 +2682,22 @@ margin-bottom:50px;
     margin-top: 0; /* Removes space above the second paragraph */
 }
 }
+#airquality
+{
+    height:500px;
+}
+.intro-section {
+    margin-bottom: 0; /* Adjust this value to reduce the space below the section title */
+}
+.blog-thumb .text p {
+    margin-bottom: 10px; /* Reduce space between paragraphs */
+    padding: 0 15px; /* Adjust padding as needed */
+}
+#airquality-text1{
+    margin-bottom:0;
 
+}
+#airquality-text2{
+margin-top:0;
+margin-bottom:0;
+}
