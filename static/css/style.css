@@ -102,6 +102,7 @@ section{
     margin-bottom: 50px; /* Space below the title */
     font-size:60px;
     font-weight:bold;
+    color:white;
 }
 #Metro .row p{
     font-size:18px;
@@ -2403,8 +2404,8 @@ footer.osr-footer-3 li {
 
 #UrbanHistory .text-center h1{
     color:black;
-    font-weight: bold;
     font-size:60px;
+    font-weight:bold;
     margin-top: 150px;
     }
 /*font design for the metro*/
@@ -2459,7 +2460,7 @@ footer.osr-footer-3 li {
 /*tab switch for images*/
 .focus {
     width: 50%;
-    height: 450px;
+    height: 650px;
     margin: 30px auto;
 }
 
@@ -2469,7 +2470,7 @@ footer.osr-footer-3 li {
 #carousel-example-generic .carousel-inner .item img {
     width: 100%; /* Ensure the image covers the full width of the carousel item */
     height: auto; /* Maintain the aspect ratio of the image */
-    max-height: 450px; /* Optional: Limit the height if necessary */
+    max-height: 650px; /* Optional: Limit the height if necessary */
     z-index:1;
 }
 
@@ -2507,7 +2508,7 @@ footer.osr-footer-3 li {
   @media (min-width: 992px) {
 
     #carouselExampleIndicatorsfirstpage .carousel-item {
-      height: 750px;
+      height: 900px;
     }
   }
 /*css for the carousel for first page*/
@@ -2671,7 +2672,7 @@ z-index: 1;
 }
 
 
-#population .section-heading-2{
+#population .section-heading-2 {
     font-size:60px;
     font-weight:bold;
 
