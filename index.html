@@ -264,7 +264,7 @@
 	<section id="population">
 		
 		<!-- Static Banner Wrap -->
-		<div class="main-banner" style="margin-top: 0;" id="population-tran">
+		<div class="main-banner" style="margin-top: 0; margin-bottom: 80px;" id="population-tran">
 			<div class="container">
 				<!--the carousel for the first page-->
 		
@@ -337,7 +337,7 @@
 					<!-- Static Banner Wrap Metro Map -->
 						<div class="container" id="metro">
 							<div class="row d-lg-flex align-items-lg-center">
-								<div class="section-heading-2 text-left mb-61">
+								<div class="section-heading-2 text-left mb-61" style="margin-bottom: 10px;">
 									<h1>Metro Rail Change</h1>				
 								</div>
 								<p>Los Angeles once had the world's largest tram system, with the famous "Red Cars" of the Pacific Electric Railway and the "Yellow Cars" of the Los Angeles Railway. However, as cars became more common and the city grew, the tram system declined. Starting in the 1950s, suburbanization and highway construction reduced tram demand, leading to service closures or conversions to buses.<br>
@@ -383,10 +383,10 @@
 		</section>
 		<!-- Features Section End -->
 
-		<section class="gray-bg" id="Built-up">
+		<section class="gray-bg" id="Built-up" style="margin-bottom: 0;">
 
 			<div class="container" id="buildup">
-				<div class="section-heading-2 text-left mb-61">
+				<div class="section-heading-2 text-left mb-61" style="margin-bottom: 5px;">
 					<h1>Human Settlement Built-up Areas Change <br> 1975-2020</h1>	
 					<p>The images illustrate the changes in the distribution of human settlement built-up surfaces in Los Angeles over a period of 45 years, with data covering both the total built-up surface and the built-up surface allocated to dominant non-residential (NRES) uses.</p>			
 				</div>
@@ -397,17 +397,17 @@
 							<div id="year-display" class="year-display">1975</div>
 						</div>
 						<input type="range" id="slider" min="1975" max="2020" value="1975" step="15">
+						<p style="text-align: left; margin-top: 10px;">*Using the WGS84 coordinate system, with a resolution of 3 arcseconds.</p>													
+						<p style="text-align: right; margin-top: 0;">Data From: <a href="https://human-settlement.emergency.copernicus.eu/download.php" class="readmore-btn th-cl">GHSL</a></p>
+						
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div>
 						<p>
 							We can observe that with the increase in years, there are more white areas visible within the image, especially at the boundaries, indicating continuous expansion of the city over the 45-year period.
-							<br><br>							
+							<br>							
 							In the late 19th and early 20th centuries, with the discovery of oil, Los Angeles began to rise and rapidly developed into the largest city in the American West. After World War II, the rise of modern industry, commerce, finance, and tourism flourished, and the urban area continued to expand outward. Even though the city was already very prosperous before 1975, as shown in the image, the urban architecture continued to expand after that year.
-							<br><br>
-							*Using the WGS84 coordinate system, with a resolution of 3 arcseconds.													
-							<p style="text-align: right;">Data From: <a href="https://human-settlement.emergency.copernicus.eu/download.php" class="readmore-btn th-cl">GHSL</a></p>
 						</p>
 					</div>
 				</div>
@@ -416,10 +416,10 @@
 		<!-- <script src="static/js/transition.js"></script> -->
 
 		<!-- Blog Section Start -->
-		<section id="AirQuality">
-			<div class="container" id="airQuality">
+		<section id="AirQuality" style="margin-top: 0; padding-top: 20px;">
+			<div class="container" id="airQuality" >
 				<!-- Section Heading Start -->
-				<div class="intro-section section-heading-2 mb-61">
+				<div class="intro-section section-heading-2 mb-61" style="margin-bottom: 10px;">
 					<h1>Sustainablity in Los Angeles</h1>
 				</div>
 				<!-- Section Heading End -->
@@ -487,7 +487,7 @@
 			<div class="container">
 				<div class="row d-lg-flex align-items-lg-center">
 					
-					<div class="epilogue-section">
+					<div class="epilogue-section" id="conclu">
 						<h2>Epilogue</h2>
 						<p>Over the past century,
 							 Los Angeles has grown rapidly from a small county of 50,000 people to the largest county in 
@@ -667,6 +667,7 @@
 			animateElementById('airQuality', 'fadeInRight'); 
 			animateElementById('airQuality-text', 'bounceInLeft'); 
 			animateElementById('PM2.5-P-C', 'slideInLeft'); 
+			animateElementById('conclu', 'slideInLeft'); 
 			
 
 		}
