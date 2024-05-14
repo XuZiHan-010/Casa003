@@ -78,6 +78,7 @@ body {
     background-image: url('../images/population_map.png');
     background-size: cover; 
     background-position: center center; 
+    min-height: 100vh;
 
 }
 .green-btn {
