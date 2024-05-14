@@ -2490,11 +2490,11 @@ footer.osr-footer-3 li {
     }
     
 
-}
+
 
 @media (max-width: 768px) {
 
-    #carouselExampleIndicatorsfirstpage .carousel-item {
+ #carouselExampleIndicatorsfirstpage  .carousel-item {
         
       height: 450px;
     }
