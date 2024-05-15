@@ -17,7 +17,7 @@
 
     function initLineChart(cityName = 'Select a neighborhood') {
         var option = {
-            title: { text: cityName + ' Population Density per kilometer',
+            title: { text: cityName + ' Population Density per square kilometer',
             textStyle: { fontWeight: 'bold' }
             },
             tooltip: { trigger: 'axis' },
