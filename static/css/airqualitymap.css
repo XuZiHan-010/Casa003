@@ -4,7 +4,7 @@
     }
 }
 
-/*css file for the air quality map and interactive line chart*/
+/* CSS file for the air quality map and interactive line chart */
 #map {
     width: 100%;
     height: 90vh; 
@@ -21,25 +21,22 @@
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    width:300px;
-    height:240px;
+    width: 300px;
+    height: 240px;
 }
 .info.legend h4 {
     font-size: 20px; /* Increase the size of the legend title */
-    font-weight: bold; /* make the title bolder */
+    font-weight: bold; /* Make the title bolder */
 }
-
 .info.legend div {
     font-size: 16px; /* Increase the font size of the legend entries */
-    margin: 8px 0 ; /* Increase spacing between entries for better readability */
-   
+    margin: 8px 0; /* Increase spacing between entries for better readability */
 }
-
 .info.legend i {
     height: 20px; /* Increase the height of the color boxes */
     width: 40px; /* Increase the width of the color boxes */
     display: inline-block;
-    margin-right: 10px; /*space between the color box and the text */
+    margin-right: 10px; /* Space between the color box and the text */
     vertical-align: middle; /* Align the color box with the middle of the text */
 }
 
@@ -51,8 +48,7 @@
     border-radius: 3px;
     cursor: pointer;
     outline: none;
-    color:back;
-  
+    color: black;
 }
 
 .year-controls button:hover {
@@ -63,10 +59,11 @@
 .year-controls button.active {
     background-color: #ccc;
 }
+
 #dataTypeSelect {
     font-weight: bold;
     color: black;
-    font-size:18px;
+    font-size: 18px;
     width: 300px;
 }
 
@@ -75,14 +72,12 @@
     color: black;
 }
 
-
 /* Clear Chart button styling */
 #clearChartBtn {
     display: block; 
-    background-color: black;
+    background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 20px;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     cursor: pointer;
@@ -90,27 +85,28 @@
 }
 
 #clearChartBtn:hover {
-    background-color: #555; /* Darker shade on hover */
+    background-color: #0056b3; /* Darker shade on hover */
     box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Elevated shadow on hover */
 }
 
+
 .button-container .btn-custom {
-    background-color: black;
+    background-color: #007bff;
     color: white;
     margin-bottom: 10px; /* Space between buttons */
+    border: 2px solid #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .button-container .btn-custom:hover, .button-container .btn-custom:focus {
-    background-color: #555; /* Darker shade on hover/focus */
-    color: #FFF;
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
 
 .button-container .btn-custom:active {
-    background-color: #333; /* Even darker on click */
-}
-
-#clearChartBtn.active {
-    background-color: #e01414; /* the background red even after the click */
+    background-color: #003f7f; 
 }
 
 .full-screen-background {
@@ -128,6 +124,7 @@
     justify-content: flex-start; /* Aligns buttons to the start of the div */
     gap: 10px; /* Space between buttons */
 }
+
 .button-container button {
     padding: 10px 20px; 
     font-size: 16px; 
@@ -135,26 +132,10 @@
     text-align: center; /* Centers the text within the buttons */
 }
 
-.button-container .btn-custom {
-    background-color: black;
-    color: white;
-    margin-bottom: 10px; /* Space between buttons */
-}
-
-.button-container .btn-custom:hover, .button-container .btn-custom:focus {
-    background-color: #555; /* Darker shade on hover/focus */
-    color: #FFF;
-}
-
-.button-container .btn-custom:active {
-    background-color: #333; /* Even darker on click */
-}
-
-
 #areaChart {
     width: 100%;
-    display:none;
-    height:400px;
+    display: none;
+    height: 400px;
     background-color: white;
     padding: 15px; 
     border-radius: 5px; 
@@ -171,18 +152,21 @@
     text-decoration: underline; /* Underline on hover or focus for accessibility */
     color: blue; 
 }
+
 .strong-red {
     color: red; 
 }
-.strong-blue{
-    color:blue;
+
+.strong-blue {
+    color: blue;
 }
-/*css for modal text here*/
+
+/* CSS for modal text */
 .modal-text-large {
     font-size: 18px; 
     color: black; 
 }
-.col-md-8
-.col-md-4{
+
+.col-md-8, .col-md-4 {
     margin-top: 20px;
 }

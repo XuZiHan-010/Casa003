@@ -421,7 +421,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- <script src="static/js/transition.js"></script> -->
+		
 
 		<!-- Blog Section Start -->
 		<section id="AirQuality" style="margin-top: 0; padding-top: 20px;">
@@ -597,17 +597,7 @@
 						Repository</a></p>
 			</div>
 
-			<!--temporary comment-->
-
-
-			<!-- <div class="pull-right">
-				<ul class="short-nav">
-					<li><a href="#">Terms of services</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Security</a></li>
-					<li><a href="#">Siemap</a></li> -->
-
-			</ul><!-- / Ul -->
+	
 		</div>
 	</div>
 	</div><!-- /Copyright End-->
@@ -641,48 +631,8 @@
 	<script src="static/js/builtup_area.js"></script>
 	<!-- Import air quality javascript -->
 	<script src="static/js/d3_airquality.js"></script>
-
-	<script>
-
-
-	// function toggleButtonColor(button) {
-	// 	button.classList.toggle('active');
-	// }
-	
-	function animateElementById(elementId, animationClass) {
-			var showId = document.getElementById(elementId);
-			var clients = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-			var divTop = showId.getBoundingClientRect().top;
-			if (divTop <= clients) {
-				showId.classList.add(animationClass);
-			} else {
-				showId.classList.remove(animationClass);
-			}
-		}
-
-		function handleScroll() {
-			animateElementById('identify', 'bounceInLeft'); 
-			animateElementById('history', 'fadeInLeft'); 
-			animateElementById('his-pic', 'fadeInLeft'); 			
-			animateElementById('his-list', 'fadeInLeft'); 			
-			animateElementById('population-tran', 'fadeInRight'); 			
-			animateElementById('animated-text-population-1', 'bounceInLeft'); 
-			animateElementById('animated-text-population-2', 'bounceInLeft'); 
-
-			animateElementById('popu-map', 'fadeInLeftBig'); 
-			animateElementById('metro', 'slideInRight'); 
-			animateElementById('buildup', 'slideInRight'); 
-			animateElementById('airQuality', 'fadeInRight'); 
-			animateElementById('airQuality-text', 'bounceInLeft'); 
-			animateElementById('PM2.5-P-C', 'slideInLeft'); 
-			animateElementById('conclu', 'slideInLeft'); 
-			
-
-		}
-
-		window.onscroll = handleScroll;
-
-	</script>
+	<!-- Import animation -->
+<script src="static/js/animation.js"></script>
 </body>
 
 </html>

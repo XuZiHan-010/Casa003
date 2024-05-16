@@ -28,6 +28,10 @@
 
     window.myLineChart = null; // Initialize chart instance holder
 
+
+    
+
+
     function initializeChart(dataSets) {
         if (window.myLineChart) {
             window.myLineChart.destroy(); // Destroy any existing chart instance
@@ -238,7 +242,7 @@
                 <div><i style="background: #babfbc"></i>No Data</div>
             `;
         } else {
-            legendTitle.innerHTML = "Water Quality Percentile" + currentYear;
+            legendTitle.innerHTML = "Water Quality" + currentYear;
             legendHtml = `
                 <div><i style="background:#BD0026"></i>Above 75</div>
                 <div><i style="background: #F03B20"></i>56 - 75</div>
