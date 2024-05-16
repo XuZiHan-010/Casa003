@@ -17,8 +17,9 @@
 
     function initLineChart(cityName = 'Select a neighborhood') {
         var option = {
-            title: { text: cityName + ' Population Density per square kilometer',
-            textStyle: { fontWeight: 'bold' }
+            title: {
+                text: cityName + ' Population Density per square kilometer',
+                textStyle: { fontWeight: 'bold' }
             },
             tooltip: { trigger: 'axis' },
             xAxis: {
@@ -90,9 +91,7 @@
             
                 myChart.setOption({
                     series: [{ data: seriesData }],
-                    title: { text: 'Los Angeles County Population Density by Neighborhood (' + year + ')'
-                   
-                     } 
+                    title: { text: 'Los Angeles County Population Density by Neighborhood (' + year + ')' } 
                 });
             }
           
@@ -100,9 +99,11 @@
     
             echarts.registerMap('Los Angeles', laJson);
             var option = {
-                title: { text: 'Los Angeles County Population Density by Neighborhood  ', 
-                subtext: 'Population Density per kilometer (2010-2022)' ,
-                left: 'center' },
+                title: { 
+                    text: 'Los Angeles County Population Density by Neighborhood',
+                    subtext: 'Population Density per square kilometer (2010-2022)',
+                    left: 'center' 
+                },
                 tooltip: {
                     trigger: 'item',
                     formatter: function(params) {
@@ -114,7 +115,7 @@
                     min: 0,
                     max: 10000, 
                     inRange: {
-                        color: ['#00FF00', '#ADFF2F', '#FFFF00', '#FFD700', '#FFA500', '#FF4500', '#FF0000']
+                        color: ['#FFFFB2', '#FED976', '#FEB24C', '#FD8D3C', '#F03B20', '#BD0026']
                     },
                     text: ['High', 'Low'],
                     calculable: true
@@ -171,5 +172,4 @@
     
     initializeChart();
     initLineChart();
-    
 })();

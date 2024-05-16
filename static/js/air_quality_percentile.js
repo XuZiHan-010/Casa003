@@ -90,22 +90,22 @@
         switch (dataType) {
             case 'percentile':
                 return pm25 > 77 ? '#BD0026' :
-                    pm25 > 57 ? '#FC4E2A' :
+                    pm25 > 57 ? '#F03B20' :
                     pm25 > 39 ? '#FD8D3C' :
-                    pm25 > 20 ? '#FFFF00' :
-                    '#babfbc';
+                    pm25 > 20 ? '#FECC5C' :
+                    '#FFFFB2';
             case 'concentration':
                 return pm25 > 12.31 ? '#BD0026' :
-                    pm25 > 11.56 ? '#FC4E2A' :
+                    pm25 > 11.56 ? '#F03B20' :
                     pm25 > 10.49 ? '#FD8D3C' :
-                    pm25 > 8.49 ? '#FFFF00' :
-                    '#babfbc';
+                    pm25 > 8.49 ? '#FECC5C' :
+                    '#FFFFB2';
             case 'waterquality':
                 return pm25 > 75 ? '#BD0026' :
-                    pm25 > 56 ? '#FC4E2A' :
+                    pm25 > 56 ? '#F03B20' :
                     pm25 > 37 ? '#FD8D3C' :
-                    pm25 > 19 ? '#FFFF00' :
-                    '#babfbc';
+                    pm25 > 19 ? '#FECC5C' :
+                    '#FFFFB2';
             default:
                 return '#babfbc'; // Default color for other data types
         }
@@ -221,28 +221,31 @@
             legendTitle.innerHTML = "PM2.5 Percentile " + currentYear;
             legendHtml = `
                 <div><i style="background:#BD0026"></i>Above 77</div>
-                <div><i style="background: #FC4E2A"></i>57 - 77</div>
-                <div><i style="background: #FD8D3C"></i>39 - 57</div>
-                <div><i style="background:  #FFFF00"></i>20 - 39</div>
-                <div><i style="background: #babfbc"></i>Below 20</div>
+                <div><i style="background: #F03B20"></i>57 - 77</div>
+                <div><i style="background: #F03B20"></i>39 - 57</div>
+                <div><i style="background: #FECC5C"></i>20 - 39</div>
+                <div><i style="background: #FFFFB2"></i>Below 20</div>
+                <div><i style="background: #babfbc"></i>No Data</div>
             `;
         } else if (dataType === 'concentration') {
             legendTitle.innerHTML = "PM2.5 Concentration " + currentYear;
             legendHtml = `
                 <div><i style="background:#BD0026"></i>Above 12.31</div>
-                <div><i style="background:  #FC4E2A"></i>11.56 - 12.31</div>
-                <div><i style="background: #FD8D3C"></i>10.49 - 11.56</div>
-                <div><i style="background: #FFFF00"></i>8.49 - 10.49</div>
-                <div><i style="background: #babfbc"></i>Below 8.49</div>
+                <div><i style="background: #F03B20"></i>11.56 - 12.31</div>
+                <div><i style="background: #F03B20"></i>10.49 - 11.56</div>
+                <div><i style="background: #FECC5C""></i>8.49 - 10.49</div>
+                <div><i style="background: #FFFFB2"></i>Below 8.49</div>
+                <div><i style="background: #babfbc"></i>No Data</div>
             `;
         } else {
             legendTitle.innerHTML = "Water Quality Percentile" + currentYear;
             legendHtml = `
                 <div><i style="background:#BD0026"></i>Above 75</div>
-                <div><i style="background: #FC4E2A"></i>56 - 75</div>
-                <div><i style="background: #FD8D3C"></i>37 - 56</div>
-                <div><i style="background:  #FFFF00"></i>19 - 37</div>
-                <div><i style="background: #babfbc"></i>Below 19</div>
+                <div><i style="background: #F03B20"></i>56 - 75</div>
+                <div><i style="background: #F03B20"></i>37 - 56</div>
+                <div><i style="background: #FECC5C"></i>19 - 37</div>
+                <div><i style="background: #FFFFB2"></i>Below 19</div>
+                <div><i style="background: #babfbc"></i>No Data</div>
             `;
         }
 

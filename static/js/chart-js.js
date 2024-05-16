@@ -93,7 +93,7 @@
                 scales: {
                     y: {
                         beginAtZero: false,
-                        min: 8.8,  // Adjusting for million scale
+                        min: 0,  // Adjusting for million scale
                         max: 10.1, // Adjusting for million scale
                         title: {
                             display: true,
